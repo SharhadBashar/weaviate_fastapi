@@ -7,7 +7,7 @@ import logging
 import json
 from datetime import datetime
 import uuid
-
+print("running")
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
