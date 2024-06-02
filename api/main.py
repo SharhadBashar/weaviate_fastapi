@@ -55,7 +55,7 @@ async def generate_meal_plan(user_profile: UserProfile):
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
         prompt = f"""
-            Generate a -day meal plan with 3 options per meal for the following user profile: Only generate dishes that are relativley common for restaurants to carry
+            Generate a 3-day meal plan with 3 options per meal for the following user profile: Only generate dishes that are relativley common for restaurants to carry
             
             Name: {user_profile.Name}
             Age: {user_profile.Age}
@@ -173,4 +173,128 @@ async def generate_meal_plan(user_profile: UserProfile):
             logging.error(f"OpenAI error: {oe}")
             raise HTTPException(status_code=500, detail="Error interacting with OpenAI")
         
+
+
+
+@app.post("/nutrition-info")
+
+async def generate_nutrition_info(
+  
+    name: str = Form(None),
+    description: str = Form(None),
+    dishID: str = Form(None),
+    userId: str = Form(None),
+    userName: str = Form(None),
+
+
+    file: UploadFile = File(None)
+):
+    dish_info = {}
+    
+    if name:
+        dish_info['name'] = name
         
+    if description:
+        dish_info['description'] = description
+        
+    if dishID:
+        dish_info['dishID'] = dishID
+        
+    if userId:
+        dish_info['userId'] = userId
+  
+    if userName:
+        dish_info['userName'] = userName
+
+    if not dish_info:
+        raise HTTPException(status_code=400, detail="No valid input provided. Please provide a name and/or description.")
+    
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+    prompt = f"""
+    You are an expert nutritionist. Analyze the following information to provide a detailed nutritional breakdown for the dish.
+    Name: {dish_info.get('name', '')}
+    Description: {dish_info.get('description', '')}
+
+    Include the calories, macronutrients (protein, fat, carbs including fiber and sugars), and micronutrients (vitamins and minerals).
+    Also provide confidence bounds for calories and macronutrients for "Strict Mode" (overestimate) and "Lazy Mode" (underestimate). Return the information in the following JSON format:
+    {{
+      "dish_info": {{
+        "name": "{dish_info.get('name', '')}",
+        "description": "{dish_info.get('description', '')}",
+        "dishID": "{dish_info.get('dishID', '')}"
+        "NutritionID": "{str(uuid.uuid4())}",
+        "userId": "{dish_info['userId']}",
+        "userName": "{dish_info['userName']}",
+        "date": "{datetime.now().strftime('%Y-%m-%d %H:%M')}
+        
+      }},
+      "serving_size": "grams",
+      "nutrition": {{
+        "calories": {{
+          "amount": [amount],
+          "unit": "kcal",
+          "strict_mode": [lower_bound],
+          "lazy_mode": [upper_bound]
+        }},
+        "macronutrients": {{
+          "protein": {{
+            "amount": [amount],
+            "unit": "grams",
+            "strict_mode": [lower_bound],
+            "lazy_mode": [upper_bound]
+          }},
+          "fat": {{
+            "amount": [amount],
+            "unit": "grams",
+            "strict_mode": [lower_bound],
+            "lazy_mode": [upper_bound]
+          }},
+          "carbohydrates": {{
+            "amount": [amount],
+            "unit": "grams",
+            "strict_mode": [lower_bound],
+            "lazy_mode": [upper_bound]
+          }},
+          "fiber": {{
+            "amount": [amount],
+            "unit": "grams"
+          }},
+          "sugars": {{
+            "amount": [amount],
+            "unit": "grams"
+          }},
+          "net_carbs": {{
+            "amount": [amount],
+            "unit": "grams"
+          }}
+        }}
+      }}
+    }}
+    """
+
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are an expert nutritionist from Harvard that knows the exact nutrition in every take out dish based on FDA daily reccomendated standards. Respond only with valid JSON."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=4096,
+            temperature=0.7,
+            response_format={"type": "json_object"}
+        )
+
+        # Debugging: Print the raw response content
+        raw_response_content = response.choices[0].message.content
+
+        # Load the JSON-like structure
+        print(f"Raw response content: {raw_response_content}")
+        
+
+
+        return raw_response_content
+
+    except openai.OpenAIError as oe:
+        logging.error(f"OpenAI error: {oe}")
+        raise HTTPException(status_code=500, detail="Error interacting with OpenAI")
