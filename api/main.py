@@ -55,7 +55,7 @@ async def generate_meal_plan(user_profile: UserProfile):
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
         prompt = f"""
-            Generate a 3-day meal plan with 3 options per meal for the following user profile: Only generate dishes that are relativley common for restaurants to carry
+            Generate a 3-day meal plan with 9 options per meal for the following user profile: Only generate dishes that are relativley common for restaurants to carry
             
             Name: {user_profile.Name}
             Age: {user_profile.Age}
@@ -90,19 +90,37 @@ async def generate_meal_plan(user_profile: UserProfile):
                 "day": 1,
                 "meals": {{
                     "breakfast": [
-                        "Avocado Toast",
-                        "Greek Yogurt with Honey and Berries",
-                        "Smoothie Bowl"
+                            "Avocado Toast",
+                            "Greek Yogurt with Honey and Berries",
+                            "Smoothie Bowl",
+                            "Chia Seed Pudding",
+                            "Overnight Oats",
+                            "Smoothie with Spinach, Banana, and Almond Milk",
+                            "Acai Bowl",
+                            "Banana Bread",
+                            "Protein Smoothie"
                     ],
                     "lunch": [
-                        "Quinoa Salad",
-                        "Veggie Wrap",
-                        "Falafel Salad"
+                          "Quinoa Salad",
+                            "Veggie Wrap",
+                            "Falafel Salad",
+                            "Hummus Plate",
+                            "Grilled Vegetable Panini",
+                            "Caprese Sandwich",
+                            "Lentil Soup",
+                            "Stuffed Peppers",
+                            "Chickpea Salad"
                     ],
                     "dinner": [
-                        "Vegetarian Sushi",
-                        "Vegetarian Stir-fry",
-                        "Vegetarian Pad Thai"
+                         "Vegetarian Sushi",
+                            "Vegetarian Stir-fry",
+                            "Vegetarian Pad Thai",
+                            "Vegetarian Pizza",
+                            "Vegetarian Curry",
+                            "Vegetarian Tacos",
+                            "Vegetarian Burrito",
+                            "Vegetarian Pasta",
+                            "Vegetarian Samosas"
                     ]
                 }}
             }},
@@ -110,19 +128,37 @@ async def generate_meal_plan(user_profile: UserProfile):
                 "day": 2,
                 "meals": {{
                     "breakfast": [
-                        "Chia Seed Pudding",
-                        "Overnight Oats",
-                        "Smoothie with Spinach, Banana, and Almond Milk"
+                           "Chia Seed Pudding",
+                            "Overnight Oats",
+                            "Smoothie with Spinach, Banana, and Almond Milk",
+                            "Avocado Toast",
+                            "Greek Yogurt with Honey and Berries",
+                            "Smoothie Bowl",
+                            "Acai Bowl",
+                            "Banana Bread",
+                            "Protein Smoothie"
                     ],
                     "lunch": [
-                        "Hummus Plate",
-                        "Grilled Vegetable Panini",
-                        "Caprese Sandwich"
+                   "Hummus Plate",
+                            "Grilled Vegetable Panini",
+                            "Caprese Sandwich",
+                            "Quinoa Salad",
+                            "Veggie Wrap",
+                            "Falafel Salad",
+                            "Lentil Soup",
+                            "Stuffed Peppers",
+                            "Chickpea Salad"
                     ],
                     "dinner": [
-                        "Vegetarian Pizza",
-                        "Vegetarian Curry",
-                        "Vegetarian Tacos"
+                            "Vegetarian Pizza",
+                            "Vegetarian Curry",
+                            "Vegetarian Tacos",
+                            "Vegetarian Sushi",
+                            "Vegetarian Stir-fry",
+                            "Vegetarian Pad Thai",
+                            "Vegetarian Burrito",
+                            "Vegetarian Pasta",
+                            "Vegetarian Samosas"
                     ]
                 }}
             }},
@@ -130,19 +166,37 @@ async def generate_meal_plan(user_profile: UserProfile):
                 "day": 3,
                 "meals": {{
                     "breakfast": [
-                        "Acai Bowl",
-                        "Banana Bread",
-                        "Protein Smoothie"
+                            "Acai Bowl",
+                            "Banana Bread",
+                            "Protein Smoothie",
+                            "Chia Seed Pudding",
+                            "Overnight Oats",
+                            "Smoothie with Spinach, Banana, and Almond Milk",
+                            "Avocado Toast",
+                            "Greek Yogurt with Honey and Berries",
+                            "Smoothie Bowl"
                     ],
                     "lunch": [
-                        "Lentil Soup",
-                        "Stuffed Peppers",
-                        "Chickpea Salad"
+                           "Lentil Soup",
+                            "Stuffed Peppers",
+                            "Chickpea Salad",
+                            "Hummus Plate",
+                            "Grilled Vegetable Panini",
+                            "Caprese Sandwich",
+                            "Quinoa Salad",
+                            "Veggie Wrap",
+                            "Falafel Salad"
                     ],
                     "dinner": [
                         "Vegetarian Samosas",
-                        "Vegetarian Burrito",
-                        "Vegetarian Pasta"
+                            "Vegetarian Burrito",
+                            "Vegetarian Pasta",
+                            "Vegetarian Pizza",
+                            "Vegetarian Curry",
+                            "Vegetarian Tacos",
+                            "Vegetarian Sushi",
+                            "Vegetarian Stir-fry",
+                            "Vegetarian Pad Thai"
                     ]
                 }}
             }}]
