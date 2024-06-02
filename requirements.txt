@@ -1,0 +1,6 @@
+fastapi
+pandas
+regex
+openai
+pydantic
+uvicorn
