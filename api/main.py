@@ -143,7 +143,7 @@ async def generate_meal_plan(user_profile: UserProfile):
         """
 
         response = openai.Completion.create(
-            model="gpt-4",
+            model="gpt-4o",
             prompt=prompt,
             max_tokens=4096,
             temperature=0.7
@@ -219,7 +219,7 @@ async def generate_menu_prescription(user_profile: UserProfile):
         """
 
         response = openai.Completion.create(
-            model="gpt-4",
+            model="gpt-4o",
             prompt=prompt,
             max_tokens=4096,
             temperature=0.7
