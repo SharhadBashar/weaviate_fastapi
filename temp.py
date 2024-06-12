@@ -7,13 +7,6 @@ import requests
 app = FastAPI()
 
 # Define types and constants
-class TCoordinates(BaseModel):
-    Latitude: float
-    Longitude: float
-
-class TDistance(BaseModel):
-    rawDistance: float
-    distanceLabel: str
 
 class DishDetails(BaseModel):
     dishRes_ID: Optional[str]
@@ -58,73 +51,9 @@ class DishDetails(BaseModel):
     eater_ReviewDictVec: Optional[Dict]
     infatuation_ReviewDictVec: Optional[Dict]
 
-class TDoorDashOperatingTimes(BaseModel):
-    monDoorDash: Optional[str]
-    tueDoorDash: Optional[str]
-    wedDoorDash: Optional[str]
-    thuDoorDash: Optional[str]
-    friDoorDash: Optional[str]
-    satDoorDash: Optional[str]
-    sunDoorDash: Optional[str]
 
-class OperatingStatus(BaseModel):
-    closed: bool
-    closingSoon: bool
 
-defaultClientLatitude = 40.7128
-defaultClientLongitude = -74.0060
 
-# Helper functions
-def calculate_distance(loc1: TCoordinates, loc2: TCoordinates) -> TDistance:
-    loc1_coords = (loc1.Latitude, loc1.Longitude)
-    loc2_coords = (loc2.Latitude, loc2.Longitude)
-    distance_in_kilometers = geodesic(loc1_coords, loc2_coords).kilometers
-    distance_in_miles = distance_in_kilometers * 0.621371
-    if distance_in_miles < 0.2:
-        distance_label = f"{round(distance_in_miles * 5280)} feet"
-    else:
-        distance_label = f"{round(distance_in_miles * 100) / 100} miles"
-    return TDistance(rawDistance=distance_in_miles, distanceLabel=distance_label)
-
-def format_price(price: str) -> str:
-    try:
-        formatted_price = f"{float(price):.2f}"
-    except ValueError:
-        formatted_price = ""
-    return formatted_price if formatted_price != "0.00" else ""
-
-def get_current_location():
-    # Replace with actual implementation to get the current location
-    return {"latitude": defaultClientLatitude, "longitude": defaultClientLongitude}
-
-def get_dish_order_links(dish: DishDetails) -> Dict[str, str]:
-    link_door_dash = dish.foodItemLinkDoorDash if dish.foodItemLinkDoorDash != 'None' else (
-        dish.linkDoorDash if dish.linkDoorDash != 'None' else 'None')
-    link_uber_eats = dish.foodItemUberCartLinks if dish.foodItemUberCartLinks != 'None' and dish.foodItemUberCartLinks != 'Invalid store identifier in the URL' else (
-        dish.foodItemLinkUber if dish.foodItemLinkUber != 'None' else (
-            dish.linkUber if dish.linkUber != 'None' else 'None'))
-    return {"doordash": link_door_dash, "ubereats": link_uber_eats}
-
-def get_operating_hours(client_timestamp: str, uber_eats_opening_time: str, uber_eats_closing_time: str, door_dash_operating_times: TDoorDashOperatingTimes) -> Dict[str, str]:
-    client_date = int(client_timestamp)
-    if uber_eats_opening_time != 'None' and uber_eats_closing_time != 'None':
-        open_time = uber_eats_opening_time
-        close_time = uber_eats_closing_time
-        source = 'uber'
-    else:
-        day_of_week = ["sunDoorDash", "monDoorDash", "tueDoorDash", "wedDoorDash", "thuDoorDash", "friDoorDash", "satDoorDash"][client_date % 7]
-        open_time, close_time = getattr(door_dash_operating_times, day_of_week).split(' - ')
-        source = 'doordash'
-    return {"open": open_time, "close": close_time, "source": source}
-
-def get_operating_status(client_timestamp: str, opening_time_str: str, closing_time_str: str) -> OperatingStatus:
-    client_time = int(client_timestamp)
-    opening_time = int(opening_time_str.split(':')[0])
-    closing_time = int(closing_time_str.split(':')[0])
-    if closing_time < opening_time:
-        closing_time += 24
-    closed = client_time < opening_time or client_time >= closing_time
-    return OperatingStatus(closed=closed, closingSoon=False)
 
 def process_results_data(client_time: str, results_data: List[DishDetails]) -> List[DishDetails]:
     processed_data = []

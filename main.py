@@ -32,7 +32,7 @@ app.add_middleware(
 async def read_root():
     return {'message': 'Welcome to the crispy personalized meal plan generator API.'}
 
-@app.post('/generate-menu')
+@app.post('/generate_menu')
 async def generate_meal_plan(user: User):
     week_meal_plan = open_ai.generate_menu(user)
     df = pd.DataFrame(week_meal_plan)
@@ -42,8 +42,7 @@ async def generate_meal_plan(user: User):
     print(f'Raw response content: {week_meal_plan}')
     return week_meal_plan
 
-@app.post("/nutrition-info/")
-
+@app.post("/nutrition_info/")
 async def generate_nutrition_info(dish: Dish, file: UploadFile = File(None)):
     dish_info = {}
     

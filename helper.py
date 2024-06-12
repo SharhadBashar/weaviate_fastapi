@@ -1,5 +1,7 @@
 import re
 import json
+from datetime import datetime
+from geopy.distance import geodesic
 
 def read_json(file_name):
     with open(file_name) as file:
@@ -58,3 +60,32 @@ def is_valid_json(data):
         return True
     except json.JSONDecodeError:
         return False
+
+def calculate_distance(loc1: dict, loc2: dict) -> dict:
+    loc1_coords = (loc1['latitude'], loc1['longitude'])
+    loc2_coords = (loc2['latitude'], loc2['longitude'])
+    distance_km = geodesic(loc1_coords, loc2_coords).kilometers
+    distance_miles = geodesic(loc1_coords, loc2_coords).miles
+    distance_label = f'{round(distance_miles * 100) / 100} miles'
+    if (distance_miles < 0.2):
+        distance_label = f'{round(distance_miles * 5280)} feet'
+    return {'distance_miles': distance_miles, 'distance_km': distance_km, 'distance_label': distance_label}
+
+def format_price(price: str) -> str:
+    try:
+        return f'{float(price):.2f}'
+    except ValueError:
+        return ''
+
+def _default_client_latitude():
+    return 40.7128
+
+def _default_client_longitude():
+    return -74.0060
+
+def get_current_location():
+    # Replace with actual implementation to get the current location
+    return {'latitude': _default_client_latitude(), 'longitude': _default_client_longitude()}
+
+def get_day_of_week(timestamp):
+    return datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S').strftime('%A').lower()
