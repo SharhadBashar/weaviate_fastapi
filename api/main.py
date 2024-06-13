@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 import openai
 from openai import OpenAI
 from pydantic import BaseModel
@@ -12,6 +13,26 @@ import uuid
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 app = FastAPI()
+
+
+# Add CORS middleware
+origins = [
+    "http://localhost:3000",  # Allow access from localhost:3000
+    "https://www.trycrispy.app/", 
+    "http://localhost:3000/dish",
+    "http://localhost:3000/profile",
+    "https://www.trycrispy.app/dish",
+    "https://www.trycrispy.app/profile"]
+
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 async def health_check():
