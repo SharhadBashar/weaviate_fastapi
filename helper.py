@@ -71,7 +71,7 @@ def calculate_distance(loc1: dict, loc2: dict) -> dict:
         distance_label = f'{round(distance_miles * 5280)} feet'
     return {'distance_miles': distance_miles, 'distance_km': distance_km, 'distance_label': distance_label}
 
-def format_price(price: str) -> str:
+def get_format_price(price: str) -> str:
     try:
         return f'{float(price):.2f}'
     except ValueError:

@@ -1,5 +1,5 @@
-import logging
-import os
+import time
+import random
 from dotenv import load_dotenv
 from datetime import datetime
 from fastapi.middleware.cors import CORSMiddleware
@@ -11,6 +11,7 @@ import database
 
 from helper import *
 from classes import *
+from restaurants import *
 from open_ai import Open_AI
 from database import Database
 
@@ -29,8 +30,48 @@ app.add_middleware(
 )
 
 @app.get('/')
-async def read_root():
+async def root():
     return {'message': 'Welcome to the crispy personalized meal plan generator API.'}
+
+@app.get('/distance')
+def distance(loc1: dict, loc2: dict):
+    return calculate_distance(loc1, loc2)
+
+@app.get('/format_price')
+def format_price(price: str):
+    return get_format_price(price)
+
+@app.get('/generate_search_link/{search_val}')
+async def generate_search_link(search_val: str):
+    loc = get_current_location()
+    page = search_val  # Dummy implementation, replace with actual page calculation
+    return f"/{page}?searchval={search_val.strip()}&lat={loc['latitude']}&lon={loc['longitude']}&tmstp={int(time.time())}"
+
+@app.get('/average_price')
+def get_average_price(data: List[Dish_Details]):
+    avg_price = round(sum([float(dish.price) for dish in data if d.ishprice]) / len(data), 2)
+    return avg_price or 0
+
+@app.get('/dish_order_links')
+def dish_order_links(dish: Dish_Details):
+    return get_dish_order_links(dish)
+
+@app.get('/operating_hours')
+def operating_hours(client_time_str: str, ubereats_open: str, ubereats_close: str, doordash_schedule: DoorDash_Schedule):
+    return get_operating_hours(client_time_str, ubereats_open, ubereats_close, doordash_schedule)
+
+@app.get('/operating_status')
+def operating_status(client_time_str: str, opening_time_str: str, closing_time_str: str):
+    return get_operating_status(client_time_str, opening_time_str, closing_time_str)
+
+@app.get('/process_results_data')
+def process_results_data(client_time_str: str, dish_data: List[Dish_Details]):
+    return get_processed_dish_data(client_time_str, dish_data)
+
+@app.get('/shuffle_array')
+def shuffle_array(arr: List):
+    random.shuffle(arr)
+    return arr
 
 @app.post('/generate_menu')
 async def generate_meal_plan(user: User):
@@ -45,7 +86,6 @@ async def generate_meal_plan(user: User):
 @app.post("/nutrition_info/")
 async def generate_nutrition_info(dish: Dish, file: UploadFile = File(None)):
     dish_info = {}
-    
     if dish.name: dish_info['name'] = dish.name
     if dish.description: dish_info['description'] = dish.description
     if dish.dish_Id: dish_info['dish_Id'] = dish.dish_Id
