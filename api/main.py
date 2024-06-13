@@ -14,7 +14,6 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 app = FastAPI()
 
-
 # Add CORS middleware
 origins = [
     "http://localhost:3000",  # Allow access from localhost:3000
