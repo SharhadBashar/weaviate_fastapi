@@ -290,8 +290,9 @@ async def generate_nutrition_info(
     Name: {dish_info.get('name', '')}
     Description: {dish_info.get('description', '')}
 
-    Include the calories, macronutrients (protein, fat, carbs including fiber and sugars), and micronutrients (vitamins and minerals).
-    Also provide confidence bounds for calories and macronutrients for "Strict Mode" (overestimate) and "Lazy Mode" (underestimate). Return the information in the following JSON format:
+    Include the calories, macronutrients (protein, fat, carbs including fiber and sugars), and net carbs. 
+    Also provide calorie estimates and macronutrients for "Strict Mode" (overestimate) and "Lazy Mode" (underestimate). 
+    Return the information in the following JSON format:
     {{
       "dish_info": {{
         "name": "{dish_info.get('name', '')}",
@@ -308,27 +309,27 @@ async def generate_nutrition_info(
         "calories": {{
           "amount": [amount],
           "unit": "kcal",
-          "strict_mode": [lower_bound],
-          "lazy_mode": [upper_bound]
+          "strict_mode": [amount],
+          "lazy_mode": [amount]
         }},
         "macronutrients": {{
           "protein": {{
             "amount": [amount],
             "unit": "grams",
-            "strict_mode": [lower_bound],
-            "lazy_mode": [upper_bound]
+            "strict_mode": [amount],
+            "lazy_mode": [amount]
           }},
           "fat": {{
             "amount": [amount],
             "unit": "grams",
-            "strict_mode": [lower_bound],
-            "lazy_mode": [upper_bound]
+            "strict_mode": [amount],
+            "lazy_mode": [amount]
           }},
           "carbohydrates": {{
             "amount": [amount],
             "unit": "grams",
-            "strict_mode": [lower_bound],
-            "lazy_mode": [upper_bound]
+            "strict_mode": [amount],
+            "lazy_mode": [amount]
           }},
           "fiber": {{
             "amount": [amount],
