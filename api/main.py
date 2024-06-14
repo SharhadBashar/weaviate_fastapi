@@ -21,7 +21,20 @@ origins = [
     "http://localhost:3000/dish",
     "http://localhost:3000/profile",
     "https://www.trycrispy.app/dish",
-    "https://www.trycrispy.app/profile"]
+    "https://www.trycrispy.app/profile",
+    "https://www.trycrispy.app",
+    "https://crispy-web.vercel.app",
+    "https://www.trycrispy.app/dish",
+    "https://www.trycrispy.app/profile",
+    "https://www.trycrispy.app/",
+    "https://www.trycrispy.app/map",
+    "https://www.trycrispy.app/search",
+    "https://www.trycrispy.app/explore",
+    "https://www.trycrispy.app/cuisine",
+    "https://www.trycrispy.app/popular-dish",
+    "https://www.trycrispy.app/diet",
+    "https://www.trycrispy.app/restaurant"
+]
 
 
 
