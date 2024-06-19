@@ -1,0 +1,28 @@
+file: crispy-web-app/src/app/cuisine/functions/index.tsx
+function: getData
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/cuisine/functions/index.tsx#L115C23-L115C27
+
+
+file: crispy-web-app/src/app/map/functions/index.tsx
+function: getRezData
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/map/functions/index.tsx#L113
+
+
+file: src/app/dish/functions/index.tsx
+function: getDishData
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L8
+
+function: getExploreDishesBase
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L243
+
+function: getExploreDishesForYouCombined
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L507
+
+function: getExploreDishesForYouCuisines
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L923
+
+function: getExploreDishesForYouDiets
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L745
+
+function: getExploreDishesForYouPopularDishes
+url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L1098

@@ -8,10 +8,8 @@ from constants import *
 
 class Database:
     def __init__(self):
-        database_info = read_json(os.path.join(PATH_CONFIG, DB_CONFIG_CK))
-        self.db_url = os.getenv('DATABASE_URL')
-        # self.db_url = database_info['db_url']
-        self.conn = psycopg2.connect(self.db_url)
+        database_info = read_json(os.path.join(PATH_CONFIG, PATH_DB_CONFIG_CK))
+        self.conn = psycopg2.connect(database_info['url'])
 
     def insert_df(self, df, table_name):
         try:

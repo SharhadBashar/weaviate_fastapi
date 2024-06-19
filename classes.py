@@ -1,4 +1,3 @@
-from typing import Union
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 
@@ -26,18 +25,18 @@ class User(BaseModel):
     workout_days: str
 
 class Dish(BaseModel):
-    name: Union[str, None] = None
-    description: Union[str, None] = None
-    dish_Id: Union[str, None] = None
-    user_Id: Union[str, None] = None
-    user_name: Union[str, None] = None
+    name: str
+    description: Optional[str]
+    dish_Id: Optional[str]
+    user_Id: Optional[str]
+    user_name: Optional[str]
 
 class Dish_Details(BaseModel):
     dishRes_ID: Optional[str]
     dish_ID: Optional[str]
     restaurant_ID: Optional[str]
     _additional: Optional[Dict]
-    geoCoordinates: Optional[TCoordinates]
+    geoCoordinates: Optional[int]
     dishName: Optional[str]
     calorie_Count_Estimate: Optional[str]
     cleanedDishName: Optional[str]

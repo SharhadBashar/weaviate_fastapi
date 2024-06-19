@@ -52,7 +52,7 @@ def get_processed_dish_data(client_time_str: str, dish_data: List[Dish_Details])
         dish.doordash_order_link = order_links['doordash']
         dish.ubereats_order_link = order_links['ubereats']
         dish.restaurant_rating = dish.restaurant_rating or 0
-        dish.price = format_price(dish.price)
+        dish.price = get_format_price(dish.price)
         if (dish.calorie > 0):
             dish.fat = round(float(dish.mass_fat) / float(dish.calorie), 2) or 0
             dish.carbs = round(float(dish.mass_carbs) / float(dish.calorie), 2) or 0
@@ -62,4 +62,4 @@ def get_processed_dish_data(client_time_str: str, dish_data: List[Dish_Details])
             dish.carbs = 0
             dish.protein = 0
         processed_dish_data.append(dish)
-    return process_dish_data
+    return processed_dish_data
