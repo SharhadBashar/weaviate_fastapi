@@ -186,7 +186,7 @@ class Weaviate:
             response = (
                 self.client_v3.query.get(
                     CRISPY_V1,
-                    RETURN_PROPERTIES_ALL
+                    RETURN_PROPERTIES_V3
                 )
                 .withWhere({
                     'operator': 'And',
@@ -271,7 +271,7 @@ class Weaviate:
             response = (
                 self.client_v3.query.get(
                     CRISPY_V1,
-                    RETURN_PROPERTIES_ALL
+                    RETURN_PROPERTIES_V3
                 )
                 .withWhere({
                     'operator': 'And',
@@ -356,7 +356,7 @@ class Weaviate:
             response = (
                 self.client_v3.query.get(
                     CRISPY_V1,
-                    RETURN_PROPERTIES_ALL
+                    RETURN_PROPERTIES_V3
                 )
                 .withWhere({
                     'operator': 'And',
@@ -370,6 +370,86 @@ class Weaviate:
                             'path': ['cleanedDishName'],
                             'operator': 'ContainsAny',
                             'valueTextArray': CURATED_DIETS[diets]
+                        },
+                        {
+                            'operator': 'Or',
+                            'operands': [
+                                {
+                                    'path': ['stockImageUber'],
+                                    'operator': 'Equal',
+                                    'valueText': 'UniqueImage'
+                                },
+                                {
+                                    'path': ['stockImageDoorDash'],
+                                    'operator': 'Equal',
+                                    'valueText': 'UniqueImage'
+                                }
+                            ]
+                        },
+                        {
+                            'operator': 'Or',
+                            'operands': [
+                                {
+                                    'path': ['dishType'],
+                                    'operator': 'Like',
+                                    'valueText': '*Lunch*',
+                                },
+                                {
+                                    'path': ['dishType'],
+                                    'operator': 'Like',
+                                    'valueText': '*Dinner*',
+                                },
+                                {
+                                    'path': ['dishType'],
+                                    'operator': 'Like',
+                                    'valueText': '*Breakfast*',
+                                },
+                                {
+                                    'path': ['dishType'],
+                                    'operator': 'Like',
+                                    'valueText': '*Brunch*',
+                                },
+                                {
+                                    'path': ['dishType'],
+                                    'operator': 'Like',
+                                    'valueText': '*Snack*',
+                                },
+                                {
+                                    'path': ['dishType'],
+                                    'operator': 'Like',
+                                    'valueText': '*Salad*',
+                                },
+                                {
+                                    'path': ['dishType'],
+                                    'operator': 'Like',
+                                    'valueText': '*Dessert*'
+                                }
+                            ]
+                        }
+                    ]
+                })
+                .with_limit(WEAVIATE_LIMIT_1000)
+                .do()
+            )
+            return response
+        except Exception as e:
+            print(e)
+            return []
+
+    def get_dish_popular(self, neighborhoods, dishes):
+        try:
+            response = (
+                self.client_v3.query.get(
+                    CRISPY_V1,
+                    RETURN_PROPERTIES_V3
+                )
+                .withWhere({
+                    'operator': 'And',
+                    'operands': [
+                        {
+                            'path': ['cleanedDishName'],
+                            'operator': 'ContainsAny',
+                            'valueTextArray': ['acai'] if dishes == 'açaí bowls' else CURATED_DISHES['breakfasts'] if dishes == 'breakfasts' else [dishes]
                         },
                         {
                             'operator': 'Or',

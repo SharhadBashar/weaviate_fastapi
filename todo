@@ -33,4 +33,4 @@ status: Done
 
 function: getExploreDishesForYouPopularDishes
 url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L1098
-status: NOT Done
+status: Done

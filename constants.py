@@ -211,6 +211,69 @@ RETURN_PROPERTIES_ALL = [
     'eater_ReviewDictVec',
     'infatuation_ReviewDictVec',
   ]
+RETURN_PROPERTIES_V3 = [
+  'dish_ID',
+  '_additional { id }',
+  'alternativesWithinSameCuisine',
+  'avoidanceDiseaseFoodVec',
+  'calorie_Count_Estimate',
+  'category_Carbs',
+  'category_Fat',
+  'category_Protein',
+  'cleanedDishName',
+  'closeTime_UberEats_uber',
+  'daysOpen_UberEats_uber',
+  'diet_Carnivore',
+  'diet_Halal',
+  'diet_Keto',
+  'diet_Kosher',
+  'diet_Mediterranean',
+  'diet_Omnivore',
+  'diet_Paleo',
+  'diet_Pescatarian',
+  'diet_Vegan',
+  'diet_Vegetarian',
+  'dishDescription',
+  'dishName',
+  'eater_ReviewDictVec',
+  'foodHistory',
+  'foodItemUberCartLinks',
+  'foodItemLinkDoorDash',
+  'foodItemLinkUber',
+  'imageDoorDash',
+  'imageUber',
+  'infatuation_ReviewDictVec',
+  'healthAlternatives',
+  'lat',
+  'linkDoorDash',
+  'linkUber',
+  'long',
+  'normalizedIngredients',
+  'mass_Carbs',
+  'mass_Fat',
+  'mass_Protein',
+  'neighborhood',
+  'priceClean',
+  'priceDoorDash',
+  'priceUber',
+  'restaurantName',
+  'restaurantPhone',
+  'restaurantWebsite',
+  'restaurant_ID',
+  'specificBaseAlternatives',
+  'monDoorDash',
+  'tueDoorDash',
+  'wedDoorDash',
+  'thuDoorDash',
+  'friDoorDash',
+  'satDoorDash',
+  'sunDoorDash',
+  'stockImageDoorDash',
+  'stockImageUber',
+  'dietTags',
+  'newCuisine',
+  'dishType'
+]
 CURATED_CUISINES = {
     'american': [
         'Buffalo Wings', 'BBQ Spare Ribs', 'Pulled Pork Sandwich', 'Sausage Egg Cheese Biscuit',
@@ -445,5 +508,184 @@ CURATED_DIETS = {
       'Vegetarian Risotto', 'Vegetarian Fettuccine Alfredo', 'Vegetarian Sushi', 'Avocado Cucumber Roll', 'Greek Salad', 'Vegetarian Chilli', 'Vegetable Tacos',
       'Vegetarian Breakfast Burritos', 'Vegetarian Quesadillas', 'Vegetarian Cheese', 'Enchiladas', 'Vegetarian Burger', 'Vegetarian Lentil Soup', 'Vegetarian Curry',
       'Vegetarian Breakfast Sandwich', 'Vegetarian Sandwich', 'Vegetarian Wrap', 'Chickpea Sandwich', 'Roasted Beet and Goat Cheese Salad', 'Vegetarian Pho with Tofu'
+    ]
+}
+CURATED_DISHES = {
+    'Açaí bowls': [
+        'Almond Açaí Bowl', 'Banana Açaí Bowl', 'Blueberry Açaí Bowl', 'Chia Seed Açaí Bowl', 'Chocolate Açaí Bowl',
+        'Coconut Açaí Bowl', 'Granola Açaí Bowl', 'Hemp Seed Açaí Bowl', 'Kiwi Açaí Bowl', 'Mango Açaí Bowl',
+        'Mixed Berry Açaí Bowl', 'Peanut Butter Açaí Bowl', 'Pineapple Açaí Bowl', 'Pomegranate Açaí Bowl',
+        'Raspberry Açaí Bowl', 'Spinach Açaí Bowl', 'Tropical Açaí Bowl'
+    ],
+    'Beef bulgogi': [
+        'Beef Bulgogi Bowl', 'Beef Bulgogi Salad', 'Beef Bulgogi with Noodles', 'Beef Bulgogi with Rice',
+        'Bulgogi Burger', 'Classic Beef Bulgogi', 'Spicy Beef Bulgogi', 'Beef Bulgogi Wrap'
+    ],
+    'Beef stroganoff': [
+        'Beef Stroganoff over Noodles', 'Beef Stroganoff over Rice', 'Beef Stroganoff with Mustard',
+        'Beef Stroganoff with Sour Cream', 'Chicken Stroganoff', 'Classic Beef Stroganoff',
+        'Mushroom Beef Stroganoff', 'Pork Stroganoff', 'Spicy Beef Stroganoff', 'Vegetarian Stroganoff (Mushroom)'
+    ],
+    'Bibimbap': [
+        'Bibimbap', 'Bibimbap with Kimchi', 'Chicken Bibimbap', 'Classic Beef Bibimbap', 'Mushroom Bibimbap',
+        'Spicy Pork Bibimbap', 'Tofu Bibimbap', 'Vegetable Bibimbap'
+    ],
+    'Biryani': [
+        'Beef Biryani', 'Chicken Biryani', 'Egg Biryani', 'Fish Biryani', 'Hyderabadi Biryani', 'Lamb Biryani',
+        'Mushroom Biryani', 'Shrimp Biryani', 'Vegetable Biryani'
+    ],
+    'Breakfasts': [
+        'Avocado Toast', 'Bagel with Lox', 'Bacon and Eggs', 'Biscuits and Gravy', 'Breakfast Burrito',
+        'Breakfast Sandwich', 'Cereal', 'Croissant', 'Eggs Benedict', 'English Breakfast', 'French Toast',
+        'Frittata', 'Fruit Salad', 'Granola with Yogurt', 'Hash Browns', 'Huevos Rancheros', 'Muffins', 'Muesli',
+        'Omelette', 'Pancakes', 'Porridge', 'Shakshuka', 'Smoothie Bowl', 'Toast', 'Waffles'
+    ],
+    'Burritos': [
+        'Burrito Bowl', 'Burrito with Avocado', 'Burrito with Chipotle Sauce', 'Burrito with Cilantro',
+        'Burrito with Corn Salsa', 'Burrito with Guacamole', 'Burrito with Lime', 'Burrito with Pico de Gallo',
+        'Burrito with Pineapple Salsa', 'Burrito with Salsa Verde', 'Classic Burrito', 'Grilled Chicken Burrito',
+        'Lamb Burrito', 'Beef Burrito', 'Breakfast Burrito', 'Fish Burrito', 'Pork Burrito', 'Shrimp Burrito',
+        'Spicy Burrito', 'Steak and Shrimp Burrito', 'Vegetarian Burrito'
+    ],
+    'Cannoli': [
+        'Cannoli', 'Chocolate Chip Cannoli', 'Chocolate Dipped Cannoli', 'Classic Ricotta Cannoli', 'Mini Cannoli',
+        'Strawberry Cannoli'
+    ],
+    'Chicken parmesan': [
+        'Baked Chicken Parmesan', 'Cauliflower Parmesan Vegetarian', 'Chicken Parmesan Sandwich',
+        'Chicken Parmesan Pizza', 'Classic Chicken Parmesan', 'Grilled Chicken Parmesan', 'Spaghetti Chicken Parmesan',
+        'Spicy Chicken Parmesan', 'Veal Parmesan'
+    ],
+    'Desserts': [
+        'Angel Food Cake', 'Apple Pie', 'Baklava', 'Banana Bread', 'Banoffee Pie', 'Blueberry Cobbler', 'Bread Pudding',
+        'Brownies', 'Cannoli', 'Caramel Apples', 'Carrot Cake', 'Cheesecake', 'Cherry Almond Smoothie', 'Chocolate Cake',
+        'Chocolate Chip Cookies', 'Chocolate Covered Strawberries', 'Chocolate Fondue', 'Chocolate Mousse',
+        'Chocolate Protein Smoothie', 'Chocolate Souffle', 'Churros', 'Cinnamon Rolls', 'Coconut Cream Pie',
+        'Creme Brulee', 'Cupcakes', 'Eclairs', 'Fruit Tart', 'Gelato', 'Ice Cream Sandwiches', 'Ice Cream Sundae',
+        'Key Lime Pie', 'Lava Cake', 'Lemon Bars', 'Lemon Meringue Pie', 'Macarons', 'Mango Pineapple Smoothie',
+        'Molten Chocolate Cake', 'Peach Cobbler', 'Peanut Butter Pie', 'Pecan Pie', 'Pumpkin Cheesecake', 'Pumpkin Pie',
+        'Raspberry Sorbet', 'Red Velvet Cake', 'Rice Pudding', 'Smoothies', 'Strawberry Shortcake', 'Tart Tatin',
+        'Tiramisu'
+    ],
+    'Drunken noodles': [
+        'Beef Drunken Noodles', 'Chicken Drunken Noodles', 'Classic Drunken Noodles', 'Drunken Noodles with Basil',
+        'Pork Drunken Noodles', 'Salmon Drunken Noodles', 'Seafood Drunken Noodles', 'Shrimp Drunken Noodles',
+        'Spicy Drunken Noodles', 'Steak Drunken Noodles', 'Tofu Drunken Noodles', 'Udon Drunken Noodles',
+        'Vegetarian Drunken Noodles'
+    ],
+    'Dumplings': [
+        'Beef Dumplings', 'Cheese Dumplings', 'Chicken Dumplings', 'Mushroom Dumplings', 'Pork Dumplings',
+        'Shrimp Dumplings', 'Soup Dumplings', 'Spinach and Ricotta Dumplings', 'Vegetable Dumplings'
+    ],
+    'Empanadas': [
+        'Beef Empanadas', 'Cheese Empanadas', 'Chicken Empanadas', 'Corn Empanadas', 'Ham and Cheese Empanadas',
+        'Mushroom Empanadas', 'Pork Empanadas', 'Shrimp Empanadas', 'Spinach Empanadas', 'Vegetable Empanadas'
+    ],
+    'Fajitas': [
+        'Beef Fajitas', 'Fajitas with Guacamole', 'Mixed Fajitas', 'Pork Fajitas', 'Shrimp Fajitas', 'Spicy Fajitas',
+        'Steak Fajitas', 'Tofu Fajitas', 'Vegetable Fajitas'
+    ],
+    'Fish and chips': [
+        'Beer Battered Fish and Chips', 'Classic Fish and Chips', 'Crispy Fish and Chips',
+        'Fish and Chips with Coleslaw', 'Fish and Chips with Lemon Wedges', 'Fish and Chips with Mushy Peas',
+        'Fish and Chips with Sweet Potato Fries', 'Fish and Chips with Tartar Sauce', 'Grilled Fish and Chips',
+        'Spicy Fish and Chips'
+    ],
+    'Goulash': [
+        'Beef Goulash', 'Chicken Goulash', 'Goulash with Dumplings', 'Pork Goulash'
+    ],
+    'Hot dogs': [
+        'Chili Cheese Hot Dog', 'Chicago Style Hot Dog', 'Classic Hot Dog', 'Grilled Hot Dog', 'New York Style Hot Dog',
+        'Sauerkraut Hot Dog'
+    ],
+    'Jambalaya': [
+        'Chicken and Sausage Jambalaya', 'Classic Jambalaya', 'Jambalaya with Ham', 'Jambalaya with Shrimp',
+        'Lobster Jambalaya', 'Spicy Jambalaya', 'Spicy Jambalaya Pasta', 'Vegetarian Jambalaya'
+    ],
+    'Juices': [
+        'Aloe Vera Juice', 'Apple Juice', 'Antioxidant Juice', 'Beet Juice', 'Carrot Juice', 'Celery Juice',
+        'Chlorophyll Juice', 'Coconut Water', 'Cranberry Juice', 'Cucumber Juice', 'Detox Juice', 'Digestive Juice',
+        'Energy Boosting Juice', 'Ginger Juice', 'Grape Juice', 'Green Juice', 'Guava Juice', 'Hydrating Juice',
+        'Immunity Boosting Juice', 'Kale Juice', 'Kiwi Juice', 'Lemonade', 'Limeade', 'Mango Juice', 'Mint Juice',
+        'Mixed Berry Juice', 'Orange Juice', 'Papaya Juice', 'Passion Fruit Juice', 'Pineapple Juice',
+        'Pomegranate Juice', 'Spinach Juice', 'Superfood Juice', 'Tomato Juice', 'Turmeric Juice', 'Watermelon Juice'
+    ],
+    'Lasagna': [
+        'Beef Lasagna', 'Chicken Lasagna', 'Classic Lasagna', 'Lasagna with Ricotta', 'Meatball Lasagna',
+        'Pesto Lasagna', 'Seafood Lasagna', 'Spinach Lasagna', 'Vegetable Lasagna'
+    ],
+    'Milkshakes': [
+        'Banana Milkshake', 'Chocolate Milkshake', 'Cookies and Cream Milkshake', 'Mango Milkshake',
+        'Peanut Butter Milkshake', 'Strawberry Milkshake', 'Vanilla Milkshake'
+    ],
+    'Moussaka': [
+        'Beef Moussaka', 'Classic Moussaka', 'Eggplant Moussaka', 'Greek Moussaka', 'Lamb Moussaka', 'Vegetarian Moussaka'
+    ],
+    'Pad thai': [
+        'Beef Pad Thai', 'Chicken Pad Thai', 'Classic Pad Thai', 'Shrimp Pad Thai', 'Tofu Pad Thai',
+        'Vegetable Pad Thai'
+    ],
+    'Pho': [
+        'Beef Pho', 'Chicken Pho', 'Classic Pho', 'Duck Pho', 'Pork Pho', 'Seafood Pho', 'Shrimp Pho',
+        'Vegetable Pho'
+    ],
+    'Pizza': [
+        'BBQ Chicken Pizza', 'Buffalo Chicken Pizza', 'Cheese Pizza', 'Chicken Pesto Pizza', 'Greek Pizza',
+        'Hawaiian Pizza', 'Margherita Pizza', 'Meat Lovers Pizza', 'Pepperoni Pizza', 'Sicilian Pizza',
+        'Spinach and Feta Pizza', 'Supreme Pizza', 'Vegetarian Pizza'
+    ],
+    'Poke bowls': [
+        'Ahi Tuna Poke Bowl', 'Chicken Poke Bowl', 'Classic Poke Bowl', 'Shrimp Poke Bowl', 'Spicy Salmon Poke Bowl',
+        'Spicy Tuna Poke Bowl', 'Tofu Poke Bowl', 'Vegetable Poke Bowl'
+    ],
+    'Quesadillas': [
+        'Beef Quesadilla', 'Cheese Quesadilla', 'Chicken Quesadilla', 'Classic Quesadilla', 'Mushroom Quesadilla',
+        'Shrimp Quesadilla', 'Spinach Quesadilla', 'Vegetable Quesadilla'
+    ],
+    'Ramen': [
+        'Beef Ramen', 'Chicken Ramen', 'Miso Ramen', 'Pork Ramen', 'Shrimp Ramen', 'Spicy Ramen', 'Vegetarian Ramen'
+    ],
+    'Salads': [
+        'Asian Chicken Salad', 'Caesar Salad', 'Caprese Salad', 'Chicken Avocado Salad', 'Chicken Caesar Salad',
+        'Chicken Salad', 'Cobb Salad', 'Cranberry Walnut Salad', 'Greek Salad', 'Mixed Green Salad', 'Pasta Salad',
+        'Potato Salad', 'Spinach Salad', 'Taco Salad', 'Tuna Salad', 'Waldorf Salad'
+    ],
+    'Sandwiches': [
+        'BLT', 'Club Sandwich', 'Cubano', 'Egg Salad Sandwich', 'Grilled Cheese', 'Ham and Cheese Sandwich',
+        'Italian Sub', 'Meatball Sub', 'PB&J', 'Philly Cheesesteak', 'Pulled Pork Sandwich', 'Reuben',
+        'Roast Beef Sandwich', 'Turkey Sandwich', 'Veggie Sandwich'
+    ],
+    'Smoothies': [
+        'Acai Smoothie', 'Avocado Smoothie', 'Banana Berry Smoothie', 'Banana Smoothie', 'Blueberry Smoothie',
+        'Carrot Smoothie', 'Chocolate Banana Smoothie', 'Chocolate Protein Smoothie', 'Citrus Smoothie',
+        'Detox Smoothie', 'Energy Smoothie', 'Green Smoothie', 'Kale Smoothie', 'Mango Smoothie',
+        'Peanut Butter Smoothie', 'Pineapple Smoothie', 'Protein Smoothie', 'Raspberry Smoothie',
+        'Strawberry Banana Smoothie', 'Strawberry Smoothie', 'Tropical Smoothie', 'Vegan Smoothie'
+    ],
+    'Soups': [
+        'Beef Stew', 'Broccoli Cheddar Soup', 'Butternut Squash Soup', 'Chicken Noodle Soup', 'Clam Chowder',
+        'Cream of Mushroom Soup', 'French Onion Soup', 'Gazpacho', 'Lentil Soup', 'Minestrone', 'Miso Soup',
+        'Pho', 'Potato Soup', 'Ramen', 'Split Pea Soup', 'Tomato Soup', 'Vegetable Soup', 'Wonton Soup'
+    ],
+    'Spaghetti carbonara': [
+        'Classic Spaghetti Carbonara', 'Spaghetti Carbonara with Bacon', 'Spaghetti Carbonara with Peas',
+        'Spaghetti Carbonara with Sausage', 'Spicy Spaghetti Carbonara', 'Vegetarian Carbonara'
+    ],
+    'Sushi': [
+        'California Roll', 'Dragon Roll', 'Rainbow Roll', 'Spicy Tuna Roll', 'Sushi Combo', 'Sushi Nigiri',
+        'Sushi Platter', 'Vegetable Roll'
+    ],
+    'Tacos': [
+        'Beef Tacos', 'Chicken Tacos', 'Fish Tacos', 'Pork Tacos', 'Shrimp Tacos', 'Spicy Tacos', 'Steak Tacos',
+        'Vegetarian Tacos'
+    ],
+    'Tofu stir-fry': [
+        'Classic Tofu Stir-Fry', 'Tofu and Broccoli Stir-Fry', 'Tofu and Mushroom Stir-Fry',
+        'Tofu and Vegetable Stir-Fry', 'Tofu Stir-Fry with Black Bean Sauce', 'Tofu Stir-Fry with Cashews',
+        'Tofu Stir-Fry with Garlic Sauce', 'Tofu Stir-Fry with Teriyaki Sauce'
+    ],
+    'Waffles': [
+        'Belgian Waffles', 'Blueberry Waffles', 'Chocolate Chip Waffles', 'Classic Waffles', 'Fruit Waffles',
+        'Protein Waffles'
     ]
 }
