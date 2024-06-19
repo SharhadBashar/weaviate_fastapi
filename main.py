@@ -109,6 +109,15 @@ def get_dish_base(neighborhoods: list):
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
     return data
 
+@app.get('/get_dish_combined/{neighborhoods}/{diets}/{cuisines}/{popular_dishes}')
+def get_dish_combined(neighborhoods: list, diets: list, cuisines: list, popular_dishes: list):
+    data = weaviate.get_dish_combined(neighborhoods, diets, cuisines, popular_dishes)
+    if not data:
+        raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
+    return data
+
+
+
 
 @app.post('/generate_menu')
 async def generate_meal_plan(user: User):
