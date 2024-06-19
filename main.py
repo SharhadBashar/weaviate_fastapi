@@ -48,10 +48,10 @@ async def generate_search_link(search_val: str):
     page = search_val
     return f"/{page}?searchval={search_val.strip()}&lat={loc['latitude']}&lon={loc['longitude']}&tmstp={int(time.time())}"
 
-# @app.get('/average_price')
-# def average_price(data: List[Dish_Details]):
-#     avg_price = round(sum([float(dish.price) for dish in data if dishprice]) / len(data), 2)
-#     return avg_price or 0
+@app.get('/average_price')
+def average_price(data: List[Dish_Details]):
+    avg_price = round(sum([float(dish.price) for dish in data if dish.price]) / len(data), 2)
+    return avg_price or 0
 
 @app.get('/dish_order_links')
 def dish_order_links(dish: Dish_Details):
