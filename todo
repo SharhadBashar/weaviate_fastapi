@@ -25,11 +25,11 @@ status: Done
 
 function: getExploreDishesForYouCuisines
 url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L923
-status: NOT Done
+status: Done
 
 function: getExploreDishesForYouDiets
 url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L745
-status: NOT Done
+status: Done
 
 function: getExploreDishesForYouPopularDishes
 url: https://github.com/CrispyAI/crispy-web-app/blob/33128860b5e1030cad04f2c07c3869c763350fad/src/app/dish/functions/index.tsx#L1098

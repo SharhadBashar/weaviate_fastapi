@@ -120,7 +120,14 @@ def get_dish_combined(neighborhoods: list, diets: list, cuisines: list, popular_
 def get_dish_cusine(neighborhoods: list, cuisines: list, ):
     data = weaviate.get_dish_cusine(neighborhoods, cuisines)
     if not data:
-        raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
+        raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and cuisines')
+    return data
+
+@app.get('/get_dish_diets/{neighborhoods}/{diets}')
+def get_dish_diets(neighborhoods: list, diets: list, ):
+    data = weaviate.get_dish_diets(neighborhoods, diets)
+    if not data:
+        raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and diets')
     return data
 
 
