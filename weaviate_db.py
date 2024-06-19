@@ -60,6 +60,7 @@ class Weaviate:
             )
             return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
         except Exception as e:
+            print(e)
             return []
 
     def get_restaurant_dish_data(self, restaurant_id, offset = 0):
@@ -69,7 +70,7 @@ class Weaviate:
             response = (
                 self.client_v3.query.get(
                     CRISPY_V1,
-                    RETURN_PROPERTIES_2
+                    RETURN_PROPERTIES_ALL
                 )
                 .with_where({
                     'operator': 'And',
@@ -99,10 +100,92 @@ class Weaviate:
         except:
             return {}
 
+    def get_dish_base(self, neighborhoods):
+        try:
+            response = (
+                self.client_v3.query.get(
+                    CRISPY_V1,
+                    RETURN_PROPERTIES_ALL
+                )
+                .withWhere({
+                    'operator': 'And',
+                    'operands': [
+                        {
+                            'path': ['neighborhood'],
+                            'operator': 'ContainsAny',
+                            'valueTextArray': neighborhoods
+                        },
+                        {
+                        'operator': 'Or',
+                        'operands': [
+                            {
+                                'path': ['stockImageUber'],
+                                'operator': 'Equal',
+                                'valueText': 'UniqueImage'
+                            },
+                            {
+                                'path': ['stockImageDoorDash'],
+                                'operator': 'Equal',
+                                'valueText': 'UniqueImage'
+                            }
+                        ]
+                        },
+                        {
+                        'operator': 'Or',
+                        'operands': [
+                            {
+                                'path': ['dishType'],
+                                'operator': 'Like',
+                                'valueText': '*Lunch*',
+                            },
+                            {
+                                'path': ['dishType'],
+                                'operator': 'Like',
+                                'valueText': '*Dinner*',
+                            },
+                            {
+                                'path': ['dishType'],
+                                'operator': 'Like',
+                                'valueText': '*Breakfast*',
+                            },
+                            {
+                                'path': ['dishType'],
+                                'operator': 'Like',
+                                'valueText': '*Brunch*',
+                            }
+                            ,
+                            {
+                                'path': ['dishType'],
+                                'operator': 'Like',
+                                'valueText': '*Snack*',
+                            },
+                            {
+                                'path': ['dishType'],
+                                'operator': 'Like',
+                                'valueText': '*Salad*',
+                            },
+                            {
+                                'path': ['dishType'],
+                                'operator': 'Like',
+                                'valueText': '*Dessert*'
+                            },
+                        ]
+                        }
+                    ]
+                })
+                .with_limit(WEAVIATE_LIMIT_1000)
+                .do()
+            )
+            return response
+        except Exception as e:
+            print(e)
+            return []
+
 if __name__ == '__main__':
     wv = Weaviate()
-    res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
+    # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
     # res = wv.get_rez_data('pizza')
+    res = wv.get_dish_base('SoHo')
     pprint((res))
     # ids = []
     # for item in res:

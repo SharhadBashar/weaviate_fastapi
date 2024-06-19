@@ -1,5 +1,6 @@
 WEAVIATE_LIMIT_50 = 50
 WEAVIATE_LIMIT_200 = 200
+WEAVIATE_LIMIT_1000 = 1000
 DEAFULT_LATITUDE = 40.720800
 DEFAULT_LONGITUDE = -73.978940
 
@@ -75,7 +76,7 @@ RETURN_PROPERTIES = [
     'eater_ReviewDictVec',
     'infatuation_ReviewDictVec',
   ]
-RETURN_PROPERTIES_2 = [
+RETURN_PROPERTIES_ALL = [
     'dishRes_ID',
     'dish_ID',
     'restaurant_ID',

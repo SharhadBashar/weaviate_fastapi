@@ -102,7 +102,12 @@ def get_dish_data(dish_id: str):
         raise HTTPException(status_code = 404, detail = 'No data found for the given dish ID')
     return data
 
-
+@app.get('/get_dish_base/{neighborhoods}')
+def get_dish_base(neighborhoods: list):
+    data = weaviate.get_dish_base(neighborhoods)
+    if not data:
+        raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
+    return data
 
 
 @app.post('/generate_menu')

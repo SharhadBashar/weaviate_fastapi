@@ -45,7 +45,7 @@ class Weaviate:
         try:
             response = collection.query.near_text(
                 query = cusine,
-                limit = WEAVIATE_LIMIT,
+                limit = WEAVIATE_LIMIT_200,
                 query_properties = ['cleanedDishName'],
                 return_properties = RETURN_PROPERTIES,
                 filters = (
