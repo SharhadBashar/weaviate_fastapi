@@ -81,9 +81,9 @@ class Weaviate:
             ._group_by(
                 prop = 'dishRes_ID',
                 objects_per_group = 1,
-                number_of_groups = WEAVIATE_LIMIT
+                number_of_groups = WEAVIATE_LIMIT_200
             )
-            .with_limit(WEAVIATE_LIMIT)
+            .with_limit(WEAVIATE_LIMIT_200)
             .do()
         )
         return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
@@ -93,11 +93,11 @@ class Weaviate:
         try:
             response = collection.query.bm25(
                 query = restaurant_id,
-                limit = WEAVIATE_LIMIT,
+                limit = WEAVIATE_LIMIT_200,
                 group_by = GroupBy(
                     prop = 'dishRes_ID',
                     objects_per_group = 1,
-                    number_of_groups = WEAVIATE_LIMIT
+                    number_of_groups = WEAVIATE_LIMIT_200
                 )
             )
             return [i.properties for i in response.objects]

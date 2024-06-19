@@ -41,52 +41,62 @@ class Weaviate:
             self.client.close() 
 
     def get_cuisine_data(self, cusine, latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE):
-        response = (
-            self.client_v3.query.get(
-                CRISPY_V1,
-                RETURN_PROPERTIES
+        try:
+            response = (
+                self.client_v3.query.get(
+                    CRISPY_V1,
+                    RETURN_PROPERTIES
+                )
+                .with_where({
+                    'operator': 'And',
+                    'operands': [{
+                        'path': ['cleanedDishName'],
+                        'operator': 'Like',
+                        'valueText': f'*${cusine}*'
+                    }]
+                })
+                .with_limit(WEAVIATE_LIMIT_200)
+                .do()
             )
-            .with_where({
-                'operator': 'And',
-                'operands': [{
-                    'path': ['cleanedDishName'],
-                    'operator': 'Like',
-                    'valueText': f'*${cusine}*'
-                }]
-            })
-            .with_limit(WEAVIATE_LIMIT_200)
-            .do()
-        )
-        return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
+            return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
+        except Exception as e:
+            return []
 
-    def get_restaurant_dish_data(self, restaurant_id):
+    def get_restaurant_dish_data(self, restaurant_id, offset = 0):
         dish_id = set()
         dishes = []
-        response = (
-            self.client_v3.query.get(
-                CRISPY_V1,
-                RETURN_PROPERTIES_2
+        try:
+            response = (
+                self.client_v3.query.get(
+                    CRISPY_V1,
+                    RETURN_PROPERTIES_2
+                )
+                .with_where({
+                    'operator': 'And',
+                    'operands': [{
+                        'path': ['restaurant_ID'],
+                        'operator': 'Equal',
+                        'valueText': restaurant_id
+                    }]
+                })
+                .with_offset(int(offset * WEAVIATE_LIMIT_50))
+                .with_limit(WEAVIATE_LIMIT_50)
+                .do()
             )
-            .with_where({
-                'operator': 'And',
-                'operands': [{
-                    'path': ['restaurant_ID'],
-                    'operator': 'Equal',
-                    'valueText': restaurant_id
-                }]
-            })
-            .with_limit(WEAVIATE_LIMIT_50)
-            .do()
-        )
-        for dish in response['data']['Get']['Crispy_v1_search_nyc']:
-            if (dish['dish_ID'] not in dish_id):
-                dish_id.add(dish['dish_ID'])
-                dishes.append(dish)
+            for dish in response['data']['Get']['Crispy_v1_search_nyc']:
+                if (dish['dish_ID'] not in dish_id):
+                    dish_id.add(dish['dish_ID'])
+                    dishes.append(dish)
+        except Exception as e:
+            print(e)
         return dishes
+    
+    def get_dish_data(self, dish_id):
+        None
 
 if __name__ == '__main__':
     wv = Weaviate()
-    res = wv.get_restaurant_dish_data('d122ea')
+    res = wv.get_restaurant_dish_data('03d267', 1)
     # res = wv.get_rez_data('pizza')
     # pprint((res))
     # ids = []
