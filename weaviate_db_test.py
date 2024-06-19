@@ -63,30 +63,6 @@ class Weaviate:
             return [i.properties for i in response.objects]
         except Exception as e:
             return []
-
-    def get_rez_data(self, text, latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE):
-        response = (
-            self.client_v3.query.get(
-                CRISPY_V1,
-                # RETURN_PROPERTIES_2
-            )
-            .with_where({
-                'operator': 'And',
-                'operands': [{
-                    'path': ['restaurant_ID'],
-                    'operator': 'Equal',
-                    'valueText': text
-                }]
-            })
-            ._group_by(
-                prop = 'dishRes_ID',
-                objects_per_group = 1,
-                number_of_groups = WEAVIATE_LIMIT_200
-            )
-            .with_limit(WEAVIATE_LIMIT_200)
-            .do()
-        )
-        return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
     
     def get_restaurant_dish_data(self, restaurant_id):
         collection = self.client.collections.get(CRISPY_V1)

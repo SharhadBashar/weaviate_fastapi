@@ -90,10 +90,16 @@ def get_restaurant_dish_data(
     restaurant_id: str,
     offset: Optional[float] = Query(0, description = 'offset multiplier'),
 ):
-    print(offset)
     data = weaviate.get_restaurant_dish_data(restaurant_id, offset = offset)
     if not data:
-        raise HTTPException(status_code = 404, detail = 'No data found for the given search term and location')
+        raise HTTPException(status_code = 404, detail = 'No data found for the given restaurant ID')
+    return data
+
+@app.get('/get_dish_data/{dish_id}')
+def get_dish_data(dish_id: str):
+    data = weaviate.get_dish_data(dish_id)
+    if not data:
+        raise HTTPException(status_code = 404, detail = 'No data found for the given dish ID')
     return data
 
 

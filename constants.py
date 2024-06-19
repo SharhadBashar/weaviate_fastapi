@@ -80,7 +80,6 @@ RETURN_PROPERTIES_2 = [
     'dish_ID',
     'restaurant_ID',
     '_additional { id }',
-    '_additional { distance }',
     'geoCoordinates { latitude longitude }',
 
     'dishName',

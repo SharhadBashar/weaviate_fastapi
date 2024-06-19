@@ -92,13 +92,18 @@ class Weaviate:
         return dishes
     
     def get_dish_data(self, dish_id):
-        None
+        try:
+            collection = self.client.collections.get(CRISPY_V1)
+            dish = collection.query.fetch_object_by_id(dish_id)
+            return dish.properties
+        except:
+            return {}
 
 if __name__ == '__main__':
     wv = Weaviate()
-    res = wv.get_restaurant_dish_data('03d267', 1)
+    res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
     # res = wv.get_rez_data('pizza')
-    # pprint((res))
+    pprint((res))
     # ids = []
     # for item in res:
     #     ids.append(item['dishRes_ID'])
