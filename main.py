@@ -103,35 +103,35 @@ def get_dish_data(dish_id: str):
     return data
 
 @app.get('/get_dish_base/{neighborhoods}')
-def get_dish_base(neighborhoods: list):
+def get_dish_base(neighborhoods: str):
     data = weaviate.get_dish_base(neighborhoods)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
     return data
 
 @app.get('/get_dish_combined/{neighborhoods}/{diets}/{cuisines}/{popular_dishes}')
-def get_dish_combined(neighborhoods: list, diets: list, cuisines: list, popular_dishes: list):
+def get_dish_combined(neighborhoods: str, diets: str, cuisines: str, popular_dishes: str):
     data = weaviate.get_dish_combined(neighborhoods, diets, cuisines, popular_dishes)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
     return data
 
 @app.get('/get_dish_cusine/{neighborhoods}/{cuisines}')
-def get_dish_cusine(neighborhoods: list, cuisines: list, ):
+def get_dish_cusine(neighborhoods: str, cuisines: str):
     data = weaviate.get_dish_cusine(neighborhoods, cuisines)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and cuisines')
     return data
 
 @app.get('/get_dish_diets/{neighborhoods}/{diets}')
-def get_dish_diets(neighborhoods: list, diets: list, ):
+def get_dish_diets(neighborhoods: str, diets: str):
     data = weaviate.get_dish_diets(neighborhoods, diets)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and diets')
     return data
 
 @app.get('/get_dish_popular/{neighborhoods}/{dishes}')
-def get_dish_popular(neighborhoods: list, dishes: list, ):
+def get_dish_popular(neighborhoods: str, dishes: str):
     data = weaviate.get_dish_popular(neighborhoods, dishes)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and dishes')

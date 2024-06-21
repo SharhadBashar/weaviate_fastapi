@@ -3,6 +3,9 @@ import json
 from datetime import datetime
 from geopy.distance import geodesic
 
+def str_to_list(string):
+    return string.split(',')
+
 def read_json(file_name):
     with open(file_name) as file:
         return json.load(file)

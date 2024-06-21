@@ -101,6 +101,7 @@ class Weaviate:
             return {}
 
     def get_dish_base(self, neighborhoods):
+        neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
                 self.client_v3.query.get(
@@ -182,6 +183,7 @@ class Weaviate:
             return []
 
     def get_dish_combined(self, neighborhoods, diets, cuisines, popular_dishes):
+        neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
                 self.client_v3.query.get(
@@ -194,7 +196,7 @@ class Weaviate:
                         {
                             'path': ['neighborhood'],
                             'operator': 'ContainsAny',
-                            'valueTextArray': [neighborhoods]
+                            'valueTextArray': neighborhoods
                         },
                         {
                             'operator': 'Or',
@@ -267,6 +269,7 @@ class Weaviate:
             return []
     
     def get_dish_cusine(self, neighborhoods, cuisines):
+        neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
                 self.client_v3.query.get(
@@ -352,6 +355,7 @@ class Weaviate:
             return []
 
     def get_dish_diets(self, neighborhoods, diets):
+        neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
                 self.client_v3.query.get(
@@ -364,7 +368,7 @@ class Weaviate:
                         {
                             'path': ['neighborhood'],
                             'operator': 'ContainsAny',
-                            'valueTextArray': [neighborhoods]
+                            'valueTextArray': neighborhoods
                         },
                         {
                             'path': ['cleanedDishName'],
@@ -437,6 +441,7 @@ class Weaviate:
             return []
 
     def get_dish_popular(self, neighborhoods, dishes):
+        neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
                 self.client_v3.query.get(
