@@ -64,33 +64,22 @@ class Weaviate:
             return []
 
     def get_restaurant_dish_data(self, restaurant_id, offset = 0):
-        dish_id = set()
-        dishes = []
+        collection = self.client.collections.get(CRISPY_V1)
         try:
-            response = (
-                self.client_v3.query.get(
-                    CRISPY_V1,
-                    RETURN_PROPERTIES_ALL
+            response = collection.query.bm25(
+                query = restaurant_id,
+                offset = int(offset * WEAVIATE_LIMIT_50),
+                limit = WEAVIATE_LIMIT_50,
+                group_by = GroupBy(
+                    prop = 'dishRes_ID',
+                    objects_per_group = 1,
+                    number_of_groups = WEAVIATE_LIMIT_50
                 )
-                .with_where({
-                    'operator': 'And',
-                    'operands': [{
-                        'path': ['restaurant_ID'],
-                        'operator': 'Equal',
-                        'valueText': restaurant_id
-                    }]
-                })
-                .with_offset(int(offset * WEAVIATE_LIMIT_50))
-                .with_limit(WEAVIATE_LIMIT_50)
-                .do()
             )
-            for dish in response['data']['Get']['Crispy_v1_search_nyc']:
-                if (dish['dish_ID'] not in dish_id):
-                    dish_id.add(dish['dish_ID'])
-                    dishes.append(dish)
+            return [i.properties for i in response.objects]
         except Exception as e:
             print(e)
-        return dishes
+            return []
     
     def get_dish_data(self, dish_id):
         try:
@@ -525,7 +514,7 @@ if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
     # res = wv.get_rez_data('pizza')
-    res = wv.get_dish_base(['SoHo'])
+    res = wv.get_restaurant_dish_data('03d267', offset = 1)
     pprint((res))
     # ids = []
     # for item in res:
