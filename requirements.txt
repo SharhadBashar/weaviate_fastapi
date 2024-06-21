@@ -1,6 +1,9 @@
 fastapi
-pandas
-regex
+geopy
 openai
+psycopg2
 pydantic
+python-dotenv
+Requests
+weaviate_client
 uvicorn
