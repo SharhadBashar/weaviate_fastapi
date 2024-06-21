@@ -107,7 +107,7 @@ class Weaviate:
                     CRISPY_V1,
                     RETURN_PROPERTIES_ALL
                 )
-                .withWhere({
+                .with_where({
                     'operator': 'And',
                     'operands': [
                         {
@@ -188,13 +188,13 @@ class Weaviate:
                     CRISPY_V1,
                     RETURN_PROPERTIES_V3
                 )
-                .withWhere({
+                .with_where({
                     'operator': 'And',
                     'operands': [
                         {
                             'path': ['neighborhood'],
                             'operator': 'ContainsAny',
-                            'valueTextArray': neighborhoods
+                            'valueTextArray': [neighborhoods]
                         },
                         {
                             'operator': 'Or',
@@ -273,7 +273,7 @@ class Weaviate:
                     CRISPY_V1,
                     RETURN_PROPERTIES_V3
                 )
-                .withWhere({
+                .with_where({
                     'operator': 'And',
                     'operands': [
                         {
@@ -358,13 +358,13 @@ class Weaviate:
                     CRISPY_V1,
                     RETURN_PROPERTIES_V3
                 )
-                .withWhere({
+                .with_where({
                     'operator': 'And',
                     'operands': [
                         {
                             'path': ['neighborhood'],
                             'operator': 'ContainsAny',
-                            'valueTextArray': neighborhoods
+                            'valueTextArray': [neighborhoods]
                         },
                         {
                             'path': ['cleanedDishName'],
@@ -443,7 +443,7 @@ class Weaviate:
                     CRISPY_V1,
                     RETURN_PROPERTIES_V3
                 )
-                .withWhere({
+                .with_where({
                     'operator': 'And',
                     'operands': [
                         {
@@ -520,7 +520,7 @@ if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
     # res = wv.get_rez_data('pizza')
-    res = wv.get_dish_base('SoHo')
+    res = wv.get_dish_base(['SoHo'])
     pprint((res))
     # ids = []
     # for item in res:
