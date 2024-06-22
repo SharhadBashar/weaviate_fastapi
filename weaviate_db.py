@@ -32,7 +32,7 @@ class Weaviate:
             }
         )
         self.client_v3 = weaviate.Client(
-            url = weaviate_info['url'],
+            url = weaviate_url,
             auth_client_secret = weaviate.auth.AuthApiKey(api_key = weavate_key),
             additional_headers = {
                 'X-OpenAI-Api-key': openai_key
