@@ -1,7 +1,6 @@
 fastapi
 geopy
 openai
-psycopg2
 pydantic
 python-dotenv
 Requests
