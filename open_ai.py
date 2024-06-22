@@ -8,8 +8,12 @@ from constants import *
 
 class Open_AI:
     def __init__(self):
-        openai_info = read_json(os.path.join(PATH_CONFIG, PATH_OPEN_AI_CONFIG))
-        self.client = OpenAI(api_key = openai_info['key'])
+        if (os.path.exists(PATH_CONFIG)):
+            openai_info = read_json(os.path.join(PATH_CONFIG, PATH_OPEN_AI_CONFIG))
+            openai_key = openai_info['key']
+        else:
+            openai_key = os.getenv('OPENAI_KEY')
+        self.client = OpenAI(api_key = openai_key)
         
     def generate_menu(self, user):
         response = self.client.chat.completions.create(
