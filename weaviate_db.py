@@ -13,20 +13,29 @@ from constants import *
 
 class Weaviate:
     def __init__(self):
-        weaviate_info = read_json(os.path.join(PATH_CONFIG, PATH_WEAVIATE_CONFIG))
-        openai_info = read_json(os.path.join(PATH_CONFIG, PATH_OPEN_AI_CONFIG))
+        if (os.path.exists(PATH_CONFIG)):
+            weaviate_info = read_json(os.path.join(PATH_CONFIG, PATH_WEAVIATE_CONFIG))
+            weavate_key = weaviate_info['key']
+            weaviate_url = weaviate_info['url']
+            openai_info = read_json(os.path.join(PATH_CONFIG, PATH_OPEN_AI_CONFIG))
+            openai_key = openai_info['key']
+        else:
+            weavate_key = os.getenv('WEAVIATE_KEY')
+            weaviate_url = os.getenv('WEAVIATE_URL')
+            openai_key = os.getenv('OPENAI_KEY')
+
         self.client = weaviate.connect_to_wcs(
-            cluster_url = weaviate_info['url'],
-            auth_credentials = weaviate.auth.AuthApiKey(api_key = weaviate_info['key']),
+            cluster_url = weaviate_url,
+            auth_credentials = weaviate.auth.AuthApiKey(api_key = weavate_key),
             headers = {
-                'X-OpenAI-Api-key': openai_info['key']
+                'X-OpenAI-Api-key': openai_key
             }
         )
         self.client_v3 = weaviate.Client(
             url = weaviate_info['url'],
-            auth_client_secret = weaviate.auth.AuthApiKey(api_key = weaviate_info['key']),
+            auth_client_secret = weaviate.auth.AuthApiKey(api_key = weavate_key),
             additional_headers = {
-                'X-OpenAI-Api-key': openai_info['key']
+                'X-OpenAI-Api-key': openai_key
             }
         )
 
