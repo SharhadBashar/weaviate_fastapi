@@ -3,6 +3,7 @@ import random
 from typing import Optional
 from datetime import datetime
 from dotenv import load_dotenv
+from urllib.parse import unquote
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, UploadFile, Form, HTTPException, Query
 
@@ -74,15 +75,16 @@ def shuffle_array(arr: List):
     random.shuffle(arr)
     return arr
 
-@app.get('/get_cuisine_data/{cusine}')
+@app.get('/get_cuisine_data/{cuisine}')
 def get_cuisine_data(
-    cusine: str,
+    cuisine: str,
     latitude: Optional[float] = Query(DEAFULT_LATITUDE, description = 'Latitude of the location'),
     longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location')
 ):
-    data = weaviate.get_cuisine_data(cusine, latitude, longitude)
+    cuisine = unquote(cuisine)
+    data = weaviate.get_cuisine_data(cuisine, latitude, longitude)
     if not data:
-        raise HTTPException(status_code = 404, detail = f'No data found for the given search term {cusine} and location')
+        raise HTTPException(status_code = 404, detail = f'No data found for the given search term {cuisine} and location')
     return data
 
 @app.get('/get_restaurant_dish_data/{restaurant_id}')
