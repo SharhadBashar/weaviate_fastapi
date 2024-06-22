@@ -82,7 +82,7 @@ def get_cuisine_data(
 ):
     data = weaviate.get_cuisine_data(cusine, latitude, longitude)
     if not data:
-        raise HTTPException(status_code = 404, detail = 'No data found for the given search term and location')
+        raise HTTPException(status_code = 404, detail = f'No data found for the given search term {cusine} and location')
     return data
 
 @app.get('/get_restaurant_dish_data/{restaurant_id}')

@@ -522,8 +522,8 @@ class Weaviate:
 if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
-    # res = wv.get_rez_data('pizza')
-    res = wv.get_restaurant_dish_data('03d267', offset = 1)
+    res = wv.get_cuisine_data('pizza')
+    # res = wv.get_restaurant_dish_data('03d267', offset = 1)
     pprint((res))
     # ids = []
     # for item in res:
