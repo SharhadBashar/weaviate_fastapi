@@ -11,7 +11,7 @@ from classes import *
 from constants import *
 from restaurants import *
 from open_ai import Open_AI
-from database import Database
+# from database import Database
 from weaviate_db import Weaviate
 
 load_dotenv()
@@ -138,15 +138,15 @@ def get_dish_popular(neighborhoods: str, dishes: str):
     return data
 
 
-@app.post('/generate_menu')
-async def generate_meal_plan(user: User):
-    week_meal_plan = open_ai.generate_menu(user)
-    df = pd.DataFrame(week_meal_plan)
-    database.insert_df(df, 'public.DietPlans')
-    print(df.head())
-    print('data inserted into cockroach')
-    print(f'Raw response content: {week_meal_plan}')
-    return week_meal_plan
+# @app.post('/generate_menu')
+# async def generate_meal_plan(user: User):
+#     week_meal_plan = open_ai.generate_menu(user)
+#     df = pd.DataFrame(week_meal_plan)
+#     database.insert_df(df, 'public.DietPlans')
+#     print(df.head())
+#     print('data inserted into cockroach')
+#     print(f'Raw response content: {week_meal_plan}')
+#     return week_meal_plan
 
 @app.post('/nutrition_info/')
 async def generate_nutrition_info(dish: Dish, file: UploadFile = File(None)):
