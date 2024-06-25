@@ -49,7 +49,7 @@ class Weaviate:
         finally:
             self.client.close() 
 
-    def get_cuisine_data(self, cusine, latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE):
+    def get_cuisine_data(self, cusine, latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0):
         try:
             response = (
                 self.client_v3.query.get(
@@ -64,7 +64,8 @@ class Weaviate:
                         'valueText': f'*${cusine}*'
                     }]
                 })
-                .with_limit(WEAVIATE_LIMIT_200)
+                .with_limit(WEAVIATE_LIMIT_50)
+                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
                 .do()
             )
             return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
@@ -98,7 +99,7 @@ class Weaviate:
         except:
             return {}
 
-    def get_dish_base(self, neighborhoods):
+    def get_dish_base(self, neighborhoods, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
@@ -173,6 +174,7 @@ class Weaviate:
                     ]
                 })
                 .with_limit(WEAVIATE_LIMIT_1000)
+                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
                 .do()
             )
             return response
@@ -180,7 +182,7 @@ class Weaviate:
             print(e)
             return []
 
-    def get_dish_combined(self, neighborhoods, diets, cuisines, popular_dishes):
+    def get_dish_combined(self, neighborhoods, diets, cuisines, popular_dishes, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
@@ -259,6 +261,7 @@ class Weaviate:
                     ]
                 })
                 .with_limit(WEAVIATE_LIMIT_1000)
+                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
                 .do()
             )
             return response
@@ -266,7 +269,7 @@ class Weaviate:
             print(e)
             return []
     
-    def get_dish_cusine(self, neighborhoods, cuisines):
+    def get_dish_cusine(self, neighborhoods, cuisines, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
@@ -345,6 +348,7 @@ class Weaviate:
                     ]
                 })
                 .with_limit(WEAVIATE_LIMIT_1000)
+                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
                 .do()
             )
             return response
@@ -352,7 +356,7 @@ class Weaviate:
             print(e)
             return []
 
-    def get_dish_diets(self, neighborhoods, diets):
+    def get_dish_diets(self, neighborhoods, diets, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
@@ -431,6 +435,7 @@ class Weaviate:
                     ]
                 })
                 .with_limit(WEAVIATE_LIMIT_1000)
+                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
                 .do()
             )
             return response
@@ -438,7 +443,7 @@ class Weaviate:
             print(e)
             return []
 
-    def get_dish_popular(self, neighborhoods, dishes):
+    def get_dish_popular(self, neighborhoods, dishes, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
@@ -512,6 +517,7 @@ class Weaviate:
                     ]
                 })
                 .with_limit(WEAVIATE_LIMIT_1000)
+                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
                 .do()
             )
             return response
@@ -522,8 +528,8 @@ class Weaviate:
 if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
-    res = wv.get_cuisine_data('pizza')
-    # res = wv.get_restaurant_dish_data('03d267', offset = 1)
+    # res = wv.get_cuisine_data('pizza')
+    res = wv.get_restaurant_dish_data('03d267', offset = 0)
     pprint((res))
     # ids = []
     # for item in res:

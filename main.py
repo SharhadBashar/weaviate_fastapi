@@ -79,10 +79,11 @@ def shuffle_array(arr: List):
 def get_cuisine_data(
     cuisine: str,
     latitude: Optional[float] = Query(DEAFULT_LATITUDE, description = 'Latitude of the location'),
-    longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location')
+    longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
+    offset: Optional[float] = Query(0, description = 'offset multiplier')
 ):
     cuisine = unquote(cuisine)
-    data = weaviate.get_cuisine_data(cuisine, latitude, longitude)
+    data = weaviate.get_cuisine_data(cuisine, latitude, longitude, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = f'No data found for the given search term {cuisine} and location')
     return data
@@ -90,7 +91,7 @@ def get_cuisine_data(
 @app.get('/get_restaurant_dish_data/{restaurant_id}')
 def get_restaurant_dish_data(
     restaurant_id: str,
-    offset: Optional[float] = Query(0, description = 'offset multiplier'),
+    offset: Optional[float] = Query(0, description = 'offset multiplier')
 ):
     data = weaviate.get_restaurant_dish_data(restaurant_id, offset = offset)
     if not data:
@@ -105,36 +106,38 @@ def get_dish_data(dish_id: str):
     return data
 
 @app.get('/get_dish_base/{neighborhoods}')
-def get_dish_base(neighborhoods: str):
-    data = weaviate.get_dish_base(neighborhoods)
+def get_dish_base(neighborhoods: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    data = weaviate.get_dish_base(neighborhoods, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
     return data
 
 @app.get('/get_dish_combined/{neighborhoods}/{diets}/{cuisines}/{popular_dishes}')
-def get_dish_combined(neighborhoods: str, diets: str, cuisines: str, popular_dishes: str):
-    data = weaviate.get_dish_combined(neighborhoods, diets, cuisines, popular_dishes)
+def get_dish_combined(neighborhoods: str, diets: str, cuisines: str, popular_dishes: str, 
+                      offset: Optional[float] = Query(0, description = 'offset multiplier')
+    ):
+    data = weaviate.get_dish_combined(neighborhoods, diets, cuisines, popular_dishes, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
     return data
 
 @app.get('/get_dish_cusine/{neighborhoods}/{cuisines}')
-def get_dish_cusine(neighborhoods: str, cuisines: str):
-    data = weaviate.get_dish_cusine(neighborhoods, cuisines)
+def get_dish_cusine(neighborhoods: str, cuisines: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    data = weaviate.get_dish_cusine(neighborhoods, cuisines, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and cuisines')
     return data
 
 @app.get('/get_dish_diets/{neighborhoods}/{diets}')
-def get_dish_diets(neighborhoods: str, diets: str):
-    data = weaviate.get_dish_diets(neighborhoods, diets)
+def get_dish_diets(neighborhoods: str, diets: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    data = weaviate.get_dish_diets(neighborhoods, diets, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and diets')
     return data
 
 @app.get('/get_dish_popular/{neighborhoods}/{dishes}')
-def get_dish_popular(neighborhoods: str, dishes: str):
-    data = weaviate.get_dish_popular(neighborhoods, dishes)
+def get_dish_popular(neighborhoods: str, dishes: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    data = weaviate.get_dish_popular(neighborhoods, dishes, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and dishes')
     return data
