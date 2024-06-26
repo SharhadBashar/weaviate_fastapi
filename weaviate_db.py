@@ -270,7 +270,7 @@ class Weaviate:
             print(e)
             return []
     
-    def get_dish_cusine(self, neighborhoods, cuisines, offset = 0):
+    def get_dish_cuisine(self, neighborhoods, cuisines, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
