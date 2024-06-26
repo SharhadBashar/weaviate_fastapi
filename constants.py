@@ -80,7 +80,8 @@ RETURN_PROPERTIES = [
     'restaurantPhone',
     'restaurantRating',
     'restaurantReviewCount',
-
+    'stockImageDoorDash',
+    'stockImageUber',
     # Review data
     'eater_ReviewDictVec',
     'infatuation_ReviewDictVec',
