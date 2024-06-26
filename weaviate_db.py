@@ -64,8 +64,8 @@ class Weaviate:
                         'valueText': f'*${cusine}*'
                     }]
                 })
-                .with_limit(WEAVIATE_LIMIT_50)
-                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
+                .with_limit(1)
+                .with_offset(int(1 * offset))
                 .do()
             )
             return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
@@ -95,6 +95,7 @@ class Weaviate:
         try:
             collection = self.client.collections.get(CRISPY_V1)
             dish = collection.query.fetch_object_by_id(dish_id)
+            dish.properties['_additional'] = {'id': dish_id}
             return dish.properties
         except:
             return {}
@@ -529,7 +530,7 @@ if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
     # res = wv.get_cuisine_data('pizza')
-    res = wv.get_restaurant_dish_data('03d267', offset = 0)
+    res = wv.get_dish_data('f4f0fa88-bc49-47a5-b24a-1c37ceeeaf2f')
     pprint((res))
     # ids = []
     # for item in res:
