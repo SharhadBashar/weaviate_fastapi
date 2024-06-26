@@ -40,6 +40,7 @@ RETURN_PROPERTIES = [
     'dishRes_ID',
     'dish_ID',
     'restaurant_ID',
+    '_additional { id }'
     'geoCoordinates {latitude longitude}',
 
     # Dish data
