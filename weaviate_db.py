@@ -362,6 +362,7 @@ class Weaviate:
 
     def get_dish_diets(self, neighborhoods, diets, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
+        diets = diets.lower()
         try:
             response = (
                 self.client_v3.query.get(
@@ -449,6 +450,7 @@ class Weaviate:
 
     def get_dish_popular(self, neighborhoods, dishes, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
+        dishes = dishes.lower()
         try:
             response = (
                 self.client_v3.query.get(
@@ -532,9 +534,9 @@ class Weaviate:
 if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
-    # res = wv.get_cuisine_data('pizza')
-    res = wv.get_restaurant_dish_data('b91041')
-    # res = wv.get_dish_data('f4f0fa88-bc49-47a5-b24a-1c37ceeeaf2f')
+    res = wv.get_cuisine_data('pizza')
+    # res = wv.get_restaurant_dish_data('b91041')
+    # res = wv.get_dish_diets('MORNINGSIDE%20HEIGHTS', 'High%20Protein')
     pprint((res))
     # ids = []
     # for item in res:

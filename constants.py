@@ -209,8 +209,6 @@ RETURN_PROPERTIES_ALL = [
     'restaurantReviewCount',
     "newCuisine",
     "dietTags",
-
-    'eater_ReviewDictVec',
     'infatuation_ReviewDictVec',
   ]
 RETURN_PROPERTIES_V3 = [

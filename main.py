@@ -107,6 +107,7 @@ def get_dish_data(dish_id: str):
 
 @app.get('/get_dish_base/{neighborhoods}')
 def get_dish_base(neighborhoods: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    neighborhoods = unquote(neighborhoods)
     data = weaviate.get_dish_base(neighborhoods, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
@@ -116,6 +117,10 @@ def get_dish_base(neighborhoods: str, offset: Optional[float] = Query(0, descrip
 def get_dish_combined(neighborhoods: str, diets: str, cuisines: str, popular_dishes: str, 
                       offset: Optional[float] = Query(0, description = 'offset multiplier')
     ):
+    neighborhoods = unquote(neighborhoods)
+    diets = unquote(diets)
+    cuisines = unquote(cuisines)
+    popular_dishes = unquote(popular_dishes)
     data = weaviate.get_dish_combined(neighborhoods, diets, cuisines, popular_dishes, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods')
@@ -123,6 +128,8 @@ def get_dish_combined(neighborhoods: str, diets: str, cuisines: str, popular_dis
 
 @app.get('/get_dish_cuisine/{neighborhoods}/{cuisines}')
 def get_dish_cuisine(neighborhoods: str, cuisines: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    neighborhoods = unquote(neighborhoods)
+    cuisines = unquote(cuisines)
     data = weaviate.get_dish_cuisine(neighborhoods, cuisines, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and cuisines')
@@ -130,6 +137,8 @@ def get_dish_cuisine(neighborhoods: str, cuisines: str, offset: Optional[float] 
 
 @app.get('/get_dish_diets/{neighborhoods}/{diets}')
 def get_dish_diets(neighborhoods: str, diets: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    neighborhoods = unquote(neighborhoods)
+    diets = unquote(diets)
     data = weaviate.get_dish_diets(neighborhoods, diets, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and diets')
@@ -137,6 +146,8 @@ def get_dish_diets(neighborhoods: str, diets: str, offset: Optional[float] = Que
 
 @app.get('/get_dish_popular/{neighborhoods}/{dishes}')
 def get_dish_popular(neighborhoods: str, dishes: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+    neighborhoods = unquote(neighborhoods)
+    dishes = unquote(dishes)
     data = weaviate.get_dish_popular(neighborhoods, dishes, offset = offset)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and dishes')
