@@ -222,7 +222,7 @@ class Weaviate:
             print(e)
             return []
 
-    def get_dish_combined(self, neighborhoods, diets, cuisines, popular_dishes, offset = 0):
+    def get_dish_combined(self, neighborhoods, offset = 0):
         neighborhoods = str_to_list(neighborhoods)
         try:
             response = (
