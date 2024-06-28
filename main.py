@@ -75,6 +75,34 @@ def shuffle_array(arr: List):
     random.shuffle(arr)
     return arr
 
+@app.get('/get_master_dish_static')
+def get_master_dish_static():
+    data = weaviate.get_master_dish_static()
+    if not data:
+        raise HTTPException(status_code = 404, detail = f'No static master dish data found')
+    return data
+
+@app.get('/get_cuisine_static')
+def get_cuisine_static():
+    data = weaviate.get_cuisine_static()
+    if not data:
+        raise HTTPException(status_code = 404, detail = f'No static cuisine data found')
+    return data
+
+@app.get('/get_diets_static')
+def get_diets_static():
+    data = weaviate.get_diets_static()
+    if not data:
+        raise HTTPException(status_code = 404, detail = f'No static diets data found')
+    return data
+
+@app.get('/get_popular_dish_static')
+def get_popular_dish_static():
+    data = weaviate.get_popular_dish_static()
+    if not data:
+        raise HTTPException(status_code = 404, detail = f'No popular dish data found')
+    return data
+
 @app.get('/get_cuisine_data/{cuisine}')
 def get_cuisine_data(
     cuisine: str,

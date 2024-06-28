@@ -49,6 +49,42 @@ class Weaviate:
         finally:
             self.client.close() 
 
+    def get_master_dish_static(self):
+        collection = self.client.collections.get('MasterGoogleFile')
+        try:
+            response = collection.query.fetch_objects()
+            return [i.properties for i in response.objects]
+        except Exception as e:
+            print(e)
+            return []
+    
+    def get_cuisine_static(self):
+        collection = self.client.collections.get('GoogleCuisineFinal2')
+        try:
+            response = collection.query.fetch_objects()
+            return [i.properties for i in response.objects]
+        except Exception as e:
+            print(e)
+            return []
+
+    def get_diets_static(self):
+        collection = self.client.collections.get('GoogleDietFinal2')
+        try:
+            response = collection.query.fetch_objects()
+            return [i.properties for i in response.objects]
+        except Exception as e:
+            print(e)
+            return []
+
+    def get_popular_dish_static(self):
+        collection = self.client.collections.get('GooglePopularDishesFinal2')
+        try:
+            response = collection.query.fetch_objects()
+            return [i.properties for i in response.objects]
+        except Exception as e:
+            print(e)
+            return []
+
     def get_cuisine_data(self, cusine, latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0):
         try:
             response = (
@@ -72,10 +108,10 @@ class Weaviate:
         except Exception as e:
             print(e)
             return []
+
     def _get_all_properties(self, item):
         item.properties['_additional'] = {'id': item.uuid}
         return item.properties
-
     def get_restaurant_dish_data(self, restaurant_id, offset = 0):
         collection = self.client.collections.get(CRISPY_V1)
         try:
@@ -534,9 +570,10 @@ class Weaviate:
 if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
-    res = wv.get_cuisine_data('pizza')
+    # res = wv.get_cuisine_data('pizza')
     # res = wv.get_restaurant_dish_data('b91041')
     # res = wv.get_dish_diets('MORNINGSIDE%20HEIGHTS', 'High%20Protein')
+    res = wv.get_diets_static()
     pprint((res))
     # ids = []
     # for item in res:
