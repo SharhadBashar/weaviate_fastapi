@@ -213,8 +213,8 @@ class Weaviate:
                         }
                     ]
                 })
-                .with_limit(WEAVIATE_LIMIT_1000)
-                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
+                .with_limit(WEAVIATE_LIMIT_50)
+                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
                 .do()
             )
             return response
@@ -300,8 +300,8 @@ class Weaviate:
                         }
                     ]
                 })
-                .with_limit(WEAVIATE_LIMIT_1000)
-                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
+                .with_limit(WEAVIATE_LIMIT_50)
+                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
                 .do()
             )
             return response
@@ -387,8 +387,8 @@ class Weaviate:
                         }
                     ]
                 })
-                .with_limit(WEAVIATE_LIMIT_1000)
-                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
+                .with_limit(WEAVIATE_LIMIT_50)
+                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
                 .do()
             )
             return response
@@ -475,8 +475,8 @@ class Weaviate:
                         }
                     ]
                 })
-                .with_limit(WEAVIATE_LIMIT_1000)
-                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
+                .with_limit(WEAVIATE_LIMIT_50)
+                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
                 .do()
             )
             return response
@@ -558,8 +558,8 @@ class Weaviate:
                         }
                     ]
                 })
-                .with_limit(WEAVIATE_LIMIT_1000)
-                .with_offset(int(WEAVIATE_LIMIT_1000 * offset))
+                .with_limit(WEAVIATE_LIMIT_50)
+                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
                 .do()
             )
             return response
