@@ -176,6 +176,16 @@ def get_dish_popular(neighborhoods: str, dishes: str, offset: Optional[float] = 
         raise HTTPException(status_code = 404, detail = 'No data found for the given neighborhoods and dishes')
     return data
 
+@app.get('/get_closest_neighbourhoods')
+def get_closest_neighbourhoods(
+    latitude: Optional[float] = Query(DEAFULT_LATITUDE, description = 'Latitude of the location'),
+    longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
+    k: Optional[int] = Query(CLOSEST_NEIGHBOURHOOD_K, description = 'Number of closest neighbourhoods to return')
+):
+    data = closest_neighbourhoods(latitude, longitude, k = k)
+    if not data:
+        raise HTTPException(status_code = 404, detail = 'No closest neighbourhoods found for the given coordinates')
+    return data
 
 # @app.post('/generate_menu')
 # async def generate_meal_plan(user: User):

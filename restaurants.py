@@ -1,7 +1,11 @@
+from pprint import pprint
+from haversine import haversine, Unit
 from datetime import datetime, timedelta
 
 from helper import *
 from classes import *
+from constants import *
+from neighbourhoods import NEIGHBOURHOODS
 
 def get_dish_order_links(dish: Dish_Details) -> Dict[str, str]:
     link_door_dash = dish.foodItemLinkDoorDash or dish.linkDoorDash or 'None'
@@ -63,3 +67,15 @@ def get_processed_dish_data(client_time_str: str, dish_data: List[Dish_Details])
             dish.protein = 0
         processed_dish_data.append(dish)
     return processed_dish_data
+
+def closest_neighbourhoods(latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE, k = CLOSEST_NEIGHBOURHOOD_K) -> list:
+    closest_neighbourhoods = []
+    for i in range(k):
+        closest_distance = float('inf')
+        for neighbourhood in NEIGHBOURHOODS:
+            distance = haversine((latitude, longitude), (neighbourhood['latitude'], neighbourhood['longitude']))
+            if (distance < closest_distance and neighbourhood not in closest_neighbourhoods):
+                closest_distance = distance
+                closest_neighbourhood = neighbourhood
+        closest_neighbourhoods.append(closest_neighbourhood)
+    return closest_neighbourhoods
