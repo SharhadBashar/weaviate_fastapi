@@ -6,3 +6,4 @@ python-dotenv
 Requests
 weaviate_client
 uvicorn
+haversine
