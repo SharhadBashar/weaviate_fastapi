@@ -91,4 +91,4 @@ def get_current_location():
     return {'latitude': _default_client_latitude(), 'longitude': _default_client_longitude()}
 
 def get_day_of_week(timestamp):
-    return datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S').strftime('%A').lower()
+    return datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S').strftime('%a').lower()

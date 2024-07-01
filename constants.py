@@ -1,3 +1,4 @@
+WEAVIATE_LIMIT_1 = 1
 WEAVIATE_LIMIT_50 = 50
 WEAVIATE_LIMIT_200 = 200
 WEAVIATE_LIMIT_1000 = 1000
@@ -36,6 +37,24 @@ PATH_WEAVIATE_CONFIG = 'weaviate.json'
 
 CRISPY_V1 = 'Crispy_v1_search_nyc'
 GEO_PROPERTY = 'geoCoordinates'
+RETURN_PROPERTIES_HOURS = [
+    'closeTime_UberEats_uber',
+    'daysOpen_UberEats_uber',
+    'friDoorDash',
+    'linkDoorDash',
+    'linkUber',
+    'monDoorDash',
+    'openCloseHours',
+    'openingHours_UberEats_uber',
+    'restaurantAddress',
+    'restaurantName',
+    'restaurantPhone',
+    'satDoorDash',
+    'sunDoorDash',
+    'thuDoorDash',
+    'tueDoorDash',
+    'wedDoorDash',
+]
 RETURN_PROPERTIES = [
     #IDs
     'dishRes_ID',

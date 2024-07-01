@@ -66,6 +66,20 @@ def operating_hours(client_time_str: str, ubereats_open: str, ubereats_close: st
 def operating_status(client_time_str: str, opening_time_str: str, closing_time_str: str):
     return get_operating_status(client_time_str, opening_time_str, closing_time_str)
 
+@app.get('/get_operating_hours/{client_time_str}/{restaurant_id}')
+def get_operating_hours(client_time_str: str, restaurant_id: str):
+    restaurant_hours_data = weaviate.get_restaurant_data_hours(restaurant_id)
+    if not restaurant_hours_data:
+        raise HTTPException(status_code = 404, detail = f'No restaurant hours data found for the given restaurant ID')
+    return get_operating_hours_restaurant(client_time_str, restaurant_hours_data)
+
+@app.get('/get_operating_status/{client_time_str}/{restaurant_id}')
+def get_operating_status(client_time_str: str, restaurant_id: str):
+    restaurant_hours_data = weaviate.get_restaurant_data_hours(restaurant_id)
+    if not restaurant_hours_data:
+        raise HTTPException(status_code = 404, detail = f'No restaurant hours data found for the given restaurant ID')
+    return get_operating_status_restaurant(client_time_str, restaurant_hours_data)
+
 @app.get('/process_results_data')
 def process_results_data(client_time_str: str, dish_data: List[Dish_Details]):
     return get_processed_dish_data(client_time_str, dish_data)
@@ -177,12 +191,12 @@ def get_dish_popular(neighborhoods: str, dishes: str, offset: Optional[float] = 
     return data
 
 @app.get('/get_closest_neighbourhoods')
-def get_closest_neighbourhoods(
+def closest_neighbourhoods(
     latitude: Optional[float] = Query(DEAFULT_LATITUDE, description = 'Latitude of the location'),
     longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
     k: Optional[int] = Query(CLOSEST_NEIGHBOURHOOD_K, description = 'Number of closest neighbourhoods to return')
 ):
-    data = closest_neighbourhoods(latitude, longitude, k = k)
+    data = get_closest_neighbourhoods(latitude, longitude, k = k)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No closest neighbourhoods found for the given coordinates')
     return data

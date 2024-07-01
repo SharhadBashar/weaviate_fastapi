@@ -85,6 +85,19 @@ class Weaviate:
             print(e)
             return []
 
+    def get_restaurant_data_hours(self, restaurant_id):
+        collection = self.client.collections.get(CRISPY_V1)
+        try:
+            response = collection.query.bm25(
+                query = restaurant_id,
+                limit = WEAVIATE_LIMIT_1,
+                return_properties = RETURN_PROPERTIES_HOURS
+            )
+            return response.objects[0].properties
+        except Exception as e:
+            print(e)
+            return {}
+
     def get_cuisine_data(self, cusine, latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0):
         try:
             response = (
@@ -570,10 +583,11 @@ class Weaviate:
 if __name__ == '__main__':
     wv = Weaviate()
     # res = wv.get_dish_data('bafd7ba5-344b-4fb9-9b2f-a02d5e54f1c4')
-    res = wv.get_cuisine_data('pizza')
+    # res = wv.get_cuisine_data('pizza')
     # res = wv.get_restaurant_dish_data('b91041')
     # res = wv.get_dish_diets('MORNINGSIDE%20HEIGHTS', 'High%20Protein')
     # res = wv.get_diets_static()
+    res = wv.get_restaurant_data_hours('03d267')
     pprint((res))
     # ids = []
     # for item in res:
