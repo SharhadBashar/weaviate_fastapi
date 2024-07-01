@@ -67,7 +67,6 @@ def get_operating_status_restaurant(client_time_str, restaurant_hours_data):
     client_time = datetime.strptime(client_time_str, '%Y-%m-%d %H:%M:%S')
     opening_time = datetime.strptime(operating_hours['open'], '%H:%M').time()
     closing_time = datetime.strptime(operating_hours['close'], '%H:%M').time()
-    print(f'opening_time: {opening_time}, closing_time: {closing_time}')
     if (closing_time <= opening_time):
         closing_time = (datetime.combine(datetime.min, closing_time) + timedelta(days=1)).time()
         if (client_time.time() < opening_time):
