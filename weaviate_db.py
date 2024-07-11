@@ -113,8 +113,8 @@ class Weaviate:
                         'valueText': f'*${cusine}*'
                     }]
                 })
-                .with_limit(WEAVIATE_LIMIT_50)
-                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
+                .with_limit(WEAVIATE_LIMIT_100)
+                .with_offset(int(WEAVIATE_LIMIT_100 * offset))
                 .do()
             )
             return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
@@ -586,8 +586,8 @@ if __name__ == '__main__':
     # res = wv.get_cuisine_data('pizza')
     # res = wv.get_restaurant_dish_data('b91041')
     # res = wv.get_dish_diets('MORNINGSIDE%20HEIGHTS', 'High%20Protein')
-    # res = wv.get_diets_static()
-    res = wv.get_restaurant_data_hours('03d267')
+    res = wv.get_master_dish_static()
+    # res = wv.get_restaurant_data_hours('03d267')
     pprint((res))
     # ids = []
     # for item in res:
