@@ -113,8 +113,8 @@ class Weaviate:
                         'valueText': f'*${cusine}*'
                     }]
                 })
-                .with_limit(1)
-                .with_offset(int(1 * offset))
+                .with_limit(WEAVIATE_LIMIT_50)
+                .with_offset(int(WEAVIATE_LIMIT_50 * offset))
                 .do()
             )
             return [i for i in response['data']['Get']['Crispy_v1_search_nyc']]
