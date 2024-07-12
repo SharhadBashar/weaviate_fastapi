@@ -50,9 +50,11 @@ class Weaviate:
             self.client.close() 
 
     def get_master_dish_static(self):
-        collection = self.client.collections.get('MasterGoogleFile')
+        collection = self.client.collections.get('MasterGoogleFile3')
         try:
-            response = collection.query.fetch_objects()
+            response = collection.query.fetch_objects(
+                limit = 2000
+            )
             return [i.properties for i in response.objects]
         except Exception as e:
             print(e)
@@ -588,7 +590,7 @@ if __name__ == '__main__':
     # res = wv.get_dish_diets('MORNINGSIDE%20HEIGHTS', 'High%20Protein')
     res = wv.get_master_dish_static()
     # res = wv.get_restaurant_data_hours('03d267')
-    pprint((res))
+    pprint(len(res))
     # ids = []
     # for item in res:
     #     ids.append(item['dishRes_ID'])
