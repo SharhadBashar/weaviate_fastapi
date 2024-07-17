@@ -212,7 +212,7 @@ def get_single_dish_search(
     has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images')
 ):
     search_term = unquote(search_term)
-    data = weaviate.get_dish_data_standard(search_term, weaviate_limit, latitude, longitude, offset = offset, neighborhoods = neighborhoods, has_unique_image = has_unique_image)
+    data = weaviate.get_single_dish_search(search_term, weaviate_limit, latitude, longitude, offset = offset, neighborhoods = neighborhoods, has_unique_image = has_unique_image)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
     return data
@@ -234,6 +234,22 @@ def get_search_dishes_ios(
     if not combined_data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
     return combined_data
+
+@app.get('/get_search_dishes/{query_type}/{query_value}')
+def get_search_dishes(
+    query_type: str,
+    query_value: str,
+    neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
+    has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images'),
+    weaviate_limit: Optional[int] = Query(10, description = 'Number of dishes to return'),
+    max_alternatives: Optional[int] = Query(3, description = 'Maximum number of alternatives to return'),
+    num_dishes: int = Query(10, description = 'Number of dishes to return')
+):
+    data = weaviate.get_search_dishes(query_type, query_value, neighborhoods, has_unique_image, weaviate_limit, max_alternatives, num_dishes)
+    if not data:
+        raise HTTPException(status_code = 404, detail = 'No dishes found for the given query type and value')
+    return data
+    
 
 # @app.post('/generate_menu')
 # async def generate_meal_plan(user: User):
