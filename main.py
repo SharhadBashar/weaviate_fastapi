@@ -120,7 +120,7 @@ def get_popular_dish_static():
 @app.get('/get_cuisine_data/{cuisine}')
 def get_cuisine_data(
     cuisine: str,
-    latitude: Optional[float] = Query(DEAFULT_LATITUDE, description = 'Latitude of the location'),
+    latitude: Optional[float] = Query(DEFAULT_LATITUDE, description = 'Latitude of the location'),
     longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
     offset: Optional[float] = Query(0, description = 'offset multiplier')
 ):
@@ -192,7 +192,7 @@ def get_dish_popular(neighborhoods: str, dishes: str, offset: Optional[float] = 
 
 @app.get('/get_closest_neighbourhoods')
 def closest_neighbourhoods(
-    latitude: Optional[float] = Query(DEAFULT_LATITUDE, description = 'Latitude of the location'),
+    latitude: Optional[float] = Query(DEFAULT_LATITUDE, description = 'Latitude of the location'),
     longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
     k: Optional[int] = Query(CLOSEST_NEIGHBOURHOOD_K, description = 'Number of closest neighbourhoods to return')
 ):
@@ -200,6 +200,38 @@ def closest_neighbourhoods(
     if not data:
         raise HTTPException(status_code = 404, detail = 'No closest neighbourhoods found for the given coordinates')
     return data
+
+@app.get('/get_single_dish_search/{search_term}')
+def get_single_dish_search(
+    search_term: str,
+    weaviate_limit: Optional[int] = Query(10, description = 'Number of dishes to return'),
+    latitude: Optional[float] = Query(DEFAULT_LATITUDE, description = 'Latitude of the location'),
+    longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
+    offset: Optional[float] = Query(0, description = 'offset multiplier'),
+    neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
+    has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images')
+):
+    data = weaviate.get_dish_data_standard(search_term, weaviate_limit, latitude, longitude, offset = offset, neighborhoods = neighborhoods, has_unique_image = has_unique_image)
+    if not data:
+        raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
+    return data
+
+@app.get('/get_search_dishes_ios/{search_term}')
+def get_search_dishes_ios(
+    search_term: str,
+    weaviate_limit: Optional[int] = Query(10, description = 'Number of dishes to return'),
+    max_alternatives: Optional[int] = Query(3, description = 'Maximum number of alternatives to return'),
+    neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
+    has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images')
+):
+    initial_dishes = weaviate.get_dish_data_ios(search_term, weaviate_limit, neighborhoods, has_unique_image)
+    alternatives = weaviate.combine_alternatives_ios(initial_dishes, max_alternatives)
+    alternative_dishes = weaviate.get_alternative_dish_data_ios(alternatives, weaviate_limit, neighborhoods, has_unique_image)
+    combined_data = {search_term: initial_dishes}
+    combined_data.update(alternative_dishes)
+    if not combined_data:
+        raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
+    return combined_data
 
 # @app.post('/generate_menu')
 # async def generate_meal_plan(user: User):

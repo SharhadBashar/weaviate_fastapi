@@ -116,7 +116,7 @@ def get_processed_dish_data(client_time_str: str, dish_data: List[Dish_Details])
         processed_dish_data.append(dish)
     return processed_dish_data
 
-def get_closest_neighbourhoods(latitude = DEAFULT_LATITUDE, longitude = DEFAULT_LONGITUDE, k = CLOSEST_NEIGHBOURHOOD_K) -> list:
+def get_closest_neighbourhoods(latitude = DEFAULT_LATITUDE, longitude = DEFAULT_LONGITUDE, k = CLOSEST_NEIGHBOURHOOD_K) -> list:
     closest_neighbourhoods = []
     for i in range(k):
         closest_distance = float('inf')
