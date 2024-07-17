@@ -211,6 +211,7 @@ def get_single_dish_search(
     neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
     has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images')
 ):
+    search_term = unquote(search_term)
     data = weaviate.get_dish_data_standard(search_term, weaviate_limit, latitude, longitude, offset = offset, neighborhoods = neighborhoods, has_unique_image = has_unique_image)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
@@ -224,6 +225,7 @@ def get_search_dishes_ios(
     neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
     has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images')
 ):
+    search_term = unquote(search_term)
     initial_dishes = weaviate.get_dish_data_ios(search_term, weaviate_limit, neighborhoods, has_unique_image)
     alternatives = weaviate.combine_alternatives_ios(initial_dishes, max_alternatives)
     alternative_dishes = weaviate.get_alternative_dish_data_ios(alternatives, weaviate_limit, neighborhoods, has_unique_image)
