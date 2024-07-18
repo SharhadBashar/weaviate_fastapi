@@ -739,10 +739,10 @@ class Weaviate:
             query_value: str, 
             neighborhoods: List[str] = None, 
             has_unique_image: bool = False, 
-            limit: int = 10,
+            weaviate_limit: int = 10,
             latitude = DEFAULT_LATITUDE,
-            longitude=DEFAULT_LONGITUDE,
-            offset=0,
+            longitude = DEFAULT_LONGITUDE,
+            offset = 0,
             max_alternatives: int = 9,
             num_dishes: int = 10
         ):
@@ -754,9 +754,9 @@ class Weaviate:
         combined_results = {}
         for dish in random.sample(dishes, min(num_dishes, len(dishes))):
             wv_filter = build_where_filter_dish(dish, neighborhoods, has_unique_image)
-            dish_results = self.get_single_dish_search(dish, limit, latitude, longitude, offset, neighborhoods, has_unique_image, wv_filter)
+            dish_results = self.get_single_dish_search(dish, weaviate_limit, latitude, longitude, offset, neighborhoods, has_unique_image, wv_filter)
             alternatives = self.combine_alternatives_ios(dish_results, max_alternatives)
-            alternative_data = self.get_alternative_dish_data(alternatives, latitude, longitude, offset, neighborhoods, has_unique_image, limit)
+            alternative_data = self.get_alternative_dish_data(alternatives, latitude, longitude, offset, neighborhoods, has_unique_image, weaviate_limit)
             combined_results[dish] = dish_results + alternative_data
 
         return combined_results
