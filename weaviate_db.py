@@ -51,12 +51,12 @@ class Weaviate:
             self.client.close() 
 
     def get_master_dish_static(self):
+        data = []
         collection = self.client.collections.get('MasterGoogleFile3')
         try:
-            response = collection.query.fetch_objects(
-                limit = 2000
-            )
-            return [i.properties for i in response.objects]
+            for item in collection.iterator():
+                data.append(item.properties)
+            return data
         except Exception as e:
             print(e)
             return []
