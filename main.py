@@ -225,19 +225,19 @@ def get_single_dish_search(
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
     return data
 
-@app.get('/get_search_dishes_ios/{search_term}')
+@app.get('/get_search_dishes_ios/{dish}')
 def get_search_dishes_ios(
-    search_term: str,
+    dish: str,
     weaviate_limit: Optional[int] = Query(10, description = 'Number of dishes to return'),
     max_alternatives: Optional[int] = Query(3, description = 'Maximum number of alternatives to return'),
     neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
     has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images')
 ):
-    search_term = unquote(search_term)
-    initial_dishes = weaviate.get_dish_data_ios(search_term, weaviate_limit, neighborhoods, has_unique_image)
+    dish = unquote(dish)
+    initial_dishes = weaviate.get_dish_data_ios(dish, weaviate_limit, neighborhoods, has_unique_image)
     alternatives = weaviate.combine_alternatives_ios(initial_dishes, max_alternatives)
     alternative_dishes = weaviate.get_alternative_dish_data_ios(alternatives, weaviate_limit, neighborhoods, has_unique_image)
-    data = {search_term: initial_dishes}
+    data = {dish: initial_dishes}
     data.update(alternative_dishes)
     if not data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
