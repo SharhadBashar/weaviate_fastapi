@@ -201,9 +201,9 @@ def closest_neighbourhoods(
         raise HTTPException(status_code = 404, detail = 'No closest neighbourhoods found for the given coordinates')
     return data
 
-@app.get('/get_single_dish_search/{search_term}')
+@app.get('/get_single_dish_search/{dish}')
 def get_single_dish_search(
-    search_term: str,
+    dish: str,
     weaviate_limit: Optional[int] = Query(10, description = 'Number of dishes to return'),
     latitude: Optional[float] = Query(DEFAULT_LATITUDE, description = 'Latitude of the location'),
     longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
@@ -211,8 +211,16 @@ def get_single_dish_search(
     neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
     has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images')
 ):
-    search_term = unquote(search_term)
-    data = weaviate.get_single_dish_search(search_term, weaviate_limit, latitude, longitude, offset = offset, neighborhoods = neighborhoods, has_unique_image = has_unique_image)
+    dish = unquote(dish)
+    data = weaviate.get_single_dish_search(
+        dish,
+        neighborhoods = neighborhoods,
+        has_unique_image = has_unique_image,
+        weaviate_limit = weaviate_limit, 
+        latitude = latitude, 
+        longitude = longitude,
+        offset = offset
+    )
     if not data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
     return data
