@@ -35,9 +35,9 @@ CURATED_DISHES = {
 
 # Function to initialize Weaviate client
 def initialize_weaviate_client():
-    openai_key = "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"
-    weaviate_key = "AD88gas7nFZKgmR1Yr0d084yvhI5YVe3a2yZ"
-    weaviate_url = "https://pjokperctzqnvi34i1omg.c0.us-central1.gcp.weaviate.cloud"
+    openai_key = os.getenv("OPENAI_KEY", "your_openai_key")
+    weaviate_key = os.getenv("WEAVIATE_KEY", "your_weaviate_key")
+    weaviate_url = os.getenv("WEAVIATE_URL", "your_weaviate_url")
 
     auth_config = weaviate.AuthApiKey(api_key=weaviate_key)
 
