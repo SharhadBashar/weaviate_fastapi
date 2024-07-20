@@ -229,23 +229,30 @@ def get_search_dishes_ios(
     initial_dishes = weaviate.get_dish_data_ios(search_term, weaviate_limit, neighborhoods, has_unique_image)
     alternatives = weaviate.combine_alternatives_ios(initial_dishes, max_alternatives)
     alternative_dishes = weaviate.get_alternative_dish_data_ios(alternatives, weaviate_limit, neighborhoods, has_unique_image)
-    combined_data = {search_term: initial_dishes}
-    combined_data.update(alternative_dishes)
-    if not combined_data:
+    data = {search_term: initial_dishes}
+    data.update(alternative_dishes)
+    if not data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given search term')
-    return combined_data
+    return data
 
 @app.get('/get_search_dishes/{query_type}/{query_value}')
 def get_search_dishes(
     query_type: str,
     query_value: str,
-    neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods to filter dishes by'),
-    has_unique_image: Optional[bool] = Query(False, description = 'Whether to filter dishes with unique images'),
-    weaviate_limit: Optional[int] = Query(10, description = 'Number of dishes to return'),
-    max_alternatives: Optional[int] = Query(3, description = 'Maximum number of alternatives to return'),
+    neighborhoods: List[str] = Query(None, description = 'List of neighborhoods'),
+    has_unique_image: bool = Query(False, description = 'Whether to filter dishes with unique images'),
+    weaviate_limit: int = Query(10, description = 'Number of dishes to search for in weaviate'),
+    max_alternatives: int = Query(3, description = 'Maximum number of alternatives to return'),
     num_dishes: int = Query(10, description = 'Number of dishes to return')
 ):
-    data = weaviate.get_search_dishes(query_type, query_value, neighborhoods, has_unique_image, weaviate_limit, max_alternatives, num_dishes)
+    data = weaviate.get_search_dishes(
+        query_type, query_value, 
+        neighborhoods = neighborhoods, 
+        has_unique_image = has_unique_image, 
+        weaviate_limit = weaviate_limit, 
+        max_alternatives = max_alternatives,
+        num_dishes = num_dishes
+    )
     if not data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given query type and value')
     return data

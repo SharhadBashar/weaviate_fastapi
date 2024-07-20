@@ -94,48 +94,7 @@ def get_current_location():
 def get_day_of_week(timestamp):
     return datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S').strftime('%a').lower()
 
-def build_where_filter(text: str, neighborhoods: List[str], has_unique_image: bool) -> Dict:
-    filter_clauses = [
-        {
-            'path': ['cleanedDishName'], 
-            'operator': 'Like', 
-            'valueText': f'*{text}*'
-        }
-    ]
-
-    if neighborhoods:
-        neighborhood_clauses = [
-            {
-                'path': ['neighborhood'], 
-                'operator': 'Equal', 
-                'valueString': neighborhood
-            }
-            for neighborhood in neighborhoods
-        ]
-        filter_clauses.append({'operator': 'Or', 'operands': neighborhood_clauses})
-
-    if has_unique_image:
-        filter_clauses.append(
-            {
-                'operator': 'Or',
-                'operands': [
-                    {
-                        'path': ['stockImageUber'],
-                        'operator': 'Equal',
-                        'valueString': 'UniqueImage',
-                    },
-                    {
-                        'path': ['stockImageDoorDash'],
-                        'operator': 'Equal',
-                        'valueString': 'UniqueImage',
-                    },
-                ],
-            }
-        )
-
-    return {'operator': 'And', 'operands': filter_clauses}
-
-def build_where_filter_dish(dish: str, neighborhoods: Optional[List[str]], has_unique_image: bool) -> Dict:
+def build_where_filter(dish: str, neighborhoods: Optional[List[str]], has_unique_image: bool) -> Dict:
     filter_clauses = [
         {
             'path': ['cleanedDishName'], 
@@ -179,4 +138,4 @@ def build_where_filter_dish(dish: str, neighborhoods: Optional[List[str]], has_u
             }
         )
 
-    return {'operator': 'And', 'operands': filter_clauses}
+    return {"operator": "And", "operands": filter_clauses}

@@ -34,7 +34,7 @@ class Weaviate:
         )
         self.client_v3 = weaviate.Client(
             url = weaviate_url,
-            auth_client_secret = weaviate.auth.AuthApiKey(api_key = weavate_key),
+            auth_client_secret = weaviate.AuthApiKey(api_key = weavate_key),
             additional_headers = {
                 'X-OpenAI-Api-key': openai_key
             }
@@ -583,11 +583,10 @@ class Weaviate:
             print(e)
             return []
 
-    def _get_vector_search_ios(self, text: str, weaviate_limit: int, where_filter: Dict) -> List[Dict]:
+    def _get_elastic_search(self, where_filter: Dict, weaviate_limit: int = 10) -> List[Dict]:
         try:
             response = (
                 self.client_v3.query.get(CRISPY_V1, RETURN_PROPERTIES_V2)
-                .with_near_text({'concepts': [text]})
                 .with_additional(['id', 'distance'])
                 .with_where(where_filter)
                 .with_limit(weaviate_limit)
@@ -598,11 +597,11 @@ class Weaviate:
             print(err)
             return []
 
-
-    def _get_elastic_search_ios(self, text: str, weaviate_limit: int, where_filter: Dict) -> List[Dict]:
+    def _get_vector_search(self, search_term: str, where_filter: Dict, weaviate_limit: int = 10) -> List[Dict]:
         try:
             response = (
                 self.client_v3.query.get(CRISPY_V1, RETURN_PROPERTIES_V2)
+                .with_near_text({'concepts': [search_term]})
                 .with_additional(['id', 'distance'])
                 .with_where(where_filter)
                 .with_limit(weaviate_limit)
@@ -611,26 +610,16 @@ class Weaviate:
             return response['data']['Get'][CRISPY_V1]
         except Exception as err:
             print(err)
+            return []
 
-    def get_single_dish_search(
-            self, 
-            search_term: str,
-            weaviate_limit: int,
-            latitude = DEFAULT_LATITUDE, 
-            longitude = DEFAULT_LONGITUDE, 
-            offset = 0, 
-            neighborhoods: List[str] = None,
-            has_unique_image: bool = False,
-            wv_filter = None
-        ) -> List[Dict]:
-        if not search_term:
+    def get_single_dish_search(self, dish: str, weaviate_limit: int = 10, latitude = DEFAULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0, neighborhoods: List[str] = None, has_unique_image: bool = False) -> List[Dict]:
+        if not dish:
             return []
         
-        if not wv_filter:
-            wv_filter = build_where_filter(search_term, neighborhoods, has_unique_image)
+        wv_filter = build_where_filter(dish, neighborhoods, has_unique_image)
 
-        elastic_resp = self._get_elastic_search_ios(search_term, weaviate_limit, wv_filter)
-        vector_resp = self._get_vector_search_ios(search_term, weaviate_limit, wv_filter)
+        elastic_resp = self._get_elastic_search(wv_filter, weaviate_limit)
+        vector_resp = self._get_vector_search(dish, wv_filter, weaviate_limit)
 
         unique_dish_res_ids = set()
         unique_dishes = []
@@ -651,22 +640,15 @@ class Weaviate:
             add_unique_dishes(half_vector_response)
 
         return unique_dishes
-    
-    def get_dish_data_ios(
-            self, 
-            search_term: str, 
-            weaviate_limit: int, 
-            neighborhoods: Optional[List[str]] = None, 
-            has_unique_image: bool = False
-        ) -> List[Dict]:
 
+    def get_dish_data_ios(self, search_term: str, weaviate_limit: int, neighborhoods: Optional[List[str]] = None, has_unique_image: bool = False) -> List[Dict]:
         if not search_term:
             return []
 
         wv_filter = build_where_filter(search_term, neighborhoods, has_unique_image)
 
-        elastic_resp = self._get_elastic_search_ios(search_term, weaviate_limit, wv_filter)
-        vector_resp = self._get_vector_search_ios(search_term, weaviate_limit, wv_filter)
+        elastic_resp = self._get_elastic_search(wv_filter, weaviate_limit)
+        vector_resp = self._get_vector_search(search_term, wv_filter, weaviate_limit)
 
         if len(elastic_resp) <= 8:
             return vector_resp + elastic_resp
@@ -701,35 +683,24 @@ class Weaviate:
             alternative_data[alt] = data
         return alternative_data
 
-    def get_dish_data(self, search_term: str, limit: int, where_filter: Dict) -> List[Dict]:
-        try:
-            response = (
-                self.client_v3.query.get(CRISPY_V1, RETURN_PROPERTIES_V2)
-                .with_near_text({'concepts': [search_term]})
-                .with_additional(['id', 'distance'])
-                .with_where(where_filter)
-                .with_limit(limit)
-                .do()
-            )
-            return response['data']['Get'][CRISPY_V1]
-        except Exception as err:
-            print(err)
-            return []
-    
-    def get_alternative_dish_data(
-        self,
-        alternatives: List[str],
-        latitude = DEFAULT_LATITUDE,
-        longitude = DEFAULT_LONGITUDE,
-        offset = 0,
-        neighborhoods: List[str] = None,
-        has_unique_image: bool = False,
-        limit: int = 10
-    ) -> List[Dict]:
+    def combine_alternatives(self, dishes: List[Dict], max_alternatives: int) -> List[str]:
+        alternatives = []
+        count = 0
+        for dish in dishes:
+            if (count >= max_alternatives):
+                break
+            for key in ['specificBaseAlternatives','alternativesWithinSameCuisine','healthAlternatives',]:
+                if (key in dish and dish[key] and dish[key] != 'None'):
+                    alternatives.extend(dish[key].strip('[]').replace("'", '').split(', '))
+                    count += len(dish[key].strip('[]').replace("'", '').split(', '))
+                if count >= max_alternatives:
+                    break
+        return list(set(alternatives[:max_alternatives]))
+
+    def get_alternative_dish_data(self, alternatives: List[str], weaviate_limit: int = 10, latitude = DEFAULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0, neighborhoods: List[str] = None, has_unique_image: bool = False) -> List[Dict]:
         alternative_data = []
         for alt in alternatives:
-            where_filter = build_where_filter_dish(alt, neighborhoods, has_unique_image)
-            data = self.get_dish_data(alt, limit, where_filter)
+            data = self.get_single_dish_search(alt, weaviate_limit, latitude, longitude, offset, neighborhoods, has_unique_image)
             alternative_data.extend(data)
         return alternative_data
 
@@ -742,7 +713,7 @@ class Weaviate:
             weaviate_limit: int = 10,
             latitude = DEFAULT_LATITUDE,
             longitude = DEFAULT_LONGITUDE,
-            offset = 0,
+            offset: int = 0,
             max_alternatives: int = 9,
             num_dishes: int = 10
         ):
@@ -753,10 +724,9 @@ class Weaviate:
 
         combined_results = {}
         for dish in random.sample(dishes, min(num_dishes, len(dishes))):
-            wv_filter = build_where_filter_dish(dish, neighborhoods, has_unique_image)
-            dish_results = self.get_single_dish_search(dish, weaviate_limit, latitude, longitude, offset, neighborhoods, has_unique_image, wv_filter)
-            alternatives = self.combine_alternatives_ios(dish_results, max_alternatives)
-            alternative_data = self.get_alternative_dish_data(alternatives, latitude, longitude, offset, neighborhoods, has_unique_image, weaviate_limit)
+            dish_results = self.get_single_dish_search(dish, weaviate_limit, latitude, longitude, offset, neighborhoods, has_unique_image)
+            alternatives = self.combine_alternatives(dish_results, max_alternatives)
+            alternative_data = self.get_alternative_dish_data(alternatives, weaviate_limit, latitude, longitude, offset,neighborhoods, has_unique_image)
             combined_results[dish] = dish_results + alternative_data
 
         return combined_results
