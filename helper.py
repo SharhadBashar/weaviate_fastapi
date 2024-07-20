@@ -94,7 +94,7 @@ def get_current_location():
 def get_day_of_week(timestamp):
     return datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S').strftime('%a').lower()
 
-def build_where_filter(dish: str, neighborhoods: Optional[List[str]], has_unique_image: bool) -> Dict:
+def build_where_filter(dish, neighborhoods, has_unique_image) -> Dict:
     filter_clauses = [
         {
             'path': ['cleanedDishName'], 
@@ -138,4 +138,4 @@ def build_where_filter(dish: str, neighborhoods: Optional[List[str]], has_unique
             }
         )
 
-    return {"operator": "And", "operands": filter_clauses}
+    return {'operator': 'And', 'operands': filter_clauses}

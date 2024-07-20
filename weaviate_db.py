@@ -583,7 +583,7 @@ class Weaviate:
             print(e)
             return []
 
-    def _get_elastic_search(self, where_filter: Dict, weaviate_limit: int = 10) -> List[Dict]:
+    def _get_elastic_search(self, where_filter, weaviate_limit = 10):
         try:
             response = (
                 self.client_v3.query.get(CRISPY_V1, RETURN_PROPERTIES_V2)
@@ -597,7 +597,7 @@ class Weaviate:
             print(err)
             return []
 
-    def _get_vector_search(self, search_term: str, where_filter: Dict, weaviate_limit: int = 10) -> List[Dict]:
+    def _get_vector_search(self, search_term, where_filter, weaviate_limit = 10):
         try:
             response = (
                 self.client_v3.query.get(CRISPY_V1, RETURN_PROPERTIES_V2)
@@ -611,11 +611,10 @@ class Weaviate:
         except Exception as err:
             print(err)
             return []
-
-    def get_single_dish_search(self, dish: str, weaviate_limit: int = 10, latitude = DEFAULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0, neighborhoods: List[str] = None, has_unique_image: bool = False) -> List[Dict]:
+        
+    def get_single_dish_search(self, dish, neighborhoods = None, has_unique_image = False, weaviate_limit = 10, latitude = DEFAULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0):
         if not dish:
             return []
-        
         wv_filter = build_where_filter(dish, neighborhoods, has_unique_image)
 
         elastic_resp = self._get_elastic_search(wv_filter, weaviate_limit)
@@ -689,7 +688,7 @@ class Weaviate:
         for dish in dishes:
             if (count >= max_alternatives):
                 break
-            for key in ['specificBaseAlternatives','alternativesWithinSameCuisine','healthAlternatives',]:
+            for key in ['specificBaseAlternatives', 'alternativesWithinSameCuisine', 'healthAlternatives',]:
                 if (key in dish and dish[key] and dish[key] != 'None'):
                     alternatives.extend(dish[key].strip('[]').replace("'", '').split(', '))
                     count += len(dish[key].strip('[]').replace("'", '').split(', '))
@@ -697,10 +696,10 @@ class Weaviate:
                     break
         return list(set(alternatives[:max_alternatives]))
 
-    def get_alternative_dish_data(self, alternatives: List[str], weaviate_limit: int = 10, latitude = DEFAULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0, neighborhoods: List[str] = None, has_unique_image: bool = False) -> List[Dict]:
+    def get_alternative_dish_data(self, alternatives, neighborhoods = None, has_unique_image = False, weaviate_limit = 10, latitude = DEFAULT_LATITUDE, longitude = DEFAULT_LONGITUDE, offset = 0):
         alternative_data = []
         for alt in alternatives:
-            data = self.get_single_dish_search(alt, weaviate_limit, latitude, longitude, offset, neighborhoods, has_unique_image)
+            data = self.get_single_dish_search(alt, neighborhoods, has_unique_image, weaviate_limit, latitude, longitude, offset)
             alternative_data.extend(data)
         return alternative_data
 
@@ -711,11 +710,11 @@ class Weaviate:
             neighborhoods: List[str] = None, 
             has_unique_image: bool = False, 
             weaviate_limit: int = 10,
+            max_alternatives: int = 9,
+            num_dishes: int = 10,
             latitude = DEFAULT_LATITUDE,
             longitude = DEFAULT_LONGITUDE,
             offset: int = 0,
-            max_alternatives: int = 9,
-            num_dishes: int = 10
         ):
         if (query_type == 'cuisine'): dishes = CURATED_CUISINES.get(query_value.lower(), [])
         elif (query_type == 'diet'): dishes = CURATED_DIETS.get(query_value.lower(), [])
@@ -724,9 +723,9 @@ class Weaviate:
 
         combined_results = {}
         for dish in random.sample(dishes, min(num_dishes, len(dishes))):
-            dish_results = self.get_single_dish_search(dish, weaviate_limit, latitude, longitude, offset, neighborhoods, has_unique_image)
+            dish_results = self.get_single_dish_search(dish, neighborhoods, has_unique_image, weaviate_limit, latitude, longitude, offset)
             alternatives = self.combine_alternatives(dish_results, max_alternatives)
-            alternative_data = self.get_alternative_dish_data(alternatives, weaviate_limit, latitude, longitude, offset,neighborhoods, has_unique_image)
+            alternative_data = self.get_alternative_dish_data(alternatives, neighborhoods, has_unique_image, weaviate_limit, latitude, longitude, offset)
             combined_results[dish] = dish_results + alternative_data
 
         return combined_results

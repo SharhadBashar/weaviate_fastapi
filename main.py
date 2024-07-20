@@ -173,7 +173,7 @@ def get_dish_cuisine(neighborhoods: str, cuisines: str, offset: Optional[float] 
     return data
 
 @app.get('/get_dish_diets/{neighborhoods}/{diets}')
-def get_dish_diets(neighborhoods: str, diets: str, offset: Optional[float] = Query(0, description = 'offset multiplier')):
+def get_dish_diets(neighborhoods: str, diets: str, offset: Optional[float] = Query(0, description = 'Offset multiplier')):
     neighborhoods = unquote(neighborhoods)
     diets = unquote(diets)
     data = weaviate.get_dish_diets(neighborhoods, diets, offset = offset)
@@ -243,15 +243,22 @@ def get_search_dishes(
     has_unique_image: bool = Query(False, description = 'Whether to filter dishes with unique images'),
     weaviate_limit: int = Query(10, description = 'Number of dishes to search for in weaviate'),
     max_alternatives: int = Query(3, description = 'Maximum number of alternatives to return'),
-    num_dishes: int = Query(10, description = 'Number of dishes to return')
+    num_dishes: int = Query(10, description = 'Number of dishes to return'),
+    latitude: Optional[float] = Query(DEFAULT_LATITUDE, description = 'Latitude of the location'),
+    longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
+    offset: Optional[float] = Query(0, description = 'Offset multiplier'),
 ):
     data = weaviate.get_search_dishes(
-        query_type, query_value, 
+        query_type, 
+        query_value, 
         neighborhoods = neighborhoods, 
         has_unique_image = has_unique_image, 
         weaviate_limit = weaviate_limit, 
         max_alternatives = max_alternatives,
-        num_dishes = num_dishes
+        num_dishes = num_dishes,
+        latitude = latitude,
+        longitude = longitude,
+        offset = offset
     )
     if not data:
         raise HTTPException(status_code = 404, detail = 'No dishes found for the given query type and value')
