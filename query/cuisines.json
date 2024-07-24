@@ -1,0 +1,1827 @@
+{
+    "alcohol": [
+        {
+            "still cider": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcq4idwxua69ohpaotow0dcsv3qucvs12svgtncea4xbha&s"
+        },
+        {
+            "sparkling cider": "https://thedeliciousspoon.com/wp-content/uploads/2019/10/apple-cider-mimosa-recipe-6-500x500.jpg"
+        },
+        {
+            "dry cider": "https://media1.popsugar-assets.com/files/thumbor/fw8cg0ebmgawwtawr-jocvbrcdw=/fit-in/500x501/filters:format_auto():upscale()/2020/09/10/064/n/46794493/026999fba4db95b3_sb_dry_studio.png"
+        },
+        {
+            "sweet cider": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqjoukrx6iaupxmotn_rqy4jdmha5cflbakt3raleqhqq&s"
+        },
+        {
+            "traditional perry": "https://storage.googleapis.com/cdn.vinoshipper.com/wine/15065/7884c64f-eb8d-49ef-9a43-15973039ec15.jpg"
+        },
+        {
+            "modern perry": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrkktwhuilulfzkijtq7tuijjtndb7goi22xhzyzubzya&s"
+        },
+        {
+            "berry cider": "https://www.ciderscene.com/wp-content/uploads/2021/11/berry_cranders_saint_cheri_table-1-scaled-1024x1024.jpg"
+        },
+        {
+            "cherry cider": "https://market.wvwinery.com/cdn/shop/products/wvwinery-69_1024x1024.jpg?v=1595943486"
+        },
+        {
+            "hopped cider": "https://market.wvwinery.com/cdn/shop/products/wvwinery-59_1024x1024.jpg?v=1595943565"
+        },
+        {
+            "spiced cider": "https://minimalistbaker.com/wp-content/uploads/2022/07/hot-spiced-apple-cider-square-500x375.jpg"
+        },
+        {
+            "junmai sake": "https://m.media-amazon.com/images/i/41djzzov67l._ac_uf1000,1000_ql80_.jpg"
+        },
+        {
+            "ginjo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcratim2ffc1ssyh0qautjph7xi0k4puagtho_r_niwl63td8qqqoz_enjrcehufemzl6v8&usqp=cau"
+        },
+        {
+            "daiginjo sake": "https://www.bbcspirits.com/3276/sake-japan-samurai-junmai-daiginjo-72cl.jpg"
+        },
+        {
+            "nama sake": "https://images.heb.com/is/image/hebgrocery/001830201-1"
+        },
+        {
+            "modern makgeolli": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqx3qt4gbhzpbahj6_df7dw8epuf75cocuihu8dyphesa&s"
+        },
+        {
+            "traditional makgeolli": "https://imbibemagazine.com/wp-content/uploads/2017/02/makgeolli-vertical.jpg"
+        },
+        {
+            "shaoxing wine": "https://m.media-amazon.com/images/i/71w6kver4jl._ac_uf1000,1000_ql80_.jpg"
+        },
+        {
+            "scotch whisky": "https://www.theglenlivet.com/wp-content/uploads/2021/10/18-year-old-single-malt-scotch-whisky-next-to-a-cocktail-in-a-coupette-scaled.jpg"
+        },
+        {
+            "bourbon": "https://www.whiskyshop.com/content/wp-content/uploads/sites/2/2021/12/featured_blantonsbourbon_sqpaneltws.jpg"
+        },
+        {
+            "rye whisky": "https://tumbleweedspirits.com/cdn/shop/files/tumbleweeddistillery_rye-600_820x.jpg?v=1683320855"
+        },
+        {
+            "irish whiskey": "https://images.squarespace-cdn.com/content/v1/61affa9c931dc960c27460a1/1ad137bd-1737-4924-8cdd-850c058439e6/jameson+6.jpg"
+        },
+        {
+            "japanese whisky": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcr7ve7bfjurtyfyhg1xmiicixgonqqchoz5fnx1rdj8dw&s"
+        },
+        {
+            "canadian whisky": "https://www.1769distillery.com/wp-content/uploads/2022/02/whisky-fixed-image.jpg"
+        },
+        {
+            "russian vodka": "https://www.firstpourcocktails.com/wp-content/uploads/2021/12/russian-standard-vodka.jpg"
+        },
+        {
+            "polish vodka": "https://wikiliq.org/wp-content/uploads/2021/02/belvedere-vodka-2.jpeg"
+        },
+        {
+            "swedish vodka": "https://bevvyco.s3.amazonaws.com/img/drinks/dy/tody/21b31022be58a60e611b330d3fdece47-lg.jpg"
+        },
+        {
+            "french vodka": "https://m.media-amazon.com/images/i/81e3hlylznl._ac_uf894,1000_ql80_.jpg"
+        },
+        {
+            "caribbean rum": "https://topshelfwineandspirits.com/cdn/shop/files/sorrel-daiquiri-960x1200_800x.png?v=1689724077"
+        },
+        {
+            "spiced rum": "https://theartisanfoodvillage.com/cdn/shop/products/winterrum-27_820x.jpg?v=1676980643"
+        },
+        {
+            "white rum": "https://salfordrum.com/cdn/shop/files/screenshot2023-04-30at17.23.20_600x.png?v=1682872183"
+        },
+        {
+            "dark rum": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrmorvnibax5bgf6d91z2wsmjjnojolpsihcbi_ov_huou7oloubvzaz1bbwhduzyqqrxo&usqp=cau"
+        },
+        {
+            "aged rum": "https://www.tasteofhome.com/wp-content/uploads/2023/03/toh-best-rum-ft-via-drizly.com_.jpg?fit=700%2c700"
+        },
+        {
+            "london dry gin": "https://sipsmith.com/wp-content/uploads/sites/4/2019/04/ldg_spritz-2022-cocktail-700x1000px.jpg"
+        },
+        {
+            "dutch genever": "https://www.cocktailsaway.com/wp-content/uploads/2021/01/2021-01-15-15.21.39-768x1024.jpg"
+        },
+        {
+            "new american gin": "https://bevvyco.s3.amazonaws.com/img/drinks/vy/fxvy/4c9ca9e541879d4750aea7cdc0386c05-lg.jpg"
+        },
+        {
+            "old tom gin": "https://www.winestillery.it/wp-content/uploads/2021/04/old-tom-autumn.jpg"
+        },
+        {
+            "blanco tequila": "https://www.masterofmalt.com/tequila/destileria-la-fortaleza/fortaleza-blanco-tequila.jpg?alt=2&w=440&h=1024&b=0xffffff&q=100"
+        },
+        {
+            "reposado tequila": "https://shop.danostequila.com/cdn/shop/files/untitleddesign_4.jpg?v=1705600986&width=1445"
+        },
+        {
+            "anejo tequila": "https://i.pinimg.com/originals/a6/9a/50/a69a503bcb0f449d6d5e6900f048f477.jpg"
+        },
+        {
+            "extra anejo tequila": "https://www.passionspirits.com/_next/image?url=https%3a%2f%2fplatform-ps-files.s3.us-east-2.amazonaws.com%2fimages%2forigin%2fsmall_00_adictivo_05_extra_anejo_black_86debfa640.jpg&w=640&q=75"
+        },
+        {
+            "cognac": "https://www.forbesindia.com/media/images/2017/feb/img_93573_cognac.jpg"
+        },
+        {
+            "armagnac": "https://www.gourmetencasa-tcm.com/14756-large_default/armagnac-saint-vivant-70cl.jpg"
+        },
+        {
+            "american brandy": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqad_xkpaid_y4po33wisc8_velyejormfblvd8rxmpq2fbarvmkwzkku7fzlf1q1xgbcg&usqp=cau"
+        },
+        {
+            "pisco": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/pisco_peru.jpg/230px-pisco_peru.jpg"
+        },
+        {
+            "espadín mezcal": "https://www.mezcalreviews.com/wp-content/uploads/2016/09/montelobos-espadin.jpg"
+        },
+        {
+            "tobalá mezcal": "https://platform-ps-files.s3.us-east-2.amazonaws.com/images/origin/medium_montelobos_tobala_06_c5d8cc464d.jpg"
+        },
+        {
+            "ensamble mezcal": "https://shopmadremezcal.com/wp-content/themes/shop-madre-mezcal-v2/images/ensamble-750.png"
+        },
+        {
+            "amaretto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsogzkgfeq6otgcvt35rfkqcsy_xskf1i68jb9t5ic0jw&s"
+        },
+        {
+            "coffee liqueur": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsfxbqjppa-yatyslqc_z5a6jzeutwc2d9oesrtfxfrvg&s"
+        },
+        {
+            "herbal liqueur": "https://cdn11.bigcommerce.com/s-ogof3dhe/images/stencil/500x659/products/1106/2758/2020_shrubs-3005__95636.1598562419.jpg?c=2"
+        },
+        {
+            "cream liqueur": "https://hips.hearstapps.com/hmg-prod/images/irish-cream-liqueurs-1643664004.jpg?crop=1.00xw:0.678xh;0,0.197xh&resize=640:*"
+        },
+        {
+            "merlot": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrzu-sjp2s9x6vjvbfnbcp67xugx-1cq_jpcdym0u61deckt87vwgopmgupk9ujl-_o9bq&usqp=cau"
+        },
+        {
+            "cabernet sauvignon": "https://www.popevalleywinery.com/assets/images/products/pictures/nvsabnovintage.jpeg"
+        },
+        {
+            "pinot noir": "https://rochesterwineshop.com/cdn/shop/products/fessparkertengjj_a146e42d-1b2b-4781-989b-8722f7189f10_grande.jpg?v=1620843157"
+        },
+        {
+            "syrah": "https://www.meadowsestatewinery.com/wp-content/uploads/2020/04/syrah-2017-02.jpg"
+        },
+        {
+            "zinfandel": "https://storage.googleapis.com/images-cub-prd-9400d55.cub.prd.v8.commerce.mi9cloud.com/product-images/detail/9c4f60ce-5623-4ff0-9046-6485af31a9ca.jpeg"
+        },
+        {
+            "chardonnay": "https://images.ctfassets.net/v6j29v1zurjq/3o8mgqawqn5o4wt1ilmtw5/76e11968e089f652786adadf8702b837/maker_chardonnayhandley-4.jpg?w=750&h=750&fl=progressive&q=90&fm=jpg"
+        },
+        {
+            "sauvignon blanc": "https://fratelliwines.in/cdn/shop/products/artboard2_a377cbeb-2870-4d93-952e-ecaa5763e636_800x.jpg?v=1652265300"
+        },
+        {
+            "pinot grigio": "https://digitalcontent.api.tesco.com/v2/media/ghs/8911e80a-850d-4e2f-93d6-8530f5b3078c/0ca90571-0b74-4f83-a020-471377419b08_1863544683.jpeg?h=960&w=960"
+        },
+        {
+            "riesling": "https://cdn.shopify.com/s/files/1/0214/4760/products/img_0353_1024x1024.jpg?v=1660007044"
+        },
+        {
+            "gewürztraminer": "https://www.wiemer.com/wp-content/uploads/hjw_gewurztraminer_dry_nv_-scaled.jpg"
+        },
+        {
+            "provence rosé": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcszyouomnwdxwmpljv_idr02rmrqxc5-aejgdwf7u4gvw&s"
+        },
+        {
+            "white zinfandel": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrsikddbmomyczfohow3y_s52ndmyzha3qbrqtniq5t0q&s"
+        },
+        {
+            "pinot noir rosé": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrsdnais2cq2yc5fzjsbcbrucv2fdosdyej9il7r50nc3-ts7vhnnbzijwngbj394ytjfo&usqp=cau"
+        },
+        {
+            "champagne": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctk-kwlssbpmscp_gobb8oxx6l9smrao3irpiuqrnk8znznghh9liapf1u8ppsoox3yram&usqp=cau"
+        },
+        {
+            "prosecco": "https://shop.greeneking.co.uk/cdn/shop/products/amodo-prosecco-bottle-greene-king-32751146500256_grande.jpg?v=1693381963"
+        },
+        {
+            "cava": "https://images.ctfassets.net/zpx0hfp3jryq/7ipnnk1sqncunh0suqeypv/23506d726b81d39c31b457d286121353/cava-wine-2000-mestres-mas-via-gran-reserva-brut-cava-catalonia-spain.jpg?fm=jpg&fl=progressive"
+        },
+        {
+            "sekt": "https://www.dupres.de/wp-content/uploads/2021/07/dupres-sekt-secco-feinkost-wein-69151-sekt-stadt-hannover-2.jpg"
+        },
+        {
+            "port": "https://www.newportvineyards.com/wp-content/uploads/2014/09/newportvineyards-port.jpg"
+        },
+        {
+            "sherry": "https://blog.bbr.com/wp-content/uploads/2023/03/sherry.png"
+        },
+        {
+            "ice wine": "https://images.squarespace-cdn.com/content/v1/603fe2f4ada6165d919a8398/1616561633573-ypd5jiim5q4iyde8k9w6/merlot-icewine-2015-151173.jpg"
+        },
+        {
+            "late harvest wine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqgsjf7izvbxmgqcek2kkt1o0be_yqdqzimsusy05ojxjy3uzu1jd5nvwqcwuchjdkjm50&usqp=cau"
+        },
+        {
+            "madeira": "https://cdn.britannica.com/77/132377-050-539e5980/madeira-wine.jpg"
+        },
+        {
+            "marsala": "https://m.media-amazon.com/images/i/519zw7ihytl.jpg"
+        },
+        {
+            "muscat": "https://panoramanow.com/wp-content/uploads/2019/01/muscat_the-other-white-wine-articles.jpg"
+        },
+        {
+            "commandaria": "https://zambartaswineries.com/wp-content/uploads/commandaria-koukouvagua.jpg"
+        }
+    ],
+    "american": [
+        {
+            "buffalo wings": "https://allthehealthythings.com/wp-content/uploads/2020/04/crispy-baked-buffalo-chicken-wings-5-scaled.jpg"
+        },
+        {
+            "bbq spare ribs": "https://cafedelites.com/wp-content/uploads/2018/06/oven-pork-ribs-image-3.jpg"
+        },
+        {
+            "pulled pork sandwich": "https://carlsbadcravings.com/wp-content/uploads/2018/01/bbq-pulled-pork-1.jpg"
+        },
+        {
+            "sausage egg cheese biscuit": "https://catzinthekitchen.com/wp-content/uploads/2022/03/sausage-egg-and-cheese-biscuit.jpg.webp"
+        },
+        {
+            "clam chowder": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2fphoto%2frecipes%2f2020-09-how-to-make-easy-new-england-clam-chowder%2fht-easy-new-england-clam-chowder812"
+        },
+        {
+            "scrambled eggs": "https://feelgoodfoodie.net/wp-content/uploads/2022/02/how-to-make-scrambled-eggs-08.jpg"
+        },
+        {
+            "fruit salad": "https://hips.hearstapps.com/hmg-prod/images/pasta-salad-horizontal-jpg-1522265695.jpg?crop=1xw:0.8435812837432514xh;center,top&resize=1200:*"
+        },
+        {
+            "pastrami sandwich": "https://i.insider.com/62196035bea1240018a8cbc0?width=1300&format=jpeg&auto=webp"
+        },
+        {
+            "omelette": "https://www.olivetomato.com/wp-content/uploads/2016/02/sam4952-1.jpg"
+        },
+        {
+            "cobb salad": "https://images.unsplash.com/photo-1562634117-6645bf4a9136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=m3w0ndgzmdl8mhwxfhnlyxjjahwxfhxdb2jijtiwu2fsywr8zw58mhx8fhwxnza2mtuwotexfda&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "apple pie": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=m3w0ndgzmdl8mhwxfhnlyxjjahwxfhxbchbszsuymfbpzxxlbnwwfhx8fde3mdyxnta4odj8ma&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "cinnamon bun": "https://images.unsplash.com/photo-1585190775852-3e6bb2b80184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=m3w0ndgzmdl8mhwxfhnlyxjjahwxfhxdaw5uyw1vbiuymfjvbgxzfgvufdb8fhx8mtcwnje1mdkwn3ww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "hot dog": "https://images.unsplash.com/photo-1599599810694-b5b37304c041?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=m3wxmja3fdb8mhxwag90by1wywdlfhx8fgvufdb8fhx8fa%3d%3d"
+        },
+        {
+            "fried chicken": "https://images.unsplash.com/photo-1626082896492-766af4eb6501?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=m3w0ndgzmdl8mhwxfhnlyxjjahwxfhxgcmllzcuymenoawnrzw58zw58mhx8fhwxnza2mtyxmze4fda&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "pot pie": "https://images.unsplash.com/photo-1628642585518-2d63c2beab6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=m3w0ndgzmdl8mhwxfhnlyxjjahwxfhxdaglja2vujtiwug90jtiwugllfgvufdb8fhx8mtcwnje1mdg5n3ww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "mashed potatoes": "https://images.unsplash.com/photo-1633436375153-d7045cb93e38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=m3w0ndgzmdl8mhwxfhnlyxjjahwxfhxnyxnozwqlmjbqb3rhdg9lc3xlbnwwfhx8fde3mdyxnje0ndb8ma&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "pancakes": "https://hips.hearstapps.com/hmg-prod/images/best-homemade-pancakes-index-640775a2dbad8.jpg?crop=0.503xw:1.00xh;0.235xw,0&resize=1200:*"
+        },
+        {
+            "grilled cheese sandwich": "https://natashaskitchen.com/wp-content/uploads/2021/08/grilled-cheese-sandwich-3.jpg"
+        },
+        {
+            "blt sandwich": "https://ohsweetbasil.com/wp-content/uploads/how-to-make-the-best-blt-recipe-4-scaled.jpg"
+        },
+        {
+            "bbq ribs": "https://overthefirecooking.com/wp-content/uploads/2021/02/f_img_4036-2-scaled.jpg"
+        },
+        {
+            "shashlik": "https://petersfoodadventures.com/wp-content/uploads/2017/02/russian-shashlik.jpg"
+        },
+        {
+            "chili soup": "https://pinchofyum.com/wp-content/uploads/sunday-chili-square.jpg"
+        },
+        {
+            "pancake stack": "https://preppykitchen.com/wp-content/uploads/2023/02/pancakes-feature-new.jpg"
+        },
+        {
+            "french toast": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1200,ar_4:3,g_center,f_auto/cms/reviews/sadelles/sadelle_2527s_2520menu_2520-_2520french_2520toast"
+        },
+        {
+            "club sandwich": "https://tatyanaseverydayfood.com/wp-content/uploads/2021/07/classic-blt-club-sandwich-recipe-3-500x500.jpg"
+        },
+        {
+            "greek yogurt parfait": "https://thewoodenskillet.com/wp-content/uploads/2023/05/greek-yogurt-parfait-recipe-1.jpg"
+        },
+        {
+            "pumpkin soup": "https://www.twopeasandtheirpod.com/wp-content/uploads/2020/10/pumpkin-soup-4.jpg"
+        },
+        {
+            "breakfast sandwich": "https://assets.bonappetit.com/photos/57acec251b3340441497533d/1:1/w_2560%2cc_limit/ba-best-breakfast-sandwich.jpg"
+        },
+        {
+            "shrimp and grits": "https://www.bowlofdelicious.com/wp-content/uploads/2018/08/easy-classic-shrimp-and-grits-3.jpg"
+        },
+        {
+            "blueberry muffins": "https://www.culinaryhill.com/wp-content/uploads/2022/08/blueberry-muffins-culinary-hill-1200x800-1.jpg"
+        },
+        {
+            "eggs and bacon": "https://www.dietdoctor.com/wp-content/uploads/2015/12/dd-14-21.jpg"
+        },
+        {
+            "crab cake": "https://recipes.net/wp-content/uploads/2023/05/chef-paul-prudhommes-cajun-crab-cakes_058a82fbb152bdc4c61ee1d42808cb1c.jpeg"
+        },
+        {
+            "cheeseburger": "https://www.kitchensanctuary.com/wp-content/uploads/2021/05/double-cheeseburger-square-fs-42.jpg"
+        },
+        {
+            "peanut butter jelly": "https://www.mashed.com/img/gallery/the-untold-truth-of-the-peanut-butter-and-jelly-sandwich/intro-1592327549.jpg"
+        },
+        {
+            "s'mores": "https://www.onceuponachef.com/images/2023/10/smores.jpg"
+        },
+        {
+            "brisket": "https://www.plattertalk.com/wp-content/uploads/2023/06/sliced-smoked-brisket-flat.jpg"
+        },
+        {
+            "chicken and waffles": "https://www.reviewjournal.com/wp-content/uploads/2020/08/14075249_web1_bouchon3.jpg?resize=801,800"
+        },
+        {
+            "eggs benedict": "https://www.jocooks.com/wp-content/uploads/2020/08/eggs-benedict-1-13.jpg"
+        },
+        {
+            "cornbread": "https://www.blessthismessplease.com/wp-content/uploads/2018/03/cornbread-recipe-1-of-1.jpg"
+        },
+        {
+            "meatloaf": "https://www.spendwithpennies.com/wp-content/uploads/2022/12/1200-the-best-meatloaf-recipe-spendwithpennies.jpg"
+        },
+        {
+            "hamburger": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/m6hasparczhynn4xtuyt7h6pte.jpg&w=1440"
+        },
+        {
+            "chicken tenders": "https://www.wellplated.com/wp-content/uploads/2023/05/oven-fried-chicken-tenders-recipe.jpg"
+        }
+    ],
+    "argentinian": [
+        {
+            "milanesa": "https://chefalli.com/wp-content/uploads/2023/08/milanesa-7-copy-500x500.jpg"
+        },
+        {
+            "asado": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/7/10/0/0068299-01_barbecued-short-ribs_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1382539150963.jpeg"
+        },
+        {
+            "parrillada": "https://gran.luchito.com/wp-content/uploads/2023/07/landscape-hero-parrillada.jpg"
+        },
+        {
+            "napolitana pizza": "https://imag.bonviveur.com/milanesa-a-la-napolitana.jpg"
+        }
+    ],
+    "australian": [
+        {
+            "meat pie": "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/165383/bourke-street-beef-brisket-6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3a1&w=1446"
+        },
+        {
+            "macadamia cookie": "https://images.eatthismuch.com/img/2670_the-boss-dom_88fa8a73-d67b-435c-8bd5-8e938e73d539.jpeg"
+        }
+    ],
+    "brazilian": [
+        {
+            "coxinha": "https://blog.amigofoods.com/wp-content/uploads/2019/09/brazilian-chicken-coxinha.jpg"
+        },
+        {
+            "tapioca": "https://cdn.greatlifepublishing.net/wp-content/uploads/sites/2/2023/03/10171241/homemade-tapioca-pudding-6-min-scaled.jpg"
+        },
+        {
+            "açaí bowl": "https://healthfulblondie.com/wp-content/uploads/2022/06/homemade-healthy-protein-acai-bowl-6.jpg"
+        },
+        {
+            "cachorro-quente": "https://i0.wp.com/tarasmulticulturaltable.com/wp-content/uploads/2014/03/cachorro-quente-brazilian-hot-dog-4-of-4.jpg?w=1300&ssl=1"
+        },
+        {
+            "empada": "https://steemitimages.com/dqmnvrdfpzhtfzh2cn7rcjbemfqcucdszisrq5zcdw9dky4/image.png"
+        },
+        {
+            "brigadeiro": "https://tb-static.uber.com/prod/image-proc/processed_images/1cec403f4004586c6984fba503d3a0cb/4218ca1d09174218364162cd0b1a8cc1.jpeg"
+        },
+        {
+            "moqueca": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/moqueca.jpg/2560px-moqueca.jpg"
+        },
+        {
+            "pastel": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/brazilian_pastel.jpg/1920px-brazilian_pastel.jpg"
+        },
+        {
+            "picanha": "https://www.chilesandsmoke.com/wp-content/uploads/2020/09/reverse-seared-picanha_featured-001.jpg"
+        }
+    ],
+    "british": [
+        {
+            "fish and chips": "https://images.themodernproper.com/billowy-turkey/production/posts/2022/fishandchips_11.jpg?w=1200&q=82&fm=jpg&fit=crop&dm=1672266407&s=07d23fbd4c10333b77543096ec00ae28"
+        },
+        {
+            "full breakfast": "https://unpeeledjournal.com/wp-content/uploads/2023/04/52828002762_99f3b99b45_b.jpg"
+        },
+        {
+            "bread pudding": "https://www.recipetineats.com/wp-content/uploads/2020/09/bread-butter-pudding_4-sq.jpg"
+        }
+    ],
+    "mystery": [
+        {
+            "cajun chicken": "https://www.chilipeppermadness.com/wp-content/uploads/2021/01/cajun-chicken-and-sausage-gumbo-recipe4-500x500.jpg"
+        },
+        {
+            "jambalaya": "https://tb-static.uber.com/prod/image-proc/processed_images/a5fcba667b6aa7d694db1ac0f118cee3/a19bb09692310dfd41e49a96c424b3a6.jpeg"
+        },
+        {
+            "gumbo": "https://hips.hearstapps.com/hmg-prod/images/shrimp-sausage-gumbo-index-65130058c85c0.jpg?crop=0.502xw:1.00xh;0.249xw,0&resize=1200:*"
+        },
+        {
+            "collard greens": "https://www.melissassouthernstylekitchen.com/wp-content/uploads/2018/12/cajuncollardgreenswithbacon-003.jpg"
+        },
+        {
+            "israeli salad": "https://www.knowyourproduce.com/wp-content/uploads/2014/06/israeli-salad-4.jpg"
+        },
+        {
+            "dulce de leche": "https://bakingamoment.com/wp-content/uploads/2019/04/img_4249-dulce-de-leche-recipe.jpg"
+        },
+        {
+            "empanadas": "https://handletheheat.com/wp-content/uploads/2015/06/beef-empanadas-square.jpg"
+        },
+        {
+            "red beans and rice ": "https://www.theseasonedmom.com/wp-content/uploads/2021/08/red-beans-and-rice-square.jpg"
+        },
+        {
+            "palak paneer": "https://foreignfork.com/wp-content/uploads/2023/07/easypalakpaneer-feature.jpg"
+        },
+        {
+            "coconut shrimp": "https://fullofplants.com/wp-content/uploads/2023/05/homemade-naan-bread-restaurant-style-vegan-thumb-1.jpg"
+        },
+        {
+            "mapo tofu": "https://thewoksoflife.com/wp-content/uploads/2019/06/mapo-tofu-10.jpg"
+        },
+        {
+            "dosa": "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/06/brown-rice-dosa-recipe.jpg"
+        },
+        {
+            "biscuits and gravy": "https://d1ralsognjng37.cloudfront.net/925c283e-a3a8-4b3f-a36e-80048aa6eeff.jpeg"
+        },
+        {
+            "pork belly bun": "https://www.ocado.com/cmscontent/recipe_image_large/41941756.jpg?dxce"
+        },
+        {
+            "borscht": "https://www.craftycookingbyanna.com/wp-content/uploads/2018/01/borscht-deep-color-720x540.jpg"
+        },
+        {
+            "veggie bowl": "https://choosingchia.com/jessh-jessh/uploads/2016/12/img_9257.jpg"
+        },
+        {
+            "avocado toast": "https://californiaavocado.com/wp-content/uploads/2020/07/california-avocado-toast-three-ways.jpeg"
+        },
+        {
+            "veggie burger": "https://eatthegains.com/wp-content/uploads/2020/07/beet-burger-5.jpg"
+        }
+    ],
+    "cajun": [
+        {
+            "shrimp grits": "https://recipes.net/wp-content/uploads/2023/05/chef-paul-prudhommes-cajun-shrimp-and-grits-recipe_6d2a11c0e4afdca9a24d0e98c40fd8e3.jpeg"
+        },
+        {
+            "cajun shrimp ": "https://charisseyu.com/wp-content/uploads/2021/07/img_8558-scaled-e1626488764533.jpg"
+        },
+        {
+            "cajun boil": "https://keviniscooking.com/wp-content/uploads/2021/05/boudin-balls-square.jpg"
+        },
+        {
+            "fried catfish": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps28690_sd163614d12_02_3b.jpg?fit=1024,1024"
+        },
+        {
+            "red snapper fish": "https://image-handler-api.viking.com/ew0kicagicagicagicjidwnrzxqioiaiahr0chm6ly9hzw0tchjvzc1wdwjsaxnolnzpa2luzy5jb20ila0kicagicagicagicjrzxkioiaiy29udgvudc9kyw0vdmlraw5ny3j1axnlcy9lbi9tywdub2xpys1pbwfnzxmvbwfyx2nvbnrlbnqvcmvjaxblcy9dywp1bl9cbgfja2vuzwrfumvkzmlzaf9wzxj0xzm4ndbfmtz4os5qcgcila0kicagicagicagicjlzgl0cyi6ihsnciagicagicagicagicjyzxnpemuioib7dqogicagicagicagicagicj3awr0aci6idewmdasdqogicagicagicagicagicjozwlnahqioibudwxsla0kicagicagicagicagicaizml0ijogimluc2lkzsisdqogicagicagicagicagicjvchrpb25zijogew0kicagicagicagicagicagicagicaid2l0ag91devubgfyz2vtzw50iia6ihrydwunciagicagicagicagicagfq0kicagicagicagicagfswncgkgicagicaidg9gb3jtyxqioiaid2viccinciagicagicagicb9dqogicagicagih0="
+        },
+        {
+            "crawfish": "https://www.chilipeppermadness.com/wp-content/uploads/2021/07/crawfish-etouffee-sq.jpg"
+        },
+        {
+            "shrimp po' boy": "https://britneybreaksbread.com/wp-content/uploads/2022/02/shrimp-poboy-5-scaled.jpg"
+        }
+    ],
+    "caribbean": [
+        {
+            "breadfruit": "https://cdn.shopify.com/s/files/1/2263/2015/files/img_4736_1_1024x1024.jpg?v=1614317118"
+        },
+        {
+            "callaloo": "https://healthiersteps.com/wp-content/uploads/2018/05/callaloo-recipe.jpg"
+        },
+        {
+            "rum punch": "https://cdn.lemonsforlulu.com/wp-content/uploads/2017/05/carribean-rum-punch-recipe-2.jpg"
+        },
+        {
+            "jerk chicken": "https://hips.hearstapps.com/hmg-prod/images/jamaican-jerk-chicken1-1662431390.jpg?crop=0.671xw:1.00xh;0.0625xw,0&resize=1200:*"
+        },
+        {
+            "rice and peas": "https://www.sweetandsorrel.com/wp-content/uploads/2020/04/rice-and-peas-5-scaled.jpg"
+        }
+    ],
+    "chinese": [
+        {
+            "shanghai noodle": "https://omnivorescookbook.com/wp-content/uploads/2022/06/220608_zha-jiang-mian_8.jpg"
+        },
+        {
+            "baozi (steamed buns)": "https://asianinspirations.com.au/wp-content/uploads/2019/06/r02325_chinese_steamed_pork_buns-1024x683.jpg"
+        },
+        {
+            "sweet and sour pork": "https://www.kitchensanctuary.com/wp-content/uploads/2021/01/sweet-and-sour-pork-tall-fs.webp"
+        },
+        {
+            "sesame chicken": "https://pupswithchopsticks.com/wp-content/uploads/chinese-sesame-chicken-tn.jpg"
+        },
+        {
+            "char siu (bbq pork)": "https://hot-thai-kitchen.com/wp-content/uploads/2018/09/char-siu-fb.jpg"
+        },
+        {
+            "general tso's chicken": "https://christieathome.com/wp-content/uploads/2022/02/general-tso-chicken-8.jpg"
+        },
+        {
+            "moo shu": "https://www.jocooks.com/wp-content/uploads/2021/02/moo-shu-pork-1-13.jpg"
+        },
+        {
+            "moo shu pork": "https://img.taste.com.au/tlimb5f3/w720-h480-cfill-q80/taste/2016/11/mu-shu-pork-with-pancakes-40771-1.jpeg"
+        },
+        {
+            "mongolian beef": "https://andianne.com/wp-content/uploads/2023/10/mongolian-beef-05.jpg"
+        },
+        {
+            "lo mein": "https://recipetineats.com/wp-content/uploads/2019/11/lo-mein_5.jpg"
+        },
+        {
+            "hot and sour soup": "https://littlespoonfarm.com/wp-content/uploads/2021/10/hot-and-sour-soup-recipe.jpg"
+        },
+        {
+            "scallion pancakes": "https://www.theflavorbender.com/wp-content/uploads/2022/12/scallion-pancakes-.jpg"
+        },
+        {
+            "roast duck": "https://i0.wp.com/anisland.cooking/wp-content/uploads/2022/02/roast-cantonese-duck-2022.jpg?w=1440&ssl=1"
+        },
+        {
+            "chicken with cashew nuts": "https://www.closetcooking.com/wp-content/uploads/2019/10/cashew-chicken-1200-7787.jpg"
+        },
+        {
+            "orange chicken": "https://www.kitchensanctuary.com/wp-content/uploads/2020/01/orange-chicken-square-1200.jpg"
+        },
+        {
+            "peking duck": "https://redhousespice.com/wp-content/uploads/2022/01/sliced-peking-duck-with-pancakes-scaled.jpg"
+        },
+        {
+            "kung pao chicken": "https://cafedelites.com/wp-content/uploads/2018/04/best-kung-pao-chicken-image-2.jpg"
+        },
+        {
+            "dim sum": "https://media.cnn.com/api/v1/images/stellar/prod/160325033254-hk-dim-sum-fook-lam-moon.jpg?q=w_4256,h_2456,x_0,y_0,c_fill/h_618"
+        },
+        {
+            "egg drop soup": "https://redhousespice.com/wp-content/uploads/2022/10/egg-drop-soup-with-scallions-500x375.jpg"
+        },
+        {
+            "chicken with black bean sauce": "https://www.spoonforkbacon.com/wp-content/uploads/2021/03/jajangmyeon.jpg"
+        },
+        {
+            "szechuan chicken": "https://www.kitchensanctuary.com/wp-content/uploads/2021/05/szechuan-chicken-square-fs-18.jpg"
+        },
+        {
+            "wonton soup": "https://tb-static.uber.com/prod/image-proc/processed_images/1c784ede8cefad4b4b9f662b3a378a3e/f0d1762b91fd823a1aa9bd0dab5c648d.jpeg"
+        },
+        {
+            "chow mein": "https://www.chelseasmessyapron.com/wp-content/uploads/2016/05/chicken-chow-mein-1.jpg"
+        },
+        {
+            "fried rice": "https://therecipecritic.com/wp-content/uploads/2019/07/easy_fried_rice-1.jpg"
+        },
+        {
+            "steamed dumplings": "https://therecipecritic.com/wp-content/uploads/2023/02/soup_dumplings.jpg"
+        },
+        {
+            "buddha's delight (jai)": "https://omnivorescookbook.com/wp-content/uploads/2022/07/220713_buddhas-delight_550.jpg"
+        },
+        {
+            "hot pot": "https://i0.wp.com/cookingwithchow.ca/wp-content/uploads/2022/03/img_5203.jpg?resize=1140%2c1710&ssl=1"
+        },
+        {
+            "hot and sour soup": "https://redhousespice.com/wp-content/uploads/2021/08/chinese-hot-and-sour-soup-1-scaled.jpg"
+        },
+        {
+            "xiao long bao (soup dumplings)": "https://www.chinasichuanfood.com/wp-content/uploads/2014/09/soup-dumpling-4-500x433.jpg"
+        },
+        {
+            "sticky rice in lotus leaf": "https://tiffycooks.com/wp-content/uploads/2022/06/a0c91266-f188-4864-8f0c-02ba5840ec54-scaled.jpg"
+        }
+    ],
+    "ethiopian": [
+        {
+            "lamb stew": "https://d1ralsognjng37.cloudfront.net/d3557968-05b5-478e-86e3-11e6ad91b732.jpeg"
+        }
+    ],
+    "french": [
+        {
+            "chocolate mousse": "https://bakerbynature.com/wp-content/uploads/2023/08/easy-chocolate-mousse-baker-by-nature-12636.jpg"
+        },
+        {
+            "quiche lorraine": "https://handletheheat.com/wp-content/uploads/2022/12/quiche-recipe-square-500x500.jpg"
+        },
+        {
+            "croissant": "https://veenaazmanov.com/wp-content/uploads/2020/05/homemade-croissants-recipe60-500x500.jpg"
+        },
+        {
+            "sole fish": "https://assets.epicurious.com/photos/645a50f742d457037e529b60/1:1/w_2560%2cc_limit/20230426-epicurious-cc26181-lede.jpg"
+        },
+        {
+            "crepes": "https://hips.hearstapps.com/hmg-prod/images/crepes-index-64347419e3c7a.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "french onion soup": "https://www.gimmesomeoven.com/wp-content/uploads/2015/01/french-onion-soup-recipe-1-1.jpg"
+        },
+        {
+            "crème brûlée": "https://www.onceuponachef.com/images/2023/02/creme-brulee-1-1200x814.jpg"
+        },
+        {
+            "salade niçoise": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/salade-nicoise-565173e.jpg?resize=768,574"
+        }
+    ],
+    "fusion": [
+        {
+            "california roll burrito": "https://dinnerthendessert.com/wp-content/uploads/2015/07/california-roll-burrito.jpg"
+        }
+    ],
+    "german": [
+        {
+            "sour cabbage": "https://ourgabledhome.com/wp-content/uploads/2022/05/authentic-german-sauerkraut.jpg"
+        },
+        {
+            "beef roll": "https://www.recipesfromeurope.com/wp-content/uploads/2021/02/beef-rouladen-recipe.jpg"
+        },
+        {
+            "grilled sausage": "https://www.koch-mit.de/app/uploads/2020/08/bratwuerste5.jpg"
+        },
+        {
+            "potato salad": "https://mydinner.co.uk/wp-content/uploads/2022/05/swabian-potato-salad-2-1.jpg"
+        },
+        {
+            "potato pancake": "https://www.daringgourmet.com/wp-content/uploads/2017/10/kartoffelpuffer-11.jpg"
+        },
+        {
+            "wurst": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/8/bratwurst%20on%20plate.jpg.rend.hgtvcom.406.290.suffix/1691431280636.jpeg"
+        },
+        {
+            "potato soup": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/assets/e7f2888a-fbd6-4379-a4f9-9117fd02c7e1/derivates/e793ed65-b883-4b13-a320-95db9b54f675.jpg"
+        },
+        {
+            "stuffed cabbage": "https://dirndlkitchen.com/wp-content/uploads/2023/02/stuffed-cabbage-rolls-kohlrouladen-dirndl-kitchen30.jpg"
+        },
+        {
+            "liverwurst": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/pf%c3%a4lzer-leberwurst.jpg/440px-pf%c3%a4lzer-leberwurst.jpg"
+        }
+    ],
+    "greek": [
+        {
+            "tzatziki": "https://www.skinnytaste.com/wp-content/uploads/2010/08/homemade-tzatziki-7.jpg"
+        },
+        {
+            "moussaka": "https://www.easycheesyvegetarian.com/wp-content/uploads/2019/11/vegetarian-moussaka-featured-1.jpg"
+        },
+        {
+            "feta dip": "https://hips.hearstapps.com/delish/assets/18/09/1519932173-greek-dip-horizontal.jpg"
+        },
+        {
+            "spanakopita": "https://www.thehungrybites.com/wp-content/uploads/2020/10/greek-spanakopita-recipe-featured.jpg"
+        },
+        {
+            "kufta ": "https://www.bowlofdelicious.com/wp-content/uploads/2019/06/keftedes-greek-meatballs-with-herb-butter-2.jpg"
+        },
+        {
+            "lamb gyros": "https://tastesbetterfromscratch.com/wp-content/uploads/2023/07/gyros-1.jpg"
+        },
+        {
+            "pastitsio pasta": "https://www.recipetineats.com/wp-content/uploads/2021/02/pastitsio-_4-sq.jpg"
+        },
+        {
+            "greek salad": "https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "stuffed peppers": "https://www.wellplated.com/wp-content/uploads/2021/12/middle-eastern-stuffed-peppers.jpg"
+        },
+        {
+            "chicken gyro": "https://carlsbadcravings.com/wp-content/uploads/2019/07/chicken-gyros-14-500x500.jpg"
+        },
+        {
+            "avgolemono soup": "https://tastefulventure.com/wp-content/uploads/2023/01/greek-lemon-chicken-rice-soup-avgolemono-4.jpg"
+        },
+        {
+            "spanakopita spinach pie": "https://www.olivetomato.com/wp-content/uploads/2021/08/sam_8242-1.jpeg"
+        }
+    ],
+    "hawaiian": [
+        {
+            "spam musubi": "https://www.washingtonpost.com/resizer/aimfwoip1-vyito5llwmllsxbe8=/arc-anglerfish-washpost-prod-washpost/public/6ujj7qssxyi6za6s3hnlbyr3py.jpg"
+        },
+        {
+            "poke bowl": "https://duyt4h9nfnj50.cloudfront.net/resized/1517415029815-w550-18.jpg"
+        }
+    ],
+    "indian": [
+        {
+            "kulfi": "https://static.toiimg.com/thumb/84786580.cms?imgsize=157368&width=800&height=800"
+        },
+        {
+            "malai kofta": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg"
+        },
+        {
+            "rasmalai": "https://www.indianveggiedelight.com/wp-content/uploads/2023/09/easy-rasmalai-recipe-featured.jpg"
+        },
+        {
+            "rogan josh": "https://hips.hearstapps.com/hmg-prod/images/rogan-josh-wide-1572547980.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "tikka masala": "https://littleferrarokitchen.com/wp-content/uploads/2023/02/easy-chicken-tikka-masala-with-coconut-milk.jpg"
+        },
+        {
+            "chole bhature": "https://media.vogue.in/wp-content/uploads/2020/08/chole-bhature-recipe.jpg"
+        },
+        {
+            "dal makhani": "https://d1ralsognjng37.cloudfront.net/d9d0f0cb-558c-44ac-aec1-6437bdf52e34.jpeg"
+        },
+        {
+            "roti": "https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,h_600,q_auto,w_800/f_auto/v1/recipes/dscf1815_6196b773aa087"
+        },
+        {
+            "kheer": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/kheer-recipe.jpg"
+        },
+        {
+            "paneer tikka": "https://www.cookwithmanali.com/wp-content/uploads/2015/07/restaurant-style-recipe-paneer-tikka.jpg"
+        },
+        {
+            "butter naan": "https://d1ralsognjng37.cloudfront.net/a045652f-dfc7-4476-8f19-b1f48fd1e6f7.jpeg"
+        },
+        {
+            "mango lassi": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/mango-lassi-recipe-1.jpg"
+        },
+        {
+            "gulab jamun": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/gulab_jamun_%28gibraltar%2c_november_2020%29.jpg/640px-gulab_jamun_%28gibraltar%2c_november_2020%29.jpg"
+        },
+        {
+            "bhindi masala": "https://media-cdn.tripadvisor.com/media/photo-s/1a/61/80/f3/bhindi-masala.jpg"
+        },
+        {
+            "biryani": "https://www.licious.in/blog/wp-content/uploads/2020/12/hyderabadi-chicken-biryani.jpg"
+        },
+        {
+            "pulao": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/tawa-pulao-recipe.jpg"
+        },
+        {
+            "fish curry": "https://www.licious.in/blog/wp-content/uploads/2022/03/shutterstock_1891229335-min.jpg"
+        },
+        {
+            "keema naan": "https://recipe52.com/wp-content/uploads/2021/06/keema-naan-19.jpg"
+        },
+        {
+            "tandoori roti": "https://www.whiskaffair.com/wp-content/uploads/2020/08/tandoori-roti-2-1.jpg"
+        },
+        {
+            "chana masala": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/chana-masala-recipe.jpg"
+        },
+        {
+            "raita": "https://hips.hearstapps.com/hmg-prod/images/delish-raita-086-ls-1608590196.jpg?crop=0.670xw:1.00xh;0.279xw,0&resize=1200:*"
+        },
+        {
+            "pav bhaji": "https://veganbell.com/wp-content/uploads/2023/08/pav-bhaji-1-500x500.jpg"
+        },
+        {
+            "aloo gobi": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/aloo-gobi-recipe.jpg"
+        },
+        {
+            "indian butter chicken": "https://cafedelites.com/wp-content/uploads/2019/01/butter-chicken-image-64.jpg"
+        },
+        {
+            "chapati": "https://ca-times.brightspotcdn.com/dims4/default/760855c/2147483647/strip/true/crop/6000x3750+0+125/resize/1200x750!/quality/75/?url=https%3a%2f%2fcalifornia-times-brightspot.s3.amazonaws.com%2f0a%2fda%2f8b9b8e134bfe95342151cdc409b9%2f666808-la-fo-kiano-moju-christmas-sr1322.jpg"
+        },
+        {
+            "chaat": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_750,h_500/k%2fedit%2f2023-03-papdi-chaat%2fpapdi-chaat-01"
+        },
+        {
+            "pakora": "https://upload.wikimedia.org/wikipedia/commons/c/cf/onion_pakora_-_a.jpg"
+        },
+        {
+            "vada pav": "https://assets.bonappetit.com/photos/627bf84a4f1dbc1baea0c973/1:1/w_3202,h_3202,c_limit/0511-vada-pav-recipe-lede.jpg"
+        },
+        {
+            "baingan bharta": "https://www.indianhealthyrecipes.com/wp-content/uploads/2020/09/baingan-bharta-recipe.jpg"
+        },
+        {
+            "samosa": "https://www.kitchensanctuary.com/wp-content/uploads/2023/10/samosa-square-fs.jpg"
+        },
+        {
+            "mutton masala": "https://eastindianrecipes.net/wp-content/uploads/2023/01/goan-mutton-masala-recipe2.jpg"
+        },
+        {
+            "chicken tikka masala": "https://bellyfull.net/wp-content/uploads/2021/05/chicken-tikka-masala-blog.jpg"
+        },
+        {
+            "pani puri": "https://static01.nyt.com/images/2024/01/17/multimedia/nd-pani-puri-mflg/nd-pani-puri-mflg-superjumbo.jpg"
+        },
+        {
+            "tandoori chicken": "https://duyt4h9nfnj50.cloudfront.net/resized/4f8677d29711b894a69770bac62d5415-w240-8d.jpg"
+        },
+        {
+            "aloo paratha": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/aloo_paratha_also_known_as_batatay_jo_phulko.jpg/440px-aloo_paratha_also_known_as_batatay_jo_phulko.jpg"
+        }
+    ],
+    "italian": [
+        {
+            "amatriciana": "https://assets.bonappetit.com/photos/57afff221b33404414976058/1:1/w_2240,c_limit/bucatini-all-amatriciana.jpg"
+        },
+        {
+            "polpette": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2fphoto%2frecipe%20ramp%20up%2f2021-08-polpette%2fpolpette_v.2_1_01"
+        },
+        {
+            "cacio e pepe": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2fphoto%2frecipes%2f2020-02-how-to-cacio-e-pepe%2fht-cacio-e-pepe_027"
+        },
+        {
+            "linguine alle vongole": "https://coleycooks.com/wp-content/uploads/2022/04/linguini-alle-vongole-pasta-with-clam-sauce-2.webp"
+        },
+        {
+            "arancini": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/1/31/3/fnm_030113-arancini-recipe_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1382542297870.jpeg"
+        },
+        {
+            "minestrone": "https://thecozycook.com/wp-content/uploads/2023/09/minestrone-soup-2-.jpg"
+        },
+        {
+            "pappardelle al cinghiale": "https://www.italianmenumaster.com/images/132.jpg"
+        },
+        {
+            "carpaccio": "https://www.karlijnskitchen.com/wp-content/uploads/2018/11/low-fodmap-carpaccio-8.jpg"
+        },
+        {
+            "focaccia": "https://images.squarespace-cdn.com/content/v1/5e272e99dd02355ec2eb8101/1579632887581-nuw3iqd948mnid4t6n9k/farinata-new-3.jpg"
+        },
+        {
+            "ricotta cheesecake": "https://media-assets.lacucinaitaliana.it/photos/625691239ac47b015f47e99a/16:9/w_2580,c_limit/torta%20ricotta%20cremosa.jpg"
+        },
+        {
+            "bruschetta": "https://natashaskitchen.com/wp-content/uploads/2020/07/tomato-bruschetta-recipe-7.jpg"
+        },
+        {
+            "polenta": "https://yourguardianchef.com/wp-content/uploads/2022/01/fried-polenta-6.jpg"
+        },
+        {
+            "tagliatelle al tartufo": "https://www.2pots2cook.com/wp-content/uploads/2021/03/truffle-tagliatelle-recipe-7.jpg"
+        },
+        {
+            "cannoli": "https://i0.wp.com/memoriediangelina.com/wp-content/uploads/2023/01/cannoli-2.jpg?fit=800%2c534&ssl=1"
+        },
+        {
+            "bresaola": "https://www.italianstylecooking.net/wp-content/uploads/2023/03/bresaola-carpaccio-1536x1024.jpg"
+        },
+        {
+            "spaghetti carbonara": "https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg?w=1280&q=75"
+        },
+        {
+            "mushroom risotto": "https://images.squarespace-cdn.com/content/v1/50106d5684aed4702b7242ed/1586960457052-q6d241245nwyjqjq34q8/image-asset.jpeg"
+        },
+        {
+            "orecchiette with broccoli rabe": "https://www.skinnytaste.com/wp-content/uploads/2011/04/orecchiette-pasta-with-chicken-sausage-_-broccoli-rabe-3.jpg"
+        },
+        {
+            "burrata salad": "https://www.halfbakedharvest.com/wp-content/uploads/2021/07/tomato-peach-and-burrata-salad-1.jpg"
+        },
+        {
+            "gnocchi": "https://images.immediate.co.uk/production/volatile/sites/30/2017/03/gnoochi-d7df2ce.png?quality=90&resize=556,505"
+        },
+        {
+            "zeppole": "https://swansdown.com/wp-content/uploads/2021/01/zeppole-1024x683.jpg.webp"
+        },
+        {
+            "tortelloni": "https://marleyspoon.com/media/recipes/203048/main_photos/large/tortelloni_marinara_with_pesto-4e5c0cfa7ed6b3bb19fc76d808d43ddf.jpeg"
+        },
+        {
+            "penne alla vodka": "https://natashaskitchen.com/wp-content/uploads/2023/02/penne-alla-vodka-7.jpg"
+        },
+        {
+            "tiramisu": "https://www.culinaryhill.com/wp-content/uploads/2021/01/tiramisu-culinary-hill-1200x800-1.jpg"
+        },
+        {
+            "porchetta": "https://iamafoodblog.b-cdn.net/wp-content/uploads/2022/12/porchetta-1793w-2-1024x682.webp"
+        },
+        {
+            "cavatelli": "https://tb-static.uber.com/prod/image-proc/processed_images/87191bc63b5ec62bfe6fac648354beb0/5954bcb006b10dbfd0bc160f6370faf3.jpeg"
+        },
+        {
+            "tortellini": "https://thecozycook.com/wp-content/uploads/2021/10/tortellini-sauce-f.jpg"
+        },
+        {
+            "chicken parmigiana": "https://tb-static.uber.com/prod/image-proc/processed_images/dd2be2b11b173c8bfc6d39051a9c5c0f/b4facf495c22df52f3ca635379ebe613.jpeg"
+        },
+        {
+            "seafood risotto": "https://duyt4h9nfnj50.cloudfront.net/resized/295bef91845da6150dbb3802f40ce2cf-w240-76.jpg"
+        },
+        {
+            "ravioli": "https://thesageapron.com/wp-content/uploads/2022/12/ravioli-54.jpg"
+        },
+        {
+            "calzone": "https://www.westoftheloop.com/wp-content/uploads/2019/01/vanity-fair-calzones-overhead2.jpg"
+        },
+        {
+            "lasagna": "https://www.modernhoney.com/wp-content/uploads/2019/08/classic-lasagna-12-scaled.jpg"
+        }
+    ],
+    "japanese": [
+        {
+            "rainbow roll": "https://recipes.net/wp-content/uploads/2022/06/rainbow-roll-min.jpg"
+        },
+        {
+            "ramen": "https://i0.wp.com/www.craftycookbook.com/wp-content/uploads/2023/03/img_8918_jpg.jpg?w=720&ssl=1"
+        },
+        {
+            "miso ramen": "https://dishingouthealth.com/wp-content/uploads/2022/01/spicymisoramen_square.jpg"
+        },
+        {
+            "tempura": "https://twosleevers.com/wp-content/uploads/2023/03/shrimp-tempura-1.png"
+        },
+        {
+            "futomaki": "https://veganeverytime.com/wp-content/uploads/2023/08/futomaki.jpg"
+        },
+        {
+            "spider roll": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3a%2f%2fstatic.onecms.io%2fwp-content%2fuploads%2fsites%2f19%2f2004%2f10%2f26%2fspider-rolls-ck-734467-x.jpg&q=60"
+        },
+        {
+            "salmon nigiri": "https://images-gmi-pmc.edge-generalmills.com/d1584f73-4865-4b8b-b3e5-7f9ca741366f.jpg"
+        },
+        {
+            "yellowtail roll": "https://ichisushi.com/wp-content/uploads/2022/05/spicy-yellowtail-roll.jpg"
+        },
+        {
+            "yakitori": "https://thebigmansworld.com/wp-content/uploads/2022/10/yakitori.jpg"
+        },
+        {
+            "vegan ramen": "https://hips.hearstapps.com/hmg-prod/images/delish-202101-veganramen-073-1611955824.jpg?crop=0.6668421052631579xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "okonomiyaki": "https://www.spoonforkbacon.com/wp-content/uploads/2021/09/okonomiyaki.jpg"
+        },
+        {
+            "tuna nigiri": "https://duyt4h9nfnj50.cloudfront.net/resized/1543347843593-w240-ba.jpg"
+        },
+        {
+            "yakisoba": "https://www.justonecookbook.com/wp-content/uploads/2023/09/yakisoba-3504-i-2.jpg"
+        },
+        {
+            "shio ramen": "https://www.justonecookbook.com/wp-content/uploads/2022/08/shio-ramen-9514-i-1.jpg"
+        },
+        {
+            "shoyu ramen": "https://www.justonecookbook.com/wp-content/uploads/2023/04/shoyu-ramen-8308-i.jpg"
+        },
+        {
+            "octopus sushi tako": "https://sunrisemart.com/cdn/shop/products/tako_octopus.jpg?v=1637797907"
+        },
+        {
+            "cucumber roll": "https://feelgoodfoodie.net/wp-content/uploads/2020/04/cucumber-roll-sushi-6.jpg"
+        },
+        {
+            "unagi don": "https://www.japanesecooking101.com/wp-content/uploads/2013/05/img_9990.jpg"
+        },
+        {
+            "alaska roll": "https://thebigmansworld.com/wp-content/uploads/2022/08/alaska-roll-2.jpg"
+        },
+        {
+            "tan tan men": "https://www.justonecookbook.com/wp-content/uploads/2023/03/tan-tan-ramen-6848-i-500x500.jpg"
+        },
+        {
+            "philadelphia roll": "https://hips.hearstapps.com/hmg-prod/images/philadelphia-roll1-1655475836.jpg"
+        },
+        {
+            "salmon roll": "https://www.tiger-corporation.com/wp-content/uploads/2023/02/hero-img-recipe-salmon-roll-22a44bc8993e779162aa80766bda8751.jpg"
+        },
+        {
+            "sashimi": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/3/22/japanese-tuna-and-salmon-sashimi-in-bowl-on-gray-background.jpg.rend.hgtvcom.1280.1280.suffix/1679511773776.jpeg"
+        },
+        {
+            "scallop nigiri": "https://popmenucloud.com/cdn-cgi/image/width%3d2304%2cheight%3d2304%2cfit%3dscale-down%2cformat%3dauto%2cquality%3d60/ltskxvwr/ac113024-cf71-4bc7-939e-f314127b63d1"
+        },
+        {
+            "sukiyaki": "https://futuredish.com/wp-content/uploads/2020/11/sukiyaki-6.jpg"
+        },
+        {
+            "curry ramen": "https://www.justonecookbook.com/wp-content/uploads/2020/05/curry-ramen-9527-i.jpg"
+        },
+        {
+            "dragon roll": "https://www.corriecooks.com/wp-content/uploads/2023/05/dragon-roll.jpg"
+        },
+        {
+            "california roll": "https://www.masalaherb.com/wp-content/uploads/2020/07/california-roll-gog-1-500x500.jpg"
+        },
+        {
+            "chashu ramen": "https://cdn.shopify.com/s/files/1/0557/8545/5765/files/ramen-toppings-101-chashu-pork-3-1024x683_480x480.jpg?v=1628356963"
+        },
+        {
+            "seafood ramen": "https://data.thefeedfeed.com/static/2020/06/11/15918884045ee24a140c006.jpg"
+        },
+        {
+            "boston roll": "https://www.savorysweetspoon.com/wp-content/uploads/2023/08/boston-roll-1x1-1.jpg"
+        },
+        {
+            "tonkotsu ramen": "https://media.blueapron.com/recipes/1690/square_newsletter_images/1481829229-4-4716/062016_2pv1_springshoyuramen-0614_sq.jpg?quality=80&width=850&format=pjpg"
+        },
+        {
+            "spicy tuna roll": "https://www.tiger-corporation.com/wp-content/uploads/2023/02/hero-img-recipe-spicy-tuna-3db6e125056f2bde01321a3da5d290da.jpg"
+        },
+        {
+            "ebi shrimp nigiri": "https://weelicious.com/wp-content/uploads/2021/05/mexican-enchiladas-11-1.jpg"
+        },
+        {
+            "eel avocado roll": "https://www.bentome.com/wp-content/uploads/2020/12/eil-avocado.jpg"
+        },
+        {
+            "tonkatsu": "https://tiffycooks.com/wp-content/uploads/2021/05/screen-shot-2021-05-10-at-12.52.14-am.png"
+        },
+        {
+            "eel unagi": "https://takestwoeggs.com/wp-content/uploads/2023/08/unagi-sushi-eel-sushi-takestwoeggs-sq.jpg"
+        },
+        {
+            "tempura roll": "https://popmenucloud.com/cdn-cgi/image/width%3d1200%2cheight%3d1200%2cfit%3dscale-down%2cformat%3dauto%2cquality%3d60/scmjpewk/520720a6-5082-4858-97ea-b2043eb748dc.jpg"
+        },
+        {
+            "tonkotsu ramen": "https://www.justonecookbook.com/wp-content/uploads/2023/04/tsukemen-dipping-ramen-noodles-8124-ii.jpg"
+        },
+        {
+            "tsukemen": "https://www.justonecookbook.com/wp-content/uploads/2023/04/tsukemen-dipping-ramen-noodles-8179-2-i-2.jpg"
+        },
+        {
+            "veggie ramen": "https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegan-ramen.jpg"
+        },
+        {
+            "volcano roll": "https://tb-static.uber.com/prod/image-proc/processed_images/7951b1db49d3950a19b434d84c51e734/4218ca1d09174218364162cd0b1a8cc1.jpeg"
+        },
+        {
+            "tuna roll": "https://www.tiger-corporation.com/wp-content/uploads/2023/02/hero-img-recipe-spicy-tuna-3db6e125056f2bde01321a3da5d290da.jpg"
+        },
+        {
+            "udon noodles": "https://thefoodietakesflight.com/wp-content/uploads/2021/03/vegan-stir-fried-spicy-garlic-udon-noodles-recipe-23.png"
+        },
+        {
+            "shrimp tempura roll": "https://futuredish.com/wp-content/uploads/2018/12/yukgaejang.jpg"
+        },
+        {
+            "hamachi sushi": "https://tb-static.uber.com/prod/image-proc/processed_images/e1d1aa453332e66df1e7f7d150553620/4218ca1d09174218364162cd0b1a8cc1.jpeg"
+        },
+        {
+            "gyoza": "https://d1ralsognjng37.cloudfront.net/7e2921a2-f26f-4055-816a-f9c3fac0ad2b.jpeg"
+        },
+        {
+            "miso soup": "https://www.justonecookbook.com/wp-content/uploads/2022/06/miso-soup-8297-i.jpg"
+        },
+        {
+            "teriyaki chicken": "https://christieathome.com/wp-content/uploads/2022/02/teriyaki-chicken-14-500x500.jpg"
+        }
+    ],
+    "jewish": [
+        {
+            "rugelach": "https://static01.nyt.com/images/2016/11/30/dining/30cooking-rugelach1/30cooking-rugelach1-articlelarge.jpg"
+        },
+        {
+            "kugel": "https://cdn.greatlifepublishing.net/wp-content/uploads/sites/2/2022/01/17120154/kugel-5-scaled.jpg"
+        },
+        {
+            "knish": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/knysh.jpg/250px-knysh.jpg"
+        },
+        {
+            "challah": "https://spanishsabores.com/wp-content/uploads/2023/08/crema-catalana-featured.jpg"
+        },
+        {
+            "latkes": "https://hips.hearstapps.com/hmg-prod/images/delish-190912-potato-latkes-0287-landscape-pf-1571156601.jpg?crop=1xw:0.8435280189423836xh;center,top&resize=1200:*"
+        },
+        {
+            "matzo ball soup": "https://duyt4h9nfnj50.cloudfront.net/resized/4da3984d5542635c72cd3fa45dd48232-w240-04.jpg"
+        }
+    ],
+    "korean": [
+        {
+            "bulgogi": "https://www.spoonforkbacon.com/wp-content/uploads/2021/05/beef_bulgogi_recipe_card.jpg"
+        },
+        {
+            "kimbap": "https://stellanspice.com/wp-content/uploads/2022/01/img_2051.jpeg"
+        },
+        {
+            "bibimbap": "https://recipetineats.com/wp-content/uploads/2019/05/bibimbap_3.jpg"
+        },
+        {
+            "jjigae": "https://drivemehungry.com/wp-content/uploads/2022/01/doenjang-jjigae-f2.jpg"
+        },
+        {
+            "kimchi ramen": "https://www.chilipeppermadness.com/wp-content/uploads/2023/03/kimchi-ramen-sq.jpg"
+        },
+        {
+            "kimchi": "https://twoplaidaprons.com/wp-content/uploads/2021/01/geotjeori-picking-up-some-fresh-kimchi-with-chopsticks.jpg"
+        },
+        {
+            "dolsot bibimbap": "https://futuredish.com/wp-content/uploads/2017/12/dolsot-bibimbap.jpg"
+        },
+        {
+            "japchae": "https://www.recipetineats.com/wp-content/uploads/2023/07/japchae-korean-noodles_9.jpg"
+        },
+        {
+            "tteokbokki": "https://fullofplants.com/wp-content/uploads/2023/08/vegan-jjajang-tteokbokki-non-spicy-korean-dish-thumb.jpg"
+        },
+        {
+            "korean bbq": "https://media.timeout.com/images/103939099/750/562/image.jpg"
+        },
+        {
+            "korean fried chicken": "https://www.kitchensanctuary.com/wp-content/uploads/2019/08/korean-fried-chicken-square-fs-new-7377.jpg"
+        }
+    ],
+    "mediterranean": [
+        {
+            "mediterranean lentil soup": "https://30daysofgreekfood.com/wp-content/uploads/2020/01/img_7741-500x500.jpg"
+        },
+        {
+            "dolmas (stuffed grape leaves)": "https://bellyfull.net/wp-content/uploads/2020/07/dolma-stuffed-grape-leaves-blog-3.jpg"
+        },
+        {
+            "mediterranean chickpea salad": "https://joyfoodsunshine.com/wp-content/uploads/2022/07/mediterranean-chickpea-salad-recipe-1x1-1.jpg"
+        },
+        {
+            "pita bread": "https://www.mygreekdish.com/wp-content/uploads/2014/10/easiest-homemade-pita-bread-recipe-scaled.jpeg"
+        }
+    ],
+    "mexican": [
+        {
+            "pico de gallo": "https://downshiftology.com/wp-content/uploads/2024/03/pico-de-gallo-main-2-500x500.jpg"
+        },
+        {
+            "pozole": "https://hips.hearstapps.com/hmg-prod/images/pozole-index-655b86b9eeb3f.jpg?crop=0.8891532031585555xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "quesadillas": "https://www.everyday-delicious.com/wp-content/uploads/2021/12/ground-beef-quesadilla-everyday-delicious-2.jpg"
+        },
+        {
+            "mole poblano": "https://duyt4h9nfnj50.cloudfront.net/resized/1519935262195-w550-1e.jpg"
+        },
+        {
+            "burritos": "https://inkristaskitchen.com/wp-content/uploads/2022/04/california-burritos-comp-15-1.jpg"
+        },
+        {
+            "sopes": "https://www.elcomal.com/wp-content/uploads/2023/02/breakfast-sopes-2-1536x1024.jpg"
+        },
+        {
+            "taco": "https://feelgoodfoodie.net/wp-content/uploads/2017/04/ground-beef-tacos-9.jpg"
+        },
+        {
+            "vegan breakfast burrito": "https://rainbowplantlife.com/wp-content/uploads/2021/05/stack-of-vegan-breakfast-burritos-closeup.jpg"
+        },
+        {
+            "birria tacos": "https://hips.hearstapps.com/hmg-prod/images/delish-202104-birriatacos-033-1619806490.jpg?crop=0.670xw:1.00xh;0,0&resize=1200:*"
+        },
+        {
+            "breakfast burrito": "https://hips.hearstapps.com/hmg-prod/images/delish-breakfast-burrito-horizontaljpg-1541624805.jpg?crop=0.8889743589743591xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "tostadas": "https://www.chilipeppermadness.com/wp-content/uploads/2023/06/tostada-de-tinga-recipe1.jpg"
+        },
+        {
+            "chilaquiles": "https://www.themediterraneandish.com/wp-content/uploads/2023/05/salmorejo-recipe-12.jpg"
+        },
+        {
+            "enchiladas": "https://duyt4h9nfnj50.cloudfront.net/resized/6f4783b9e35a3b4cea4559541f2fb91e-w240-53.jpg"
+        },
+        {
+            "tacos al pastor": "https://cookieandkate.com/images/2015/07/salsa-verde-recipe-4.jpg"
+        },
+        {
+            "tamales": "https://d1ralsognjng37.cloudfront.net/5f541639-4766-489a-8812-4ec611c1069a.jpeg"
+        },
+        {
+            "mexican street corn (elote)": "https://themodernnonna.com/wp-content/uploads/2022/06/elotes-png.png"
+        },
+        {
+            "guacamole": "https://cdn.loveandlemons.com/wp-content/uploads/2023/07/guacamole-recipe.jpg"
+        },
+        {
+            "salsa verde": "https://www.delishknowledge.com/wp-content/uploads/salsa-verde-recipes_9.jpg"
+        }
+    ],
+    "middle eastern": [
+        {
+            "baklava": "https://www.browneyedbaker.com/wp-content/uploads/2021/05/baklava-4-square.jpg"
+        },
+        {
+            "kebab": "https://joyfoodsunshine.com/wp-content/uploads/2022/06/chicken-kebabs-recipe-1.jpg"
+        },
+        {
+            "hummus": "https://www.inspiredtaste.net/wp-content/uploads/2019/07/the-best-homemade-hummus-recipe-1200.jpg"
+        },
+        {
+            "kebabs": "https://lovingitvegan.com/wp-content/uploads/2021/10/vegan-kebabs-27.jpg"
+        },
+        {
+            "tabbouleh": "https://www.fufuskitchen.com/wp-content/uploads/2021/02/chicken-makloubeh-1314x1536.webp"
+        },
+        {
+            "baba ghanoush": "https://feelgoodfoodie.net/wp-content/uploads/2023/03/lebanese-baba-ghanoush-09.jpg"
+        },
+        {
+            "zaatar": "https://feelgoodfoodie.net/wp-content/uploads/2023/03/roasted-zaatar-chicken-08.jpg"
+        },
+        {
+            "shakshuka": "https://www.themediterraneandish.com/wp-content/uploads/2017/01/shakshuka-recipe-the-mediterranean-dish-100.jpg"
+        },
+        {
+            "shawarma": "https://www.themediterraneandish.com/wp-content/uploads/2023/02/cauliflower-shawarma_8.jpg"
+        }
+    ],
+    "peruvian": [
+        {
+            "ceviche": "https://hips.hearstapps.com/hmg-prod/images/ceviche-index-64887642e188d.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*"
+        },
+        {
+            "chaufa": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/we6pxi6atqibopqpommdzcwv3m.jpg&w=1440"
+        },
+        {
+            "papa a la huancaina": "https://cdn0.recetasgratis.net/es/posts/6/1/1/papas_a_la_huancaina_peruanas_32116_600.jpg"
+        },
+        {
+            "anticuchos": "https://rumbameats.com/wp-content/uploads/2019/07/anticuchos-1.jpg"
+        },
+        {
+            "arroz con mariscos": "https://tb-static.uber.com/prod/image-proc/processed_images/8c741bb80350ee3c83d6812f3ac19d41/5954bcb006b10dbfd0bc160f6370faf3.jpeg"
+        },
+        {
+            "lomo saltado": "https://www.oliveandmango.com/images/uploads/2022_07_18_lomo_saltado_0.jpg"
+        },
+        {
+            "tacu tacu": "https://cravingsjournal.com/wp-content/uploads/2023/08/peruvian-tacu-tacu-3.jpg"
+        }
+    ],
+    "pizza": [
+        {
+            "buffalo chicken pizza": "https://comfortablefood.com/wp-content/uploads/2023/03/buffalo-chicken-pizza-featured-3.jpg"
+        },
+        {
+            "gluten-free pizza": "https://cupcakesandkalechips.com/wp-content/uploads/2021/07/gluten-free-bbq-chicken-pizza-recipe-7629.jpg"
+        },
+        {
+            "gluten free margarita pizza pie": "https://i0.wp.com/www.spicesinmydna.com/wp-content/uploads/2020/05/gluten-free-margherita-pizza-9.jpg?resize=610%2c915&ssl=1"
+        },
+        {
+            "supreme pizza": "https://www.thursdaynightpizza.com/wp-content/uploads/2022/06/veggie-pizza-featured-image-3.png"
+        },
+        {
+            "bacon and egg breakfast pizza": "https://s23209.pcdn.co/wp-content/uploads/2018/03/bacon-breakfast-pizzaimg_3556-copy.jpg"
+        },
+        {
+            "olive pizza": "https://ficacci.com/img_user/azienda/big/pizza-con-salsiccia-cipolla-e-olive-nere-greche-700.png"
+        },
+        {
+            "pesto pizza": "https://d1ralsognjng37.cloudfront.net/576fe2e7-35a2-4082-890d-7aefb6975d13.jpeg"
+        },
+        {
+            "vegetarian pizza": "https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg"
+        },
+        {
+            "formaggi pizza": "https://d1dn9atxuly58a.cloudfront.net/ragusaonline/foto/3162/3162-01-11-30-3027.jpg"
+        },
+        {
+            "pizza vegetariana": "https://www.tasteatlas.com/images/dishes/b44b470fae3648d0bffd06aa9e7b782c.jpg"
+        },
+        {
+            "white pizza": "https://tastesbetterfromscratch.com/wp-content/uploads/2020/10/white-pizza-6-480x270.jpg"
+        },
+        {
+            "pizza bianca": "https://tastesbetterfromscratch.com/wp-content/uploads/2020/10/white-pizza-6-500x500.jpg"
+        },
+        {
+            "pizza diavola": "https://global.filippoberio.com/wp-content/uploads/2018/11/pizzadiavola.jpg"
+        },
+        {
+            "meat lover's pizza": "https://cookingwithchefbryan.com/wp-content/uploads/2022/01/meat-lovers-pizza.jpg"
+        },
+        {
+            "pizza margherita": "https://images.prismic.io/eataly-us/ed3fcec7-7994-426d-a5e4-a24be5a95afd_pizza-recipe-main.jpg?auto=compress,format"
+        },
+        {
+            "mushroom pizza": "https://www.acouplecooks.com/wp-content/uploads/2019/06/mushroom-pizza-with-herbs-011.jpg"
+        },
+        {
+            "hawaiian pizza": "https://www.jessicagavin.com/wp-content/uploads/2020/07/hawaiian-pizza-16-1200.jpg"
+        },
+        {
+            "pepperoni pizza": "https://atsloanestable.com/wp-content/uploads/2023/06/new-york-style-pizza2.jpg"
+        },
+        {
+            "bbq chicken pizza": "https://sallysbakingaddiction.com/wp-content/uploads/2014/03/homemade-bbq-chicken-pizza.jpg"
+        },
+        {
+            "sicilian pizza": "https://hips.hearstapps.com/hmg-prod/images/zach-sicilian-house-of-pizza-1621631121.jpg"
+        },
+        {
+            "pizza napoletana": "https://tb-static.uber.com/prod/image-proc/processed_images/775aee11b9ff33e3240ed384466ac6e4/5954bcb006b10dbfd0bc160f6370faf3.jpeg"
+        },
+        {
+            "margherita pizza": "https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg"
+        },
+        {
+            "bacon pizza": "https://tb-static.uber.com/prod/image-proc/processed_images/e7b265767baf620b96996d5fed10253c/5954bcb006b10dbfd0bc160f6370faf3.jpeg"
+        },
+        {
+            "chicago deep dish pizza": "https://upload.wikimedia.org/wikipedia/commons/4/4f/chicago-style_stuffed_pizza.jpg"
+        },
+        {
+            "vegan pizza": "https://www.contentednesscooking.com/wp-content/uploads/2018/04/vegetarian-bbq-pizza-7.jpg"
+        },
+        {
+            "pizza al prosciutto": "https://www.enjoyeuropeanquality.it/wp/wp-content/uploads/2019/04/pizza.jpg"
+        },
+        {
+            "chicken bacon ranch pizza": "https://www.julieseatsandtreats.com/wp-content/uploads/2017/06/chicken-bacon-ranch-pizza-landscape.jpg"
+        },
+        {
+            "bbq pizza": "https://www.thecandidcooks.com/wp-content/uploads/2021/02/bbq-pulled-pork-pizza-feature.jpg"
+        },
+        {
+            "baked ziti pizza": "https://www.lifeisbutadish.com/wp-content/uploads/2016/11/baked-ziti-pizza-3.jpg"
+        },
+        {
+            "eggplant parmesan pizza": "https://images.food52.com/wj-a3ilapt_dqm_rax33bwq0vxs=/1200x1200/75bfc3a6-ebc3-4406-8611-8e25ea5d0a47--eggplant_parmesan_pizza.jpg"
+        },
+        {
+            "meatball pizza": "https://weirdandwildpizza.com/wp-content/uploads/2021/01/main-2.jpg"
+        },
+        {
+            "mediterranean flatbread pizza": "https://www.heinens.com/wp-content/uploads/2021/06/800x550_mediterranean-flatbread-14.jpg"
+        },
+        {
+            "pizza ai funghi porcini": "https://www.tasteatlas.com/images/dishes/08648360db374a7e939a0e5f19d8a7bd.jpg?mw=1300"
+        }
+    ],
+    "russian": [
+        {
+            "pelmeni": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/pelmeni_russian.jpg/1200px-pelmeni_russian.jpg"
+        },
+        {
+            "pirozhki": "https://simmerandsauce.com/wp-content/uploads/2017/10/dsc06375-768x512.jpg"
+        },
+        {
+            "beef stroganoff": "https://www.kitchensanctuary.com/wp-content/uploads/2020/01/beef-stroganoff-square-fs-46.jpg"
+        },
+        {
+            "okroshka soup": "https://www.mariaushakova.com/wp-content/uploads/2020/07/okroshka-2.jpg.webp"
+        },
+        {
+            "olivier salad": "https://tb-static.uber.com/prod/image-proc/processed_images/a9936054d455632e94645f8ae60996a4/4218ca1d09174218364162cd0b1a8cc1.jpeg"
+        }
+    ],
+    "spanish": [
+        {
+            "morcilla sausage": "https://www.jamonessinfronteras.com/wp-content/uploads/2016/11/morcilla-en-trozos.jpg"
+        },
+        {
+            "paella": "https://houseofnasheats.com/wp-content/uploads/2023/08/mixed-paella-recipe-1-500x500.jpg"
+        },
+        {
+            "seafood paella": "https://themediterraneanchick.com/wp-content/uploads/2020/09/img_0825-1-1536x1024.jpg"
+        },
+        {
+            "calamares a la romana (fried squid rings)": "https://static.wixstatic.com/media/a27d24_912cb7f2d45f4230b53089e00c6f519a~mv2.jpg/v1/fill/w_640,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a27d24_912cb7f2d45f4230b53089e00c6f519a~mv2.jpg"
+        },
+        {
+            "papas fritas": "https://www.jocooks.com/wp-content/uploads/2023/02/patatas-bravas-1-18.jpg"
+        },
+        {
+            "flan": "https://tb-static.uber.com/prod/image-proc/processed_images/d592480db44ea47c977573777fe60bc8/5954bcb006b10dbfd0bc160f6370faf3.jpeg"
+        },
+        {
+            "churros": "https://tb-static.uber.com/prod/image-proc/processed_images/9a1785913c547a466cc68f133329775b/5954bcb006b10dbfd0bc160f6370faf3.jpeg"
+        },
+        {
+            "ensalada": "https://www.atastefortravel.ca/wp-content/uploads/2023/11/guatemalan-russian-salad-recipe.jpg"
+        },
+        {
+            "pulpo a la feria (fair-style octopus)": "https://www.bascofinefoods.com/wp-content/uploads/2017/04/pulpo_a_la_gallega-e1505552149193-1.jpg"
+        },
+        {
+            "croquetas de jamon": "https://www.ice.edu/sites/default/files/content/jamon%20plate.jpg"
+        },
+        {
+            "garlic shrimp": "https://www.themediterraneandish.com/wp-content/uploads/2020/11/gambas-al-ajillo-spanish-shrimp-recipe-7.jpg"
+        },
+        {
+            "febada": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/fabada_en_cazuela_de_barro.jpg/440px-fabada_en_cazuela_de_barro.jpg"
+        },
+        {
+            "tortilla española (spanish omelette)": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/7/16/10/spanish-omelette-tortilla-espaola-7131360.jpg.rend.hgtvcom.616.462.suffix/1563299473830.jpeg"
+        }
+    ],
+    "sushi": [
+        {
+            "tamago sushi": "https://recipes.net/wp-content/uploads/2022/06/tamagoyaki-min-scaled.jpeg"
+        },
+        {
+            "nigiri sushi": "https://cdn.media.amplience.net/i/japancentre/recipes-217-nigiri-sushi/nigiri-sushi?$poi$&w=700&h=410&sm=c&fmt=auto"
+        },
+        {
+            "maki roll": "https://images.immediate.co.uk/production/volatile/sites/2/2022/05/maki-sushi-rolls-3059293.jpg?resize=768,574"
+        },
+        {
+            "omakase sushi": "https://riceinfo.com/wp-content/uploads/2017/11/pressed-sushi.jpg"
+        },
+        {
+            "saba sushi (mackerel)": "https://www.justonecookbook.com/wp-content/uploads/2019/08/mackerel-pressed-sushi-0214-i-1-500x500.jpg"
+        },
+        {
+            "tobiko sushi (flying fish roe)": "https://wulfsfish.com/cdn/shop/products/2001-06-0820.08.41bcropweb_1200x1200_crop_center.jpg?v=1611691988"
+        },
+        {
+            "hotate sushi (scallop)": "https://thejapanesebar.com/wp-content/uploads/2021/08/dsc_9751-hotate-nigiri-web1000-930x498.jpg"
+        },
+        {
+            "ikura sushi (salmon roe)": "https://img-global.cpcdn.com/recipes/db9f8bc67005bf96/1200x630cq70/photo.jpg"
+        },
+        {
+            "chirashi sushi": "https://www.justonecookbook.com/wp-content/uploads/2020/02/chirashi-sushi-7722-i-1.jpg"
+        },
+        {
+            "uni sushi roll": "https://lasvegas-sushi.com/wp-content/uploads/2019/10/38363512_m2.jpg"
+        },
+        {
+            "shrimp sushi roll": "https://popmenucloud.com/cdn-cgi/image/width%3d1536%2cheight%3d1536%2cfit%3dscale-down%2cformat%3dauto%2cquality%3d60/deavklto/f370cd77-54ce-4c84-973c-61a271a2a1e1.png"
+        },
+        {
+            "anago sushi (saltwater eel)": "https://thejapanesebar.com/wp-content/uploads/2021/08/anago_-_shira_nui_aud5.50_each_4760494022-2-1-web1000-930x500.jpg"
+        },
+        {
+            "negitoro sushi": "https://thejapanesebar.com/wp-content/uploads/2021/08/pxl_20210803_053728235-negitoro-maki-2-1-web1000-930x500.jpg"
+        },
+        {
+            "hamachi sushi (yellowtail)": "https://cookingwithcocktailrings.com/wp-content/uploads/2021/02/img_60395902c009b.jpg"
+        },
+        {
+            "inari sushi": "https://pickledplum.com/wp-content/uploads/2019/09/inari-sushi-2optm.jpg"
+        },
+        {
+            "tempura sushi": "https://norecipes.com/wp-content/uploads/2022/02/shrimp-tempura-roll-004.jpg"
+        },
+        {
+            "toro sushi roll": "https://popmenucloud.com/cdn-cgi/image/width%3d1200%2cheight%3d1200%2cfit%3dscale-down%2cformat%3dauto%2cquality%3d60/deavklto/7b283c32-b97b-49aa-9f0a-6f5d18be2e0c.png"
+        },
+        {
+            "unagi sushi (freshwater eel)": "https://www.savorysweetspoon.com/wp-content/uploads/2023/08/unagi-sushi-closeup-1x1-1.jpg"
+        }
+    ],
+    "swedish": [
+        {
+            "smörgåsbord platter": "https://images.immediate.co.uk/production/volatile/sites/2/2022/10/the-smorgasbord-f2ac4f9.jpg?quality=90&resize=556,505"
+        },
+        {
+            "meatballs": "https://thecozycook.com/wp-content/uploads/2022/08/swedish-meatballs-1.jpg"
+        },
+        {
+            "cinnamon roll": "https://therecipecritic.com/wp-content/uploads/2023/11/kanelbullar.jpg"
+        }
+    ],
+    "thai": [
+        {
+            "red curry": "https://assets.epicurious.com/photos/64494aa32fe21c41dfd88d3c/1:1/w_2560%2cc_limit/green-papaya-salad-ba.jpeg"
+        },
+        {
+            "massaman curry": "https://d1ralsognjng37.cloudfront.net/4f2ad67b-1364-4cf2-beb6-45f263537293.jpeg"
+        },
+        {
+            "tom yum soup": "https://hot-thai-kitchen.com/wp-content/uploads/2013/03/tom-yum-goong-blog.jpg"
+        },
+        {
+            "kao soi": "https://hot-thai-kitchen.com/wp-content/uploads/2014/01/kao-soi-blog.jpg"
+        },
+        {
+            "coconut soup (tom kha gai)": "https://hot-thai-kitchen.com/wp-content/uploads/2014/06/tom-kha-gai-new-sq.jpg"
+        },
+        {
+            "cashew chicken": "https://hot-thai-kitchen.com/wp-content/uploads/2022/05/cashew-chicken-sq.jpg"
+        },
+        {
+            "mango sticky rice": "https://hot-thai-kitchen.com/wp-content/uploads/2022/09/mango-sticky-rice-blog.jpg"
+        },
+        {
+            "thai basil chicken (pad krapow)": "https://omnivorescookbook.com/wp-content/uploads/2020/07/200702_thai-basil-chicken_550.jpg"
+        },
+        {
+            "thai basil fried rice": "https://cjeatsrecipes.com/wp-content/uploads/2022/05/thai-basil-fried-rice-plated-500x500.jpg"
+        },
+        {
+            "thai iced tea": "https://www.foxandbriar.com/wp-content/uploads/2022/07/thai-iced-tea-square-1-of-1.jpg"
+        },
+        {
+            "pineapple fried rice": "https://hot-thai-kitchen.com/wp-content/uploads/2014/02/pineapple-fried-rice-sq-2.jpg"
+        },
+        {
+            "som tum (papaya salad)": "https://www.templeofthai.com/images/recipes/som-tum-thai-960x652.jpg"
+        },
+        {
+            "pad thai": "https://inquiringchef.com/wp-content/uploads/2023/02/authentic-pad-thai-1923-1-680x850.jpg"
+        },
+        {
+            "kao pad (thai fried rice)": "https://khinskitchen.com/wp-content/uploads/2023/02/khao-pad-08.jpg"
+        },
+        {
+            "red curry": "https://theflavoursofkitchen.com/wp-content/uploads/2021/08/thai-red-curry-1-scaled.jpg"
+        },
+        {
+            "pad see ew": "https://www.aromaandessence.com/wp-content/uploads/2023/04/pad-see-ew.webp"
+        },
+        {
+            "green curry": "https://www.connoisseurusveg.com/wp-content/uploads/2022/05/vegan-green-curry-22-sq.jpg"
+        },
+        {
+            "thai spring rolls": "https://www.marionskitchen.com/wp-content/uploads/2019/02/20170828_spring-roll-fb-live-3-e1552875551168.jpg"
+        },
+        {
+            "panang curry": "https://www.onceuponachef.com/images/2023/10/panang-curry-1200x1600.jpg"
+        }
+    ],
+    "turkish": [
+        {
+            "baklava": "https://www.themediterraneandish.com/wp-content/uploads/2022/11/turkish-delight-final-36.jpg"
+        },
+        {
+            "lahmacun": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2021/03/vegan-turkish-pizza-lahmacun-800x1200.jpg"
+        },
+        {
+            "kebab": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/f%c4%b1r%c4%b1n_kebab%c4%b1.jpg/440px-f%c4%b1r%c4%b1n_kebab%c4%b1.jpg"
+        },
+        {
+            "kebab": "https://www.chocolatesandchai.com/wp-content/uploads/2022/03/iskender-kebab-featured.jpg"
+        },
+        {
+            "kebab": "https://www.giverecipe.com/wp-content/uploads/2021/04/turkish-chicken-kebab-recipe.jpg"
+        },
+        {
+            "adana kebab": "https://www.helengraves.co.uk/wp-content/uploads/2018/10/new-adana-kebab-recipe.jpg"
+        },
+        {
+            "baklava": "https://i.ytimg.com/vi/yzhzyvr8p60/maxresdefault.jpg"
+        },
+        {
+            "icli kofte": "https://turkishfoodie.com/wp-content/uploads/2018/09/stuffed-meatballs.jpg"
+        }
+    ],
+    "vietnamese": [
+        {
+            "bun bo hue": "https://i1.wp.com/seonkyounglongest.com/wp-content/uploads/2017/08/bun-bo-hue-45.jpg?w=1000&ssl=1"
+        },
+        {
+            "banh mi": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1200,ar_4:3,g_center,f_auto/cms/reviews/banh/davidlee_nyc_banh_banh_mi_thit_nuong_001"
+        },
+        {
+            "spring rolls": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_1200,ar_4:3,g_center,f_auto/cms/reviews/sao-mai/sao_2520mai-summer_2520and_2520spring_2520rolls"
+        },
+        {
+            "pho": "https://static01.nyt.com/images/2019/11/07/dining/07hungry-pho-slide-ye86/07hungry-pho-slide-ye86-articlelarge.jpg?quality=75&auto=webp&disable=upscale"
+        },
+        {
+            "banh cuon (rice rolls)": "https://thevietvegan.com/wp-content/uploads/2020/09/img_0975w.jpg"
+        },
+        {
+            "cha gio (spring rolls)": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctunkxoxg_nobc9dooidw_ieiqbi_vym5xl7fhckvoxfa&s"
+        }
+    ],
+    "lebanese": [
+        {
+            "kibbeh": "https://www.alphafoodie.com/wp-content/uploads/2023/01/kibbeh-square.jpeg"
+        },
+        {
+            "shish tawouk": "https://feelgoodfoodie.net/wp-content/uploads/2018/07/shish-tawook-8-2.jpg"
+        },
+        {
+            "tabbouleh": "https://feelgoodfoodie.net/wp-content/uploads/2023/09/lebanese-tabbouleh-salad-timg.jpg"
+        },
+        {
+            "fattoush": "https://feelgoodfoodie.net/wp-content/uploads/2023/09/fattoush-salad-timg.jpg"
+        }
+    ],
+    "pharmacy": [
+        {
+            "benadryl": "https://www.biovea.com/de/images/products/xlrg/3666_z.jpg"
+        },
+        {
+            "claritin": "https://storage.googleapis.com/images-bks-prd-1385851.bks.prd.v8.commerce.mi9cloud.com/product-images/detail/60344e00-5294-47a2-bf86-90d159542751.jpeg"
+        },
+        {
+            "allegra": "https://ixxilon.mauve.de/700/18113489_1.jpg"
+        },
+        {
+            "children's benadryl allergy": "https://www.benadryl.com/sites/benadryl_us_2/files/styles/product_image/public/product-images/childrens-allergy-liquid.png"
+        },
+        {
+            "zyrtec": "https://pics.walgreens.com/prodimg/514848/10_450.jpg"
+        },
+        {
+            "xyzal allergy 24hr": "https://hsastore.com/on/demandware.static/-/sites-hec-master/default/dw2f0ac5c5/images/large/424402_3.jpg"
+        },
+        {
+            "flonase allergy relief nasal spray": "https://i5.walmartimages.com/seo/flonase-allergy-relief-24-hour-non-drowsy-metered-nasal-spray-60-sprays_88544fdf-ef81-41e1-a943-56bb75d21288.d63ba73805c0db59a9dc6f8dedb499a1.jpeg?odnheight=768&odnwidth=768&odnbg=ffffff"
+        },
+        {
+            "nasacort allergy 24hr nasal spray": "https://i.webareacontrol.com/fullimage/1000-x-1000/n/2/nasacort-sustainablepackaging-desktop-1670318702372-p.jpeg"
+        },
+        {
+            "alavert allergy 24-hour relief": "https://images.freshop.com/00305732700205/afef4bb9ffb4dd2a8e496cabc4a82e9e_large.png"
+        },
+        {
+            "children's tylenol": "https://target.scene7.com/is/image/target/guest_94b6a4ea-7eca-4499-a1bd-d956d4b8a14d?wid=488&hei=488&fmt=pjpeg"
+        },
+        {
+            "children's motrin": "https://pics.walgreens.com/prodimg/658237/9_450.jpg"
+        },
+        {
+            "childrens mucinex - cough cherry": "https://m.media-amazon.com/images/i/61hcrdj1oyl.jpg"
+        },
+        {
+            "pedialyte electrolyte powder": "https://target.scene7.com/is/image/target/guest_c62a8242-bf8f-468d-8783-4c0e4cec79b3?wid=488&hei=488&fmt=pjpeg"
+        },
+        {
+            "children's zyrtec allergy": "https://www.kroger.com/product/images/large/front/0019156690514"
+        },
+        {
+            "infants' advil drops": "https://pics.walgreens.com/prodimg/285040/450.jpg"
+        },
+        {
+            "hyland's baby tiny cold tablets": "https://hylands.com/cdn/shop/products/d07_r001_bcld-t125_bottle_a_002.jpg?v=1645557563"
+        },
+        {
+            "dayquil, cold + flu 2 cap": "https://www.cbprices.com/wp-content/uploads/2021/09/20-032da-1-540x540.jpg"
+        },
+        {
+            "nyquil": "https://pics.walgreens.com/prodimg/608024/450.jpg"
+        },
+        {
+            "sudafed": "https://www.sudafed.com/sites/sudafed_us/files/styles/product_image/public/sinuscongestion_productshot2x.jpg"
+        },
+        {
+            "tylenol cold and flu": "https://i5.walmartimages.com/asr/36efcb77-f0f4-48a8-8fdc-a87d5d9620b7.4edfb3a7f8724fe72b38fcda58a2eb10.jpeg?odnheight=768&odnwidth=768&odnbg=ffffff"
+        },
+        {
+            "mucinex": "https://m.media-amazon.com/images/i/71gyvigkaul._ac_uf1000,1000_ql80_.jpg"
+        },
+        {
+            "mucinex fast-max": "https://target.scene7.com/is/image/target/guest_dfadbf06-3c63-4515-a607-067fcd26e5a3?wid=488&hei=488&fmt=pjpeg"
+        },
+        {
+            "theraflu flu & sore throat": "https://i.ebayimg.com/images/g/vdkaaosw6mfjbf~e/s-l600.jpg"
+        },
+        {
+            "robitussin severe multi-symptom cough cold + flu": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_us/products/max-strength-severe-multi-sym-cough-cold-flu-value-pack-robitussin.png?auto=format"
+        },
+        {
+            "alka-seltzer plus cold medicine": "https://m.media-amazon.com/images/i/81ijes-p3ll._ac_uf1000,1000_ql80_.jpg"
+        },
+        {
+            "vicks dayquil and nyquil severe with vapocool": "https://target.scene7.com/is/image/target/guest_e979cd79-4841-4975-96b4-3559255f112e?wid=488&hei=488&fmt=pjpeg"
+        },
+        {
+            "cold-eeze zinc lozenges": "https://cdn.shopify.com/s/files/1/0774/9081/5256/products/cold-shortening-sugar-free-lozenges-992278.png?v=1690469569&width=2000"
+        },
+        {
+            "pepto bismol": "https://www.biovea.com/de/images/products/xlrg/3651_z.jpg"
+        },
+        {
+            "imodium": "https://media.docmorris.de/produkte-pzn/17382709/imodium-akut-duo-2-mg-125-mg-tabletten-12-st-17382709-default-420-1690833919@2x.jpg"
+        },
+        {
+            "gas-x": "https://i5.walmartimages.com/seo/gas-x-extra-strength-gas-relief-simethicone-chewable-tablets-cherry-creme-18-ct-6-pack_b303786f-a73c-4c4c-a605-622dd5144155_1.1bb7a34663a6b1959dac75f38411a89c.jpeg"
+        },
+        {
+            "pepto bismol ultra": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/peb/peb03928/y/8.jpg"
+        },
+        {
+            "nexium 24hr": "https://www.mountainside-medical.com/cdn/shop/products/screenshot2021-12-10at10-33-53nexiumacidreducerdelayedreleasecapsules_510x450.png?v=1664820407"
+        },
+        {
+            "prilosec otc": "https://fsastore.com/dw/image/v2/bfkw_prd/on/demandware.static/-/sites-hec-master/default/dwbab222e4/images/large/prilosec-otc-heartburn-relief-and-acid-reducer-tablets-14-ct-31692m_01.jpg?sw=302"
+        },
+        {
+            "metamucil fiber": "https://i5.walmartimages.ca/images/large/596/903/6000205596903.jpg"
+        },
+        {
+            "dulcolax stool softener": "https://www.kroger.com/product/images/large/front/0068142102209"
+        },
+        {
+            "miralax laxative powder": "https://m.media-amazon.com/images/i/81f6hf9nosl._ac_uf1000,1000_ql80_.jpg"
+        },
+        {
+            "boiron's oscillococcinum (homeopathic flu medicine)": "https://m.media-amazon.com/images/i/81vhcxqubdl._ac_uf1000,1000_ql80_.jpg"
+        },
+        {
+            "hyland's leg cramps": "https://pics.walgreens.com/prodimg/504448/450.jpg"
+        },
+        {
+            "zarbee's naturals sleep with melatonin supplement": "https://i5.walmartimages.com/seo/zarbee-s-naturals-children-s-sleep-with-melatonin-supplement-natural-berry-flavored-50-gummies_7fedd70c-3a2a-4c6d-91a2-656ea9c50078.4dfb8eebbe4eb2e27ab94a8cd3293c18.jpeg?odnheight=768&odnwidth=768&odnbg=ffffff"
+        },
+        {
+            "sambucol black elderberry": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/sbl/sbl00122/y/57.jpg"
+        },
+        {
+            "rescue remedy natural stress relief": "https://www.thehealthstore.ie/media/catalog/product/cache/3fbb7b3e538511f747bc5ec13bbad0a3/r/e/rescue-remedy.jpg"
+        },
+        {
+            "abreva - fda approved cold sore/fever blister treatment": "https://store.mayoclinic.com/media/catalog/product/cache/b922072109bb674a25942f60bdb5613b/w/-/w-307660801559_abreva_cold_sore_treatment_1.jpg"
+        },
+        {
+            "anbesol, cool mint liquid": "https://i5.walmartimages.com/asr/510ff238-9448-4990-8a94-e9e5c4841a06_1.d12dba523bf6dd233f2caef225d31e0b.jpeg?odnheight=768&odnwidth=768&odnbg=ffffff"
+        },
+        {
+            "orajel 3x for mouth sores": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrhrc_glyfbroputjoj9zbqk-rrwgs15xzqpw8-zpimsq&s"
+        },
+        {
+            "kank-a mouth pain liquid": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/btx/btx20391/y/13.jpg"
+        },
+        {
+            "biotene dry mouth oral rinse": "https://target.scene7.com/is/image/target/guest_ce56c06a-3e47-49f3-8329-93faec431484?qlt=65&fmt=pjpeg&hei=350&wid=350"
+        },
+        {
+            "gum canker-x pain relief gel": "https://cdn1.skinsafeproducts.com/photo/37d9200ae0264b/large_1496605286.jpeg?1496605286"
+        },
+        {
+            "tylenol": "https://i5.walmartimages.com/asr/ef54c251-c26c-4635-9486-973e684edbf5.4054e909b876523793cb125cbaa6ab41.jpeg?odnheight=768&odnwidth=768&odnbg=ffffff"
+        },
+        {
+            "advil": "https://cdn.metcash.media/image/upload/f_auto,c_limit,w_750,q_auto/igashop/images/350578"
+        },
+        {
+            "aleve": "https://i5.walmartimages.com/asr/55516154-4c22-4429-8405-49bf95b0780b.27d1cc3899201eacc0ce05b8acc98137.jpeg?odnheight=320&odnwidth=320&odnbg=ffffff"
+        },
+        {
+            "excedrin": "https://www.mountainside-medical.com/cdn/shop/files/excedrin-extra-strength-headache-relief-medicine_77b83073-614a-45c9-95bd-848501a74402.jpg?v=1696526684"
+        },
+        {
+            "tylenol extra strength": "https://www.schoolnursesupplyinc.com/cdn-cgi/image/quality%3d85/assets/images/18627.jpg"
+        },
+        {
+            "advil pain reliever and fever reducer": "https://storesgo.com/uploads/product/mediumthumb/jpg/advil-ibuprofen-200-mg-pain-relieverfever-reducer-360-tablets_1654717300.jpg"
+        },
+        {
+            "bayer aspirin": "https://m.media-amazon.com/images/i/71ivzz5el0l._ac_uf1000,1000_ql80_.jpg"
+        },
+        {
+            "motrin ib": "https://target.scene7.com/is/image/target/guest_6f7b3c37-fb88-4461-8ebf-b18669d9b37f?wid=488&hei=488&fmt=pjpeg"
+        },
+        {
+            "midol complete": "https://www.biovea.com/de/images/products/xlrg/6208_z.jpg"
+        },
+        {
+            "naproxen sodium (generic aleve)": "https://directfsa.com/cdn/shop/products/51hivahmy1l_1024x.jpg?v=1585757734"
+        },
+        {
+            "tylenol pm": "https://www.tylenol.com/sites/tylenol_us/files/product-images/tylpm_charm_bty_ft_712by630_1.png"
+        },
+        {
+            "advil pm": "https://i5.walmartimages.com/asr/e605cf8f-294a-41cc-b181-04602a9e8ab4_1.ff2052baa18d261f2c2b98cfedbf2cfd.jpeg"
+        },
+        {
+            "unisom sleeptabs": "https://www.kroger.com/product/images/large/front/0004116700623"
+        },
+        {
+            "zzzquil nighttime sleep-aid": "https://images.ctfassets.net/34zny1xcpyrz/3ujdup3a2batzkwx65dbay/66435643ba6a155c0b2b6ae624483da1/pdp_desk_zzzq_base_liquicaps_carton_hero_091.jpg"
+        },
+        {
+            "melatonin supplements": "https://target.scene7.com/is/image/target/guest_6e2e64ab-6671-4e44-bb83-7e4b8cd4ce1a?wid=488&hei=488&fmt=pjpeg"
+        },
+        {
+            "nytol quickcaps": "https://m.media-amazon.com/images/i/51wgp5ntjsl.jpg"
+        },
+        {
+            "detol, first aid antiseptic - liquid": "https://spicelands.de/wp-content/uploads/2020/03/dsc03266-1.jpg"
+        },
+        {
+            "sensodyne toothpaste": "https://storage.googleapis.com/images-cub-prd-9400d55.cub.prd.v8.commerce.mi9cloud.com/product-images/detail/a5faebf2-f7dc-46e4-8ba4-9307e2a89062.jpeg"
+        },
+        {
+            "crest complete whitening + scope": "https://images.ctfassets.net/kyl4ub5sv0it/01fi1i7aljx9flltoqtr1d/def9190288180eb3b153fffbf838b0a9/120_primary.jpeg"
+        },
+        {
+            "oral-b glide pro-health dental floss": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gct-tmzbdqew4zfc427lpipqfxv4hn2yr7ugiytnqvasna&s"
+        },
+        {
+            "listerine total care anticavity mouthwash": "https://m.media-amazon.com/images/i/711b8wpwydl._ac_uf894,1000_ql80_.jpg"
+        },
+        {
+            "colgate total sf whitening gel": "https://i5.walmartimages.ca/images/large/985/767/6000205985767.jpg"
+        },
+        {
+            "neosporin": "https://www.neosporin.com/sites/neosporin_us/files/taco-images/01_neo_312547237796_us_pain_relief_cream_1oz_obwb_500wx500h.png"
+        },
+        {
+            "aspercreme": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/acm/acm05724/y/11.jpg"
+        },
+        {
+            "a+d first aid ointment": "https://i5.walmartimages.com/seo/a-d-first-aid-ointment-dry-skin-moisturizer-skin-protectant-with-vitamin-a-d-1-5oz_1ce97d2b-7f0a-4391-bf89-d3061c43e1c8.8cc90f437caeebf5288a83b1d9aa925b.jpeg?odnheight=768&odnwidth=768&odnbg=ffffff"
+        },
+        {
+            "polysporin antibiotic ointment": "https://www.neosporin.com/sites/neosporin_us/files/product-images/01_ply_300810798877_us_plyysporin_ointment_1oz_obwb_500wx500h.png"
+        },
+        {
+            "cortizone-10": "https://pics.walgreens.com/prodimg/184104/450.jpg"
+        },
+        {
+            "voltaren arthritis pain gel": "https://storage.googleapis.com/images-bks-prd-1385851.bks.prd.v8.commerce.mi9cloud.com/product-images/detail/e5a891ed-1661-4185-9c52-64f64696c8d2.jpeg"
+        },
+        {
+            "bengay ultra strength pain relieving cream": "https://i.ebayimg.com/images/g/lsgaaoswn39i9d6d/s-l600.jpg"
+        }
+    ]
+}

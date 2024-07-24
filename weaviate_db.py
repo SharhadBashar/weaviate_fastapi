@@ -39,6 +39,9 @@ class Weaviate:
                 'X-OpenAI-Api-key': openai_key
             }
         )
+        self.CURATED_CUISINES = json.load(open(CURATED_CUISINES_FILE, 'r', encoding = 'utf-8'))
+        self.CURATED_DIETS = json.load(open(CURATED_DIETS_FILE, 'r', encoding = 'utf-8'))
+        self.CURATED_DISHES = json.load(open(CURATED_DISHES_FILE, 'r', encoding = 'utf-8'))
 
     def connection_status(self):
         return True if self.client.is_live() else False
@@ -716,18 +719,20 @@ class Weaviate:
             longitude = DEFAULT_LONGITUDE,
             offset: int = 0,
         ):
-        if (query_type == 'cuisine'): dishes = CURATED_CUISINES.get(query_value.lower(), [])
-        elif (query_type == 'diet'): dishes = CURATED_DIETS.get(query_value.lower(), [])
-        elif (query_type == 'popular'): dishes = CURATED_DISHES.get(query_value.lower(), [])
+        if (query_type == 'cuisine'): dishes_links = self.CURATED_CUISINES.get(query_value.lower(), [])
+        elif (query_type == 'diet'): dishes_links = self.CURATED_DIETS.get(query_value.lower(), [])
+        elif (query_type == 'popular'): dishes_links = self.CURATED_DISHES.get(query_value.lower(), [])
         else: return None
-
+        
+        dishes = get_all_keys(dishes_links)
+        
         combined_results = {}
         for dish in random.sample(dishes, min(num_dishes, len(dishes))):
             dish_results = self.get_single_dish_search(dish, neighborhoods, has_unique_image, weaviate_limit, latitude, longitude, offset)
             alternatives = self.combine_alternatives(dish_results, max_alternatives)
             alternative_data = self.get_alternative_dish_data(alternatives, neighborhoods, has_unique_image, weaviate_limit, latitude, longitude, offset)
             combined_results[dish] = dish_results + alternative_data
-
+        combined_results = add_default_property(combined_results, dishes_links, 'default_image_link')
         return combined_results
 
 if __name__ == '__main__':

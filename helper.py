@@ -1,6 +1,7 @@
 import re
 import json
 from typing import *
+from pprint import pprint
 from datetime import datetime
 from geopy.distance import geodesic
 
@@ -139,3 +140,17 @@ def build_where_filter(dish, neighborhoods, has_unique_image) -> Dict:
         )
 
     return {'operator': 'And', 'operands': filter_clauses}
+
+def get_all_keys(dicts):
+    keys = set()  # Use a set to avoid duplicate keys
+    for d in dicts:
+        keys.update(d.keys())
+    return list(keys)
+
+def add_default_property(main_dict, default_property_dict, dict_property):
+    default_property_dict = {k: v for d in default_property_dict for k, v in d.items()}
+    for key, value in main_dict.items():
+        if len(value) > 0:
+            for i, _ in enumerate(value):
+                main_dict[key][i][dict_property] = default_property_dict[key]
+    return main_dict
