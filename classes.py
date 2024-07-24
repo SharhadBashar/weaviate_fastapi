@@ -1,9 +1,8 @@
-from typing import Union
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 
 class User(BaseModel):
-    user_Id: int
+    user_id: int
     user_name: str
     name: str
     age: int
@@ -26,54 +25,54 @@ class User(BaseModel):
     workout_days: str
 
 class Dish(BaseModel):
-    name: Union[str, None] = None
-    description: Union[str, None] = None
-    dish_Id: Union[str, None] = None
-    user_Id: Union[str, None] = None
-    user_name: Union[str, None] = None
+    name: str
+    description: Optional[str]
+    dish_id: Optional[str]
+    user_id: Optional[str]
+    user_name: Optional[str]
 
 class Dish_Details(BaseModel):
-    dishRes_ID: Optional[str]
-    dish_ID: Optional[str]
-    restaurant_ID: Optional[str]
+    dish_res_id: Optional[str]
+    dish_id: Optional[str]
+    restaurant_id: Optional[str]
     _additional: Optional[Dict]
-    geoCoordinates: Optional[TCoordinates]
-    dishName: Optional[str]
-    calorie_Count_Estimate: Optional[str]
-    cleanedDishName: Optional[str]
-    dietTags: Optional[List[str]]
-    foodItemLinkUber: Optional[str]
-    foodItemLinkDoorDash: Optional[str]
-    foodItemUberCartLinks: Optional[str]
-    healthAlternatives: Optional[str]
-    mass_Carbs: Optional[str]
-    mass_Fat: Optional[str]
-    mass_Protein: Optional[str]
-    imageDoorDash: Optional[str]
-    imageUber: Optional[str]
-    linkUber: Optional[str]
-    linkDoorDash: Optional[str]
-    priceClean: Optional[str]
-    closeTime_UberEats_uber: Optional[str]
-    daysOpen_UberEats_uber: Optional[str]
-    monDoorDash: Optional[str]
-    tueDoorDash: Optional[str]
-    wedDoorDash: Optional[str]
-    thuDoorDash: Optional[str]
-    friDoorDash: Optional[str]
-    satDoorDash: Optional[str]
-    sunDoorDash: Optional[str]
+    geo_coordinates: Optional[int]
+    dish_name: Optional[str]
+    calorie_count_estimate: Optional[str]
+    cleaned_dish_name: Optional[str]
+    diet_tags: Optional[List[str]]
+    food_item_link_uber: Optional[str]
+    food_item_link_door_dash: Optional[str]
+    food_item_uber_cart_links: Optional[str]
+    health_alternatives: Optional[str]
+    mass_carbs: Optional[str]
+    mass_fat: Optional[str]
+    mass_protein: Optional[str]
+    image_door_dash: Optional[str]
+    image_uber: Optional[str]
+    link_uber: Optional[str]
+    link_door_dash: Optional[str]
+    price_clean: Optional[str]
+    close_time_uber_eats_uber: Optional[str]
+    days_open_uber_eats_uber: Optional[str]
+    monday_door_dash: Optional[str]
+    tuesday_door_dash: Optional[str]
+    wednesday_door_dash: Optional[str]
+    thursday_door_dash: Optional[str]
+    friday_door_dash: Optional[str]
+    saturday_door_dash: Optional[str]
+    sunday_door_dash: Optional[str]
     lat: Optional[float]
     long: Optional[float]
     neighborhood: Optional[str]
-    openCloseHours: Optional[str]
-    openingHours_UberEats_uber: Optional[str]
-    restaurantName: Optional[str]
-    restaurantPhone: Optional[str]
-    restaurantRating: Optional[str]
-    restaurantReviewCount: Optional[int]
-    eater_ReviewDictVec: Optional[Dict]
-    infatuation_ReviewDictVec: Optional[Dict]
+    open_close_hours: Optional[str]
+    opening_hours_uber_eats_uber: Optional[str]
+    restaurant_name: Optional[str]
+    restaurant_phone: Optional[str]
+    restaurant_rating: Optional[str]
+    restaurant_review_count: Optional[int]
+    eater_review_dict_vec: Optional[Dict]
+    infatuation_review_dict_vec: Optional[Dict]
 
 class DoorDash_Schedule(BaseModel):
     monday: Optional[str]

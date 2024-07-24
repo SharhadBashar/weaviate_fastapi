@@ -1,8 +1,9 @@
 fastapi
-regex
+geopy
 openai
 pydantic
-uvicorn
 python-dotenv
-requests
-weaviate-client
+Requests
+weaviate_client
+uvicorn
+haversine

@@ -1,7 +1,12 @@
 import re
 import json
+from typing import *
+from pprint import pprint
 from datetime import datetime
 from geopy.distance import geodesic
+
+def str_to_list(string):
+    return string.split(',')
 
 def read_json(file_name):
     with open(file_name) as file:
@@ -71,7 +76,7 @@ def calculate_distance(loc1: dict, loc2: dict) -> dict:
         distance_label = f'{round(distance_miles * 5280)} feet'
     return {'distance_miles': distance_miles, 'distance_km': distance_km, 'distance_label': distance_label}
 
-def format_price(price: str) -> str:
+def get_format_price(price: str) -> str:
     try:
         return f'{float(price):.2f}'
     except ValueError:
@@ -88,4 +93,64 @@ def get_current_location():
     return {'latitude': _default_client_latitude(), 'longitude': _default_client_longitude()}
 
 def get_day_of_week(timestamp):
-    return datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S').strftime('%A').lower()
+    return datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S').strftime('%a').lower()
+
+def build_where_filter(dish, neighborhoods, has_unique_image) -> Dict:
+    filter_clauses = [
+        {
+            'path': ['cleanedDishName'], 
+            'operator': 'Like', 
+            'valueText': f'*{dish}*'
+        }
+    ]
+
+    if neighborhoods:
+        neighborhood_filters = [
+            {
+                'path': ['neighborhood'], 
+                'operator': 'Equal', 
+                'valueString': neighborhood
+            }
+            for neighborhood in neighborhoods
+        ]
+        filter_clauses.append(
+            {
+                'operator': 'Or',
+                'operands': neighborhood_filters,
+            }
+        )
+
+    if has_unique_image:
+        filter_clauses.append(
+            {
+                'operator': 'Or',
+                'operands': [
+                    {
+                        'path': ['stockImageUber'],
+                        'operator': 'Equal',
+                        'valueText': 'UniqueImage',
+                    },
+                    {
+                        'path': ['stockImageDoorDash'],
+                        'operator': 'Equal',
+                        'valueText': 'UniqueImage',
+                    },
+                ],
+            }
+        )
+
+    return {'operator': 'And', 'operands': filter_clauses}
+
+def get_all_keys(dicts):
+    keys = set()  # Use a set to avoid duplicate keys
+    for d in dicts:
+        keys.update(d.keys())
+    return list(keys)
+
+def add_default_property(main_dict, default_property_dict, dict_property):
+    default_property_dict = {k: v for d in default_property_dict for k, v in d.items()}
+    for key, value in main_dict.items():
+        if len(value) > 0:
+            for i, _ in enumerate(value):
+                main_dict[key][i][dict_property] = default_property_dict[key]
+    return main_dict
