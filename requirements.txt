@@ -1,0 +1,8 @@
+fastapi
+regex
+openai
+pydantic
+uvicorn
+python-dotenv
+requests
+weaviate-client

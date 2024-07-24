@@ -1,0 +1,916 @@
+{
+    "carnivore diet": [
+        {
+            "ribeye steak": "https://diethood.com/wp-content/uploads/2021/02/ribeye-steak-5.jpg"
+        },
+        {
+            "korean chicken wings": "https://www.jocooks.com/wp-content/uploads/2019/07/korean-bbq-chicken-1-10.jpg"
+        },
+        {
+            "bacon and eggs": "https://static.toiimg.com/thumb/75680608.cms?imgsize=1875963&width=800&height=800"
+        },
+        {
+            "chicken wings": "https://www.thecookierookie.com/wp-content/uploads/2018/12/baked-chicken-wings-reshoot.jpg"
+        },
+        {
+            "beef patty": "https://cdn.greatlifepublishing.net/wp-content/uploads/sites/2/2022/10/12085225/julia-childs-ground-beef-patties-og-2.jpg"
+        },
+        {
+            "new york strip steak": "https://www.harryanddavid.com/blog/wp-content/uploads/2021/09/new-york-strip-steak-2.jpg.webp"
+        },
+        {
+            "pulled pork": "https://hips.hearstapps.com/hmg-prod/images/delish-slow-cooker-pulled-pork-horizontal-1-1539618654.png?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
+        },
+        {
+            "filet mignon": "https://www.fattybuttsbbq.com/static/411bbe3993bf1d825319e6887bc6395e/8dbcc/reverse-sear-filet-mignon-recipe.jpg"
+        },
+        {
+            "bison ": "https://cdn.shopify.com/s/files/1/1918/9371/files/tritipcookedsquare_1600x.jpg?v=1683894819"
+        },
+        {
+            "beef ribs": "https://www.myforkinglife.com/wp-content/uploads/2023/03/oven-baked-beef-ribs-10475.jpg"
+        },
+        {
+            "fried pork chops": "https://www.spendwithpennies.com/wp-content/uploads/2022/03/pan-seared-pork-chops-spendwithpennies-3.jpg"
+        },
+        {
+            "pork belly": "https://pinchandswirl.com/wp-content/uploads/2020/10/crispy-pork-belly_square.jpg"
+        },
+        {
+            "pork ribs": "https://www.kitchensanctuary.com/wp-content/uploads/2023/07/salt-and-pepper-ribs-square-fs.jpg"
+        },
+        {
+            "steak tartare": "https://images.immediate.co.uk/production/volatile/sites/30/2023/09/steak-tartare-c0d766e.jpg?quality=90&resize=556,505"
+        },
+        {
+            "beef liver": "https://healthyrecipesblogs.com/wp-content/uploads/2021/02/liver-and-onions-featured-500x500.jpg"
+        },
+        {
+            "sashimi": "https://images.immediate.co.uk/production/volatile/sites/30/2020/02/sashimi-c123df7.jpg?quality=90&resize=556,505"
+        },
+        {
+            "grilled lamb chops": "https://www.vindulge.com/wp-content/uploads/2023/04/grilled-lamb-chops.jpg"
+        },
+        {
+            "grilled salmon": "https://www.thecookierookie.com/wp-content/uploads/2023/05/featured-grilled-salmon-recipe.jpg"
+        },
+        {
+            "bone soup": "https://images.getrecipekit.com/20240118202756-bone-broth-for-health.jpg?width=650&quality=90&"
+        }
+    ],
+    "gluten free": [
+        {
+            "grilled chicken breast": "https://www.onceuponachef.com/images/2020/05/best-grilled-chicken-760x1050.jpg"
+        },
+        {
+            "roasted turkey breast": "https://s23209.pcdn.co/wp-content/uploads/2021/11/211015_damn-delicious_herb-roasted-turkey-breast_375.jpg"
+        },
+        {
+            "grilled pork chops": "https://alldayidreamaboutfood.com/wp-content/uploads/2022/08/brined-grilled-pork-chops.jpg"
+        },
+        {
+            "baked potato": "https://hips.hearstapps.com/hmg-prod/images/delish-perfect-baked-sweet-potato-1637646118.jpg?crop=0.742xw:0.998xh;0.135xw,0.00218xh&resize=1200:*"
+        },
+        {
+            "turkey wraps": "https://www.twopeasandtheirpod.com/wp-content/uploads/2023/06/turkey-wraps-18.jpg"
+        },
+        {
+            "gluten-free caesar salad": "https://at-my-table.com/wp-content/uploads/2020/01/vegan-gluten-free-caesar-salad-1-of-1.webp"
+        },
+        {
+            "grilled pork tenderloin": "https://cdn.momsdish.com/wp-content/uploads/2022/04/grilled-pork-tenderloin-09.jpg"
+        },
+        {
+            "tofu with mixed vegetables": "https://jessicainthekitchen.com/wp-content/uploads/2022/05/vegan-stir-fry01030.jpg"
+        },
+        {
+            "cauliflower stir fried": "https://pinchofyum.com/wp-content/uploads/cauliflower-fried-rice-recipe.jpg"
+        },
+        {
+            "gluten free fried rice": "https://kaleenaskitchen.com/wp-content/uploads/2023/11/gffriedrice1.jpg"
+        },
+        {
+            "shrimp stir fry": "https://cdn.momsdish.com/wp-content/uploads/2023/05/shrimp-stir-fry-07.jpg"
+        },
+        {
+            "gluten-free tofu skewers": "https://www.makingthymeforhealth.com/wp-content/uploads/2015/06/tofu-fajita-kebabs_.jpg"
+        },
+        {
+            "sesame tofu stir fry": "https://littlespicejar.com/wp-content/uploads/2015/08/sesame-ginger-tofu-stir-fry-4-710x1065.jpeg"
+        },
+        {
+            "chicken with mixed vegetables": "https://www.cookingclassy.com/wp-content/uploads/2019/12/chicken-stir-fry-1.jpg"
+        },
+        {
+            "quinoa salad": "https://s23209.pcdn.co/wp-content/uploads/2013/10/img_4345edit1.jpg"
+        },
+        {
+            "spinach and mushroom omelette": "https://static.onecms.io/wp-content/uploads/sites/19/2015/03/23/mushroom-spinach-omelet-ck.jpg"
+        },
+        {
+            "gluten free chow mein": "https://www.cookingclassy.com/wp-content/uploads/2019/01/chow-mein-9.jpg"
+        },
+        {
+            "beef and broccoli stir fry": "https://www.healthyseasonalrecipes.com/wp-content/uploads/2022/02/beef-and-broccoli-stir-fry-7.jpg"
+        },
+        {
+            "gluten-free tofu fried rice": "https://zestfulkitchen.com/wp-content/uploads/2020/08/fried-rice_hero_for-web_cover.jpg"
+        },
+        {
+            "cauliflower pizza crust": "https://www.ambitiouskitchen.com/wp-content/uploads/2021/03/cauliflower-pizza-crust-12.jpg"
+        },
+        {
+            "quinoa salad": "https://www.chelseasmessyapron.com/wp-content/uploads/2017/05/quinoa-avocado-power-salad2.jpg"
+        },
+        {
+            "gluten-free cauliflower manchurian": "https://rainbowplantlife.com/wp-content/uploads/2022/02/gobi-manchurian-cover-photo-on-white-tile-1-of-1.jpg"
+        },
+        {
+            "grilled shrimp salad": "https://static01.nyt.com/images/2021/05/03/dining/yf-spicy-shrimp-and-chickpea-salad/merlin_186367128_e9f5e0f5-0dbc-4dd8-bfde-a9bb4ce52026-square640.jpg"
+        },
+        {
+            "grilled asparagus": "https://www.feastingathome.com/wp-content/uploads/2022/03/grilled-asparagus_-4.jpg"
+        },
+        {
+            "shrimp kebab": "https://res.cloudinary.com/hksqkdlah/image/upload/31785_sfs-grilled-shrimp-vegetable-kebabs-34.jpg"
+        },
+        {
+            "gluten-free pizza": "https://fromthelarder.co.uk/wp-content/uploads/2022/06/gf-pizza-warm-images-3-683x1024.jpg"
+        },
+        {
+            "gluten-free pasta with sauce": "https://image.cdn2.seaart.ai/2023-07-15/45214232567877/28fad823a74b479ffd6e42748910d132aef28838_high.webp"
+        },
+        {
+            "mushroom risotto": "https://boldappetite.com/wp-content/uploads/2022/02/food-9342.jpg"
+        },
+        {
+            "grilled chicken caesar salad": "https://reciperunner.com/wp-content/uploads/2017/07/grilled-chicken-caesar-salad-photograph.jpg"
+        },
+        {
+            "caprese salad": "https://glutenfreeitalianeats.com/wp-content/uploads/2022/06/close-up-of-caprese-salad-2.jpg"
+        },
+        {
+            "grilled vegetable frittata": "https://www.vindulge.com/wp-content/uploads/2023/04/grilled-frittata-slice.jpg"
+        },
+        {
+            "gluten-free frittata": "https://www.thebutterhalf.com/wp-content/uploads/2018/03/easy-baked-frittata-recipe-spinach-gluten-free-2.jpg"
+        },
+        {
+            "cucumber avocado sushi rolls": "https://i0.wp.com/nourishingamy.com/wp-content/uploads/2022/08/garlic-cucumber-and-avocado-sushi-rolls-1.jpg?fit=2048%2c1365&ssl=1"
+        },
+        {
+            "teriyaki glazed fish": "https://natashaskitchen.com/wp-content/uploads/2016/01/teriyaki-salmon-recipe-4.jpg"
+        },
+        {
+            "teriyaki glazed chicken": "https://www.cuisinart.com/globalassets/recipes/recipe_6170_1259131208.jpg"
+        },
+        {
+            "mediterranean salad": "https://feelgoodfoodie.net/wp-content/uploads/2019/02/mediterranean-chopped-salad-12.jpg"
+        },
+        {
+            "grilled lamb kebabs with yogurt sauce": "https://www.feastingathome.com/wp-content/uploads/2018/05/grilled-lamb-kebab-salad-109.jpg"
+        },
+        {
+            "chickpea salad": "https://cookieandkate.com/images/2021/08/best-chickpea-salad-recipe-2.jpg"
+        },
+        {
+            "shrimp tacos": "https://www.wellplated.com/wp-content/uploads/2018/04/healthy-shrimp-tacos-with-shrimp-taco-sauce.jpg"
+        },
+        {
+            "vegetarian chilli": "https://static01.nyt.com/images/2014/02/11/science/12recipehealth/12recipehealth-superjumbo.jpg"
+        },
+        {
+            "gluten-free fajita bowl with chicken": "https://theskinnyishdish.com/wp-content/uploads/2022/07/chicken-fajita-bowls-009.jpg"
+        },
+        {
+            "gluten-free fajita bowl with veggies": "https://www.lastingredient.com/wp-content/uploads/2021/04/veggie-fajita-bowls-recipe1.jpg"
+        },
+        {
+            "gluten-free shrimp tacos": "https://healthfulblondie.com/wp-content/uploads/2021/05/al-pastor-shrimp-tacos-4.jpg"
+        },
+        {
+            "gluten-free chili": "https://wheatbythewayside.com/wp-content/uploads/2022/10/gluten-free-chili-recipe-3.jpg"
+        },
+        {
+            "gluten-free spiced pilaf": "https://chefjanetk.com/wp-content/uploads/2021/09/gluten-free-rice-pilaf-card-2023.jpg"
+        },
+        {
+            "avocado salad": "https://playswellwithbutter.com/wp-content/uploads/2023/07/cucumber-avocado-salad-7-960x1440.jpg"
+        },
+        {
+            "grilled salmon": "https://media.istockphoto.com/id/1214416414/photo/barbecued-salmon-fried-potatoes-and-vegetables-on-wooden-background.jpg?s=612x612&w=0&k=20&c=y8rybzfcvec-fxmmuou-qkprc3tufniw3ysoe8drn6g="
+        },
+        {
+            "baked salmon with gluten free sauce": "https://www.feastingathome.com/wp-content/uploads/2019/05/salmon-dill-sauce.jpg"
+        },
+        {
+            "baked cod with gluten free sauce": "https://www.themediterraneandish.com/wp-content/uploads/2017/10/mediterranean-baked-cod-recipe-lemon-garlic-the-mediterranean-dish-1.jpg"
+        },
+        {
+            "grilled swordfish with sauce": "https://ouritaliantable.com/wp-content/uploads/2014/05/swordfish-chickpea3-lowres.jpg"
+        },
+        {
+            "sautéed shrimp with garlic": "https://thematbakh.com/wp-content/uploads/2021/07/lemon-garlic-butter-shrimp-17.jpg"
+        },
+        {
+            "thai curry": "https://media.istockphoto.com/id/183334584/photo/thai-green-curry-with-chicken.jpg?s=612x612&w=0&k=20&c=md6aj5nfp6bv01bpbs0ikdjhulji_bda7ulbpx2dfuq="
+        },
+        {
+            "chicken lettuce wrap": "https://s23209.pcdn.co/wp-content/uploads/2018/09/peanut-chicken-lettuce-wrapsimg_6861.jpg"
+        },
+        {
+            "steamed mixed vegetables": "https://www.kitchensanctuary.com/wp-content/uploads/2023/10/steamed-veg-medley-square-fs.jpg"
+        },
+        {
+            "eggs and avocado": "https://media.istockphoto.com/id/1306846600/photo/sandwiches-with-avocado-poached-egg-sprouts-and-cheese-for-healthy-breakfast-on-white.jpg?s=612x612&w=0&k=20&c=pjtj92u87f3zwhp7w0c0afziaoqqzktzppk7c7yylae="
+        },
+        {
+            "baked chicken": "https://static01.nyt.com/images/2024/01/04/multimedia/lh-baked-chicken-thighs-hzgq/lh-baked-chicken-thighs-hzgq-superjumbo.jpg"
+        },
+        {
+            "vegetable soup": "https://static01.nyt.com/images/2023/10/12/multimedia/lh-vegetable-soup-ckfp/lh-vegetable-soup-ckfp-threebytwomediumat2x.jpg"
+        },
+        {
+            "grilled steak with gluten free sauce": "https://saltedmint.com/wp-content/uploads/2024/01/sirloin-steaks-with-peppercorn-sauce-2.jpg"
+        },
+        {
+            "sautéed spinach with garlic": "https://www.sipandfeast.com/wp-content/uploads/2021/09/sauteed-spinach-garlic-recipe-snippet.jpg"
+        },
+        {
+            "veggie gluten free wraps": "https://theloopywhisk.com/wp-content/uploads/2018/06/gluten-free-veggie-wrap_730px-4.jpg.webp"
+        },
+        {
+            "salmon and asparagus": "https://kalejunkie.com/wp-content/uploads/2022/05/kalejunkie-sheet-pan-lemon-herb-salmon-1.jpg"
+        },
+        {
+            "baked halibut": "https://media.istockphoto.com/id/1230001174/photo/fried-cod-fillet-with-fresh-vegetables.jpg?s=612x612&w=0&k=20&c=d3zoqhtispwslys-g7ilbznukog3zfg2jdmfw8llfay="
+        },
+        {
+            "gluten-free avocado toast": "https://cupcakesandkalechips.com/wp-content/uploads/2022/04/gluten-free-avocado-toast-recipe-22.jpg"
+        },
+        {
+            "grilled portobello mushrooms": "https://media.istockphoto.com/id/1153453984/photo/roasted-portobello-mushrooms-stuffed-with-cheese-and-herbs-on-a-black-iron-background-top-view.jpg?s=612x612&w=0&k=20&c=vyv2ocyjossrk_1_a3kw4vba1mbegxs30rjct7kkn90="
+        },
+        {
+            "grilled vegetable skewers": "https://www.foodiecrush.com/wp-content/uploads/2020/05/bbq-chicken-breasts-foodiecrush.com-004.jpg"
+        },
+        {
+            "gluten-free cauliflower tenders": "https://eat-gluten-free.celiac.org/wp-content/uploads/2018/10/caulipower-3.jpg"
+        },
+        {
+            "gluten-free cauliflower": "https://www.snixykitchen.com/wp-content/uploads/2022/09/gluten-free-crispy-cauliflower-bites-6.jpg"
+        },
+        {
+            "roasted brussels sprouts ": "https://www.garnishandglaze.com/wp-content/uploads/2020/11/roasted-brussel-sprouts-6.jpg"
+        }
+    ],
+    "halal": [
+        {
+            "halal burgers": "https://onestophalal.com/cdn/shop/articles/halal_burger_banner-1684366320794_278e146f-9c34-448c-a002-342ed721cfc1_1200x.jpg?v=1684792752"
+        },
+        {
+            "gyro": "https://laurenslatest.com/wp-content/uploads/2023/06/homemade-gyros-31.jpg"
+        },
+        {
+            "lamb gyro": "https://assets.epicurious.com/photos/59513832a5db170587cf62b9/1:1/w_2560%2cc_limit/shutterstock_220309672.jpg"
+        },
+        {
+            "chicken tandoori": "https://ministryofcurry.com/wp-content/uploads/2021/02/air-fryer-tandoori-chicken_-2.jpg"
+        },
+        {
+            "samosas": "https://therecipecritic.com/wp-content/uploads/2023/12/samosa-2.jpg"
+        },
+        {
+            "beef seekh kebab": "https://www.teaforturmeric.com/wp-content/uploads/2018/10/seekh-kebab-4.jpg"
+        },
+        {
+            "indian butter chicken": "https://feelgoodfoodie.net/wp-content/uploads/2024/02/easy-butter-chicken-timg.jpg"
+        },
+        {
+            "biryani": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg"
+        },
+        {
+            "baba ghanouj": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2019/05/vegan-baba-ganoush-bowl-cropped-800x1200.jpg"
+        },
+        {
+            "baklava": "https://www.themediterraneandish.com/wp-content/uploads/2020/04/baklava-recipe-9.jpg"
+        },
+        {
+            "hummus": "https://www.themediterraneandish.com/wp-content/uploads/2015/01/how-to-make-hummus-recipe-3.jpg"
+        },
+        {
+            "shawarma": "https://sailorbailey.com/wp-content/uploads/2023/05/pita-shawarma1.jpg"
+        },
+        {
+            "tabbouleh": "https://feelgoodfoodie.net/wp-content/uploads/2023/09/lebanese-tabbouleh-salad-timg.jpg"
+        },
+        {
+            "kebab": "https://joyfoodsunshine.com/wp-content/uploads/2022/06/chicken-kebabs-recipe-1.jpg"
+        },
+        {
+            "shish kebab": "https://knifeandsoul.com/wp-content/uploads/2023/01/lamb-shish-kebab-recipe-card.jpg"
+        },
+        {
+            "chicken over rice": "https://littlespicejar.com/wp-content/uploads/2022/06/halal-cart-white-sauce-6-735x1103.jpg"
+        },
+        {
+            "kofta kebab": "https://thefoodiephysician.com/wp-content/uploads/2015/08/kebabs.jpg"
+        },
+        {
+            "mixed grill platter": "https://static01.nyt.com/images/2015/07/15/dining/15grill/15grill-superjumbo.jpg"
+        }
+    ],
+    "healthy": [
+        {
+            "caesar salad": "https://natashaskitchen.com/wp-content/uploads/2019/01/caesar-salad-recipe-3.jpg"
+        },
+        {
+            "turkey sandwich": "https://www.favfamilyrecipes.com/wp-content/uploads/2021/07/turkey-sandwich-3.jpg"
+        },
+        {
+            "avocado toast": "https://cdn.loveandlemons.com/wp-content/uploads/2020/01/avocado-toast.jpg"
+        },
+        {
+            "grilled chicken salad": "https://www.eatingbirdfood.com/wp-content/uploads/2023/06/grilled-chicken-salad-hero.jpg"
+        },
+        {
+            "grilled chicken bowl": "https://www.howsweeteats.com/wp-content/uploads/2022/06/grilled-chicken-rice-bowls-12.jpg"
+        },
+        {
+            "grilled chicken sandwich": "https://cdn-abioh.nitrocdn.com/irwsmxpedamsnblsqlbkxmjsjwoqrrps/assets/images/optimized/rev-01bf621/www.apinchofhealthy.com/wp-content/uploads/2021/09/close-up-side-shot-of-styled-sandwich-2.jpg"
+        },
+        {
+            "tomato soup": "https://www.saltandlavender.com/wp-content/uploads/2022/09/easy-tomato-soup-9.jpg"
+        },
+        {
+            "breakfast sandwich": "https://www.twopeasandtheirpod.com/wp-content/uploads/2023/06/breakfast-sandwich-0015.jpg"
+        },
+        {
+            "buffalo roasted cauliflower": "https://cdn.loveandlemons.com/wp-content/uploads/2022/10/buffalo-cauliflower-recipe.jpg"
+        },
+        {
+            "baked potato": "https://thenaturalnurturer.com/wp-content/uploads/2023/04/oven-baked-sweet-potatoes-24.jpg"
+        },
+        {
+            "kale and apple salad": "https://static01.nyt.com/images/2018/10/30/dining/apple-cheddar-kale-salad/merlin_145792368_0de6b697-1f58-47a9-a046-901c388cec32-superjumbo.jpg"
+        },
+        {
+            "stir fry veggies with tofu": "https://jessicainthekitchen.com/wp-content/uploads/2022/07/vegan-stir-fry01030.jpg"
+        },
+        {
+            "stir fry veggies": "https://therecipecritic.com/wp-content/uploads/2019/08/vegetable_stir_fry.jpg"
+        },
+        {
+            "stir fry veggies with chicken": "https://www.dinneratthezoo.com/wp-content/uploads/2019/12/honey-garlic-chicken-stir-fry-final-1.jpg"
+        },
+        {
+            "vegetable noodle soup": "https://veronikaskitchen.com/wp-content/uploads/2023/01/vegetable-noodle-soup-3423.jpg"
+        },
+        {
+            "beef stir-fry": "https://www.butterbeready.com/wp-content/uploads/2023/02/dk6a9933.jpg"
+        },
+        {
+            "green juice": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/08/green-juice-5.jpg"
+        },
+        {
+            "acai bowls": "https://www.twopeasandtheirpod.com/wp-content/uploads/2023/06/acai-bowl-10.jpg"
+        },
+        {
+            "overnight oats with fruit": "https://www.crowdedkitchen.com/wp-content/uploads/2022/03/brm-protein-overnight-oats-7-scaled.jpg"
+        },
+        {
+            "garlic string beans": "https://smellylunchbox.com/wp-content/uploads/2022/06/greenbeans-scaled.jpg"
+        },
+        {
+            "roasted veggies": "https://www.wellplated.com/wp-content/uploads/2021/12/what-to-do-with-roasted-vegetables.jpg"
+        },
+        {
+            "poke bowl": "https://therecipecritic.com/wp-content/uploads/2020/03/poke-bowls-2-1.jpg"
+        },
+        {
+            "green smoothie": "https://cdn.loveandlemons.com/wp-content/uploads/2022/12/green-smoothie-recipes.jpg"
+        },
+        {
+            "yogurt parfait with fruits": "https://feelgoodfoodie.net/wp-content/uploads/2021/05/fruit-and-yogurt-parfait-09.jpg"
+        },
+        {
+            "quinoa salad": "https://www.eatingbirdfood.com/wp-content/uploads/2024/04/easy-quinoa-salad-hero-cropped.jpg"
+        },
+        {
+            "minestrone soup": "https://www.eatingbirdfood.com/wp-content/uploads/2021/11/minestrone-soup-hero.jpg"
+        },
+        {
+            "thin crust pizza": "https://www.bhg.com/thmb/l42romj0porpp2wwewwxsltf-x4=/1244x0/filters:no_upscale():strip_icc()/thin-crust-pepperoni-vegetable-pizza-ru207102-9d5b6151a9074ec18a7af235fb332d83.jpg"
+        },
+        {
+            "sushi": "https://elavegan.com/wp-content/uploads/2021/06/vegan-sushi-on-a-white-plate-from-above.jpg"
+        },
+        {
+            "onigiri": "https://www.manusmenu.com/wp-content/uploads/2017/08/onigiri-3-1-of-1.jpg"
+        },
+        {
+            "greek salad": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/08/greek-salad-6-1.jpg"
+        },
+        {
+            "mediterranean bowl": "https://thebigmansworld.com/wp-content/uploads/2024/01/mediterranean-bowl-recipe.jpg"
+        },
+        {
+            "breakfast burrito": "https://hips.hearstapps.com/hmg-prod/images/delish-breakfast-burrito-horizontaljpg-1541624805.jpg?crop=0.8889743589743591xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "burrito bowl": "https://www.twopeasandtheirpod.com/wp-content/uploads/2023/05/burrito-bowls-18.jpg"
+        },
+        {
+            "taco salad": "https://www.howsweeteats.com/wp-content/uploads/2023/04/taco-salad-11.jpg"
+        },
+        {
+            "falafel wrap": "https://pickyeaterblog.com/wp-content/uploads/2022/11/healthy-falafel-wrap-recipe.jpg"
+        },
+        {
+            "hummus and pita": "https://suebeehomemaker.com/wp-content/uploads/2017/10/homemade-hummus-and-pita-chips-4.jpg"
+        },
+        {
+            "veggie sandwich": "https://neighborfoodblog.com/wp-content/uploads/2016/08/best-veggie-sandwich-with-cream-cheese-4-735x1101.jpg"
+        },
+        {
+            "scrambled eggs": "https://healthyrecipesblogs.com/wp-content/uploads/2021/09/scrambled-eggs-featured-new.jpg"
+        },
+        {
+            "poached eggs": "https://kristineskitchenblog.com/wp-content/uploads/2023/03/perfect-poached-eggs-03.jpg"
+        },
+        {
+            "omelette": "https://feelgoodfoodie.net/wp-content/uploads/2021/04/how-to-make-an-omelette-10.jpg"
+        },
+        {
+            "tofu and rice": "https://thewoksoflife.com/wp-content/uploads/2018/01/teriyaki-tofu-3-1.jpg"
+        },
+        {
+            "fruit salad": "https://www.coinedcuisine.com/wp-content/uploads/2023/06/coined-cuisine_rainbow-fruit-salad-p-scaled.jpg"
+        },
+        {
+            "chicken noodle soup": "https://recipetineats.com/wp-content/uploads/2017/05/chicken-noodle-soup-from-scratch_3.jpg"
+        },
+        {
+            "grilled chicken nuggets": "https://unboundwellness.com/wp-content/uploads/2022/05/grilled_nuggets_4.jpg"
+        },
+        {
+            "vegan chicken nuggets": "https://jessicainthekitchen.com/wp-content/uploads/2019/12/vegan-tofu-nuggets-crispy-crunchy-3.jpg"
+        },
+        {
+            "chia pudding": "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/chia-pudding-angled.jpg"
+        },
+        {
+            "spaghetti squash": "https://ohsweetbasil.com/wp-content/uploads/brown-butter-spaghetti-squash-with-sausage-and-kale-10-scaled.jpg"
+        },
+        {
+            "grilled veggie platter": "https://s23209.pcdn.co/wp-content/uploads/2017/07/grilled-vegetable-platter1.jpg"
+        },
+        {
+            "black bean sandwich": "https://cdn.loveandlemons.com/wp-content/uploads/2020/07/black-bean-burger-1.jpg"
+        },
+        {
+            "banh mi": "https://hips.hearstapps.com/hmg-prod/images/banh-mi-with-grilled-pork1-1663331872.jpg?crop=0.683xw:1.00xh;0.317xw,0&resize=1200:*"
+        },
+        {
+            "fish and rice": "https://assets.bonappetit.com/photos/5e3c64ce424a090009173528/1:1/w_2560%2cc_limit/hly_salt+pepper%2520fish_16x9.jpg"
+        }
+    ],
+    "keto": [
+        {
+            "cobb salad": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/4hsb4c2mxj5occp4hgypgp47eu.jpg&w=1440"
+        },
+        {
+            "bacon and eggs": "https://www.dishbydish.net/wp-content/uploads/air-fryer-bacon-gluten-free-dairy-free_final3-scaled.jpg"
+        },
+        {
+            "egg salad": "https://www.culinaryhill.com/wp-content/uploads/2022/05/egg-salad-culinary-hill-1200x800-1.jpg"
+        },
+        {
+            "caesar salad": "https://natashaskitchen.com/wp-content/uploads/2019/01/caesar-salad-recipe-3.jpg"
+        },
+        {
+            "butter filet": "https://www.carnaldish.com/wp-content/uploads/2018/10/garlicbuttersteak_featured.jpg"
+        },
+        {
+            "chicken lettuce wrap": "https://cleanfoodcrush.com/wp-content/uploads/2018/03/skinny-blt-avocado-wraps-clean-eating-recipe-1024x683.jpg"
+        },
+        {
+            "buffalo wings": "https://hips.hearstapps.com/hmg-prod/images/buffalo-wings-index-65b7cc59e4ac6.jpg"
+        },
+        {
+            "shrimp and avocado salad": "https://www.wholesomeyum.com/wp-content/uploads/2022/07/wholesomeyum-shrimp-avocado-salad.jpg"
+        },
+        {
+            "pork belly with green pepper": "https://yummykitchentv.com/wp-content/uploads/2022/05/stir-fry-green-beans-1024x779.jpg"
+        },
+        {
+            "beef stir-fry with mixed vegetables": "https://www.rachelcooks.com/wp-content/uploads/2022/09/beef-stir-fry-with-vegetables016-web-square.jpg"
+        },
+        {
+            "meatballs in marinara sauce": "https://www.jocooks.com/wp-content/uploads/2012/11/italian-meatballs-1-2-1-500x375.jpg"
+        },
+        {
+            "eggplant lasagna": "https://www.feastingathome.com/wp-content/uploads/2020/11/epplant-lasagna.jpg"
+        },
+        {
+            "caprese salad": "https://whatsgabycooking.com/wp-content/uploads/2023/06/dinner-party-__-traditional-caprese-1.jpg"
+        },
+        {
+            "grilled salmon with asparagus": "https://img.taste.com.au/dc9jnkib/w720-h480-cfill-q80/taste/2016/11/chargrilled-salmon-with-asparagus-in-lime-vinaigrette-59335-1.jpeg"
+        }
+    ],
+    "paleo": [
+        {
+            "grilled chicken": "https://theyummydelights.com/wp-content/uploads/2021/05/grilled-chicken-salad-1.jpg"
+        },
+        {
+            "sweet potato fries": "https://www.eatyourselfskinny.com/wp-content/uploads/2015/10/sweet-potato-fries-44.jpg"
+        },
+        {
+            "brussels sprout salad": "https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqcdylbdowxcxqq6oyua9fnnu5i4vjfwuamomavcxeh5q&s"
+        },
+        {
+            "butternut squash soup": "https://www.twopeasandtheirpod.com/wp-content/uploads/2022/11/butternut-squash-soup-4.jpg"
+        },
+        {
+            "beef and broccoli stir-fry": "https://natashaskitchen.com/wp-content/uploads/2019/08/beef-and-broccoli-2.jpg"
+        },
+        {
+            "cucumber salad": "https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2021/06/cucumber-dill-salad-square-1200.jpg"
+        },
+        {
+            "prosciutto melon salad": "https://img.taste.com.au/20tqicgu/w720-h480-cfill-q80/taste/2018/01/peach-and-prosciutto-salad-with-honey-basil-dressing-135175-1.jpg"
+        },
+        {
+            "beet salad": "https://natashaskitchen.com/wp-content/uploads/2018/01/beet-salad-with-arugula-and-balsamic-vinaigrette-5-500x500.jpg"
+        },
+        {
+            "lettuce wraps": "https://theeburgerdude.com/wp-content/uploads/2023/02/lettuce-wraps-blog-3-2048x1568.jpg"
+        },
+        {
+            "grilled salmon": "https://www.cookingclassy.com/wp-content/uploads/2016/06/lime_salmon_mango_avocado_salsa_coconut_rice6..jpg"
+        }
+    ],
+    "pescatarian": [
+        {
+            "crab cakes": "https://www.jocooks.com/wp-content/uploads/2018/12/crab-cakes-1.jpg"
+        },
+        {
+            "clam chowder": "https://thecozycook.com/wp-content/uploads/2022/10/clam-chowder-f.jpg"
+        },
+        {
+            "lobster roll": "https://drivemehungry.com/wp-content/uploads/2022/05/lobster-roll-5.jpg"
+        },
+        {
+            "vegetable stir fry with tofu": "https://www.skinnytaste.com/wp-content/uploads/2021/09/tofu-stir-fry-8.jpg"
+        },
+        {
+            "avocado toast with poached egg": "https://realfood.tesco.com/media/images/smashed-avocado-v2-lgh-568ba110-4d9e-4023-a2bd-5ffd7528e72a-0-1400x919.jpg"
+        },
+        {
+            "shrimp scampi": "https://static01.nyt.com/images/2022/06/02/dining/shrimpscampi_thumb/shrimpscampi_thumb-square640.jpg"
+        },
+        {
+            "grilled octopus": "https://jesspryles.com/wp-content/uploads/2020/06/grilled-octopus-59-2-2048x1365.jpg"
+        },
+        {
+            "fish tacos": "https://www.howsweeteats.com/wp-content/uploads/2023/08/grilled-fish-tacos-17.jpg"
+        },
+        {
+            "mushroom taco": "https://www.everydaymaven.com/wp-content/uploads/2019/07/img_9640.jpg.webp"
+        },
+        {
+            "black beans and cilantro lime rice": "https://juliasalbum.com/wp-content/uploads/2017/05/34684289646_e87e741ee2_c.jpg"
+        },
+        {
+            "falafel with tzatziki sauce": "https://dishingouthealth.com/wp-content/uploads/2021/01/falafelbowls_square.jpg"
+        },
+        {
+            "grilled salmon": "https://www.twopeasandtheirpod.com/wp-content/uploads/2022/08/grilled-salmon-7.jpg"
+        },
+        {
+            "pan-seared tuna steaks": "https://www.acouplecooks.com/wp-content/uploads/2020/06/grilled-tuna-003.jpg"
+        },
+        {
+            "seared scallops": "https://hips.hearstapps.com/hmg-prod/images/seared-scallops-1-64e521a5e7545.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "seafood paella": "https://simply-delicious-food.com/wp-content/uploads/2020/10/0e2a1651-2.jpg"
+        },
+        {
+            "homemade southwest black bean burger": "https://audreydunham.com/wp-content/uploads/2016/07/img_7989.jpg"
+        },
+        {
+            "quinoa salad with roasted vegetables": "https://www.ambitiouskitchen.com/wp-content/uploads/2023/03/roasted-veggie-chickpea-pesto-quinoa-salad-7-750x750.jpg"
+        }
+    ],
+    "vegetarian": [
+        {
+            "vegetarian mac n cheese": "https://www.connoisseurusveg.com/wp-content/uploads/2022/01/vegan-mac-cheese-sq-22.jpg"
+        },
+        {
+            "vegetarian broccoli cheddar soup": "https://www.connoisseurusveg.com/wp-content/uploads/2022/03/vegan-broccoli-cheddar-soup-sq.jpg"
+        },
+        {
+            "vegetarian stir fry": "https://www.evolvingtable.com/wp-content/uploads/2022/05/avocado-roll-23.jpg"
+        },
+        {
+            "tofu stir fry": "https://www.connoisseurusveg.com/wp-content/uploads/2022/03/vegan-stir-fry-22-07.jpg"
+        },
+        {
+            "vegetarian noodles": "https://zardyplants.com/wp-content/uploads/2020/08/vegan-garlic-noodles-07-1.jpg"
+        },
+        {
+            "vegetarian spring rolls": "https://www.connoisseurusveg.com/wp-content/uploads/2022/04/baked-spring-rolls-sq.jpg"
+        },
+        {
+            "vegetarian stir fry with tofu": "https://www.wellplated.com/wp-content/uploads/2019/03/vegetable-tofu-stir-fry.jpg"
+        },
+        {
+            "spinach quiche": "https://sallysbakingaddiction.com/wp-content/uploads/2014/02/spinach-quiche.jpg"
+        },
+        {
+            "vegetarian quiche": "https://www.delscookingtwist.com/wp-content/uploads/2020/09/mediterranean-quiche-with-feta-cheese_6.jpg"
+        },
+        {
+            "daal": "https://kitchenandotherstories.com/wp-content/uploads/2022/11/daal-makhani-featured-image.jpg"
+        },
+        {
+            "paneer tikka masala": "https://i0.wp.com/cookingwithbry.com/wp-content/uploads/paneer-tikka-masala-recipe-3.png?resize=1080%2c1080&ssl=1"
+        },
+        {
+            "channa masala": "https://www.connoisseurusveg.com/wp-content/uploads/2023/04/chana-masala-8.jpg"
+        },
+        {
+            "vegetable korma": "https://spicecravings.com/wp-content/uploads/2019/09/vegetable-korma-9.jpg"
+        },
+        {
+            "vegetarian pasta": "https://cdn.loveandlemons.com/wp-content/uploads/2022/02/vegan-pasta.jpg"
+        },
+        {
+            "vegetarian pizza": "https://cdn.loveandlemons.com/wp-content/uploads/2022/02/vegan-pasta.jpg"
+        },
+        {
+            "margherita pizza": "https://thecarrotunderground.com/wp-content/uploads/2021/08/best-homemade-vegan-margherita-pizza-2.jpg"
+        },
+        {
+            "caprese salad": "https://cookieandkate.com/images/2018/08/best-caprese-salad-recipe-4.jpg"
+        },
+        {
+            "spinach and ricotta ravioli": "https://www.wholesomm.com/wp-content/uploads/2020/05/img_8647.jpg"
+        },
+        {
+            "vegetarian ravioli": "https://parade.com/.image/ar_1:1%2cc_fill%2ccs_srgb%2cfl_progressive%2cq_auto:good%2cw_1200/mtkwntgwmtcymze2odc3otq5/ravioli-with-roasted-veggies-ftr.jpg"
+        },
+        {
+            "mushroom risotto": "https://boldappetite.com/wp-content/uploads/2022/02/food-9342.jpg"
+        },
+        {
+            "vegetarian risotto": "https://plantbasedonabudget.com/wp-content/uploads/2013/10/vegan-vegetable-risotto-plant-based-on-a-budget-7.jpg"
+        },
+        {
+            "vegetarian fettuccine alfredo": "https://www.connoisseurusveg.com/wp-content/uploads/2021/06/vegan-fettuccine-alfredo-8-of-8.jpg"
+        },
+        {
+            "vegetarian sushi": "https://images.101cookbooks.com/vegan-sushi-7.jpg"
+        },
+        {
+            "avocado cucumber roll": "https://www.evolvingtable.com/wp-content/uploads/2022/05/avocado-roll-23.jpg"
+        },
+        {
+            "greek salad": "https://carlsbadcravings.com/wp-content/uploads/2021/09/greek-salad-3-b.jpg"
+        },
+        {
+            "vegetarian chilli": "https://rainbowplantlife.com/wp-content/uploads/2021/11/chili-edited-photos-6-of-8-scaled.jpg"
+        },
+        {
+            "vegetable tacos": "https://simplegreensmoothies.com/wp-content/uploads/vegan-tacos-vegan-taco-recipe-featured.jpg"
+        },
+        {
+            "vegetarian breakfast burritos": "https://naturallyella.com/wp-content/uploads/2016/08/vegetarian_breakfast_burrito-2-1.jpg"
+        },
+        {
+            "vegetarian quesadillas": "https://www.connoisseurusveg.com/wp-content/uploads/2016/07/loaded-avocado-quesadillas-fb-1.jpg"
+        },
+        {
+            "vegetarian cheese enchiladas": "https://alexandracooks.com/wp-content/uploads/2020/08/enchiladas2_alexandraskitchen.jpg"
+        },
+        {
+            "vegetarian burger": "https://cookieandkate.com/images/2013/05/best-veggie-burger-recipe-3.jpg"
+        },
+        {
+            "vegetarian lentil soup": "https://choosingchia.com/jessh-jessh/uploads/2021/09/lentil-stew-7.jpg"
+        },
+        {
+            "vegetarian curry": "https://www.noracooks.com/wp-content/uploads/2022/08/vegan-curry-6.jpg"
+        },
+        {
+            "vegetarian breakfast sandwich": "https://cdn.loveandlemons.com/wp-content/uploads/2022/09/breakfast-sandwich-1.jpg"
+        },
+        {
+            "vegetarian sandwich": "https://www.connoisseurusveg.com/wp-content/uploads/2023/07/vegan-blt-dq-3.jpg"
+        },
+        {
+            "vegetarian wrap": "https://tastesbetterfromscratch.com/wp-content/uploads/2014/04/veggie-wrap-2.jpg"
+        },
+        {
+            "chickpea sandwich": "https://minimalistbaker.com/wp-content/uploads/2014/12/amazing-chickpea-sunflower-sandwich-savory-a-mix-of-crunchy-and-soft-textures-and-so-delicious-vegan-glutenfree-healthy.jpg"
+        },
+        {
+            "roasted beet and goat cheese salad": "https://cookieandkate.com/images/2021/02/roasted-beet-arugula-salad-recipe-1.jpg"
+        },
+        {
+            "vegetarian pho with tofu": "https://www.connoisseurusveg.com/wp-content/uploads/2022/10/vegan-pho-22-r-sq-2.jpg"
+        }
+    ],
+    "sibo friendly": [
+        {
+            "roasted turkey breast": "https://s23209.pcdn.co/wp-content/uploads/2021/11/211015_damn-delicious_herb-roasted-turkey-breast_375.jpg"
+        },
+        {
+            "roasted pork loin": "https://diethood.com/wp-content/uploads/2019/09/roasted-pork-loin-4.jpg"
+        },
+        {
+            "egg salad": "https://hips.hearstapps.com/hmg-prod/images/egg-salad-index-6412391670d33.jpg?crop=0.8892548373816386xw:1xh;center,top&resize=1200:*"
+        },
+        {
+            "sautéed beef strips with bell peppers and ginger": "https://omnivorescookbook.com/wp-content/uploads/2019/09/1908_ginger-beef-stir-fry_550.jpg"
+        },
+        {
+            "stir-fried tofu with bamboo shoots and carrots": "https://thatspicychick.com/wp-content/uploads/2022/05/tofu-with-hot-garlic-sauce-closeup-on-plate.jpg"
+        },
+        {
+            "lamb chops": "https://www.jocooks.com/wp-content/uploads/2012/01/lamb-chops-with-mint-garlic-sauce-1-7.jpg"
+        },
+        {
+            "chicken and ginger soup": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/10/carrot-ginger-soup-main.jpg"
+        },
+        {
+            "egg frittata with spinach": "https://www.thatskinnychickcanbake.com/wp-content/uploads/2014/05/spinach-frittata-12.jpg"
+        },
+        {
+            "baked cod": "https://www.acouplecooks.com/wp-content/uploads/2020/09/baked-cod-059.jpg"
+        },
+        {
+            "baked chicken": "https://www.chocolatemoosey.com/wp-content/uploads/2018/02/mediterranean-roasted-chicken-thighs-with-olives-photo-6240.jpg"
+        },
+        {
+            "baked salmon with lemon": "https://www.mypricechopper.com/frontend/media/recipes/bakedsalmonlemondillparsley2_web_1110x625.jpg"
+        },
+        {
+            "grilled shrimp": "https://adashofmacros.com/wp-content/uploads/2019/10/roasted-butternut-squash-puree-with-shrimp-1-of-3.jpg"
+        },
+        {
+            "sautéed scallops with lemon and parsley": "https://cafedelites.com/wp-content/uploads/2018/03/garlic-scallops-image-14-500x375.jpg"
+        },
+        {
+            "grilled chicken breast with herbs": "https://www.eatingbirdfood.com/wp-content/uploads/2023/06/grilled-chicken-breast-hero.jpg"
+        },
+        {
+            "beef stew": "https://www.litethriive.com/wp-content/uploads/2021/02/thank-you-1-1024x1024.png"
+        },
+        {
+            "homemade chicken soup": "https://recipetineats.com/wp-content/uploads/2017/05/chicken-noodle-soup-from-scratch_3.jpg"
+        },
+        {
+            "mackerel": "https://feastwithsafiya.com/wp-content/uploads/2021/11/oven-roasted-mackerel.jpg"
+        },
+        {
+            "quinoa salad with cucumbers and carrots": "https://www.cookingclassy.com/wp-content/uploads/2020/01/quinoa-salad-16-500x500.jpg"
+        }
+    ],
+    "vegan": [
+        {
+            "vegan caesar salad": "https://www.mydarlingvegan.com/wp-content/uploads/2017/04/caesar5.jpg"
+        },
+        {
+            "vegan overnight oats": "https://simple-veganista.com/wp-content/uploads/2021/04/healthy-overnight-oats-recipe-11.jpg"
+        },
+        {
+            "vegan stir fry": "https://therecipecritic.com/wp-content/uploads/2019/08/vegetable_stir_fry.jpg"
+        },
+        {
+            "tofu stir fry": "https://www.connoisseurusveg.com/wp-content/uploads/2022/03/vegan-stir-fry-22-07.jpg"
+        },
+        {
+            "vegan noodles": "https://zardyplants.com/wp-content/uploads/2020/08/vegan-garlic-noodles-07-1.jpg"
+        },
+        {
+            "vegan spring rolls": "https://www.connoisseurusveg.com/wp-content/uploads/2022/04/baked-spring-rolls-sq.jpg"
+        },
+        {
+            "vegan acai bowl": "https://theallnaturalvegan.com/wp-content/uploads/2023/09/homemade-acai-bowl.jpg"
+        },
+        {
+            "vegan ice cream": "https://lovingitvegan.com/wp-content/uploads/2019/08/vegan-ice-cream-14.jpg"
+        },
+        {
+            "daal": "https://kitchenandotherstories.com/wp-content/uploads/2022/11/daal-makhani-featured-image.jpg"
+        },
+        {
+            "vegan curry with chickpeas": "https://rainbowplantlife.com/wp-content/uploads/2023/02/hero_01_chickpea-curry.jpg"
+        },
+        {
+            "vegan pasta": "https://cdn.loveandlemons.com/wp-content/uploads/2022/02/vegan-pasta.jpg"
+        },
+        {
+            "vegan pizza": "https://veganhuggs.com/wp-content/uploads/2017/10/vegan-pizza-recipe-3.jpg"
+        },
+        {
+            "vegan sushi": "https://images.101cookbooks.com/vegan-sushi-7.jpg"
+        },
+        {
+            "avocado cucumber roll": "https://www.evolvingtable.com/wp-content/uploads/2022/05/avocado-roll-23.jpg"
+        },
+        {
+            "vegan tempura with vegetables": "https://www.justonecookbook.com/wp-content/uploads/2020/05/vegetable-tempura-1710-ii.jpg"
+        },
+        {
+            "vegan kimchi tofu stew": "https://assets.bonappetit.com/photos/5877fd4b4341aeac31495170/4:3/w_3763,h_2822,c_limit/tofu-and-kimchi-stew.jpg"
+        },
+        {
+            "vegan tacos": "https://namelymarly.com/wp-content/uploads/2020/04/vegan_taco_meat_03-web.jpg"
+        },
+        {
+            "vegan breakfast burritos": "https://plantbasedonabudget.com/wp-content/uploads/2013/04/vegan-easy-breakfast-burritos-plant-based-on-a-budget-12.jpg"
+        },
+        {
+            "vegan quesadillas": "https://www.apinchofhealthy.com/wp-content/uploads/2022/04/styled-cooked-quesadillas-1-2.jpg"
+        },
+        {
+            "vegan pad thai": "https://veganhuggs.com/wp-content/uploads/2019/03/vegan-pad-thai-3.jpg"
+        },
+        {
+            "vegan curry": "https://www.noracooks.com/wp-content/uploads/2022/08/vegan-curry-6.jpg"
+        },
+        {
+            "vegan salad": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2021/05/green-vegan-salad-platter-800x1200.jpg"
+        },
+        {
+            "vegan sandwich": "https://www.veganricha.com/wp-content/uploads/2023/05/club-sandwich-with-tofu-meat-9000.jpg"
+        },
+        {
+            "vegan chilli": "https://rainbowplantlife.com/wp-content/uploads/2021/11/chili-edited-photos-6-of-8-scaled.jpg"
+        },
+        {
+            "vegan burger": "https://cookieandkate.com/images/2013/05/best-veggie-burger-recipe-3.jpg"
+        },
+        {
+            "vegan lentil soup": "https://playswellwithbutter.com/wp-content/uploads/2020/12/damn-good-lentil-soup-15.jpg"
+        },
+        {
+            "vegan soup": "https://www.connoisseurusveg.com/wp-content/uploads/2021/01/vegan-chicken-noodle-soup-7-of-9.jpg"
+        },
+        {
+            "vegan wings": "https://www.noracooks.com/wp-content/uploads/2022/06/vegan-wings-8.jpg"
+        },
+        {
+            "vegan breakfast sandwich": "https://i.pinimg.com/564x/7b/2e/b9/7b2eb9da06f873d450085e716831cbf1.jpg"
+        },
+        {
+            "vegan wrap": "https://foodwithfeeling.com/wp-content/uploads/2021/04/vegan-wraps-10-680x1020.jpg"
+        },
+        {
+            "vegan cake": "https://www.noracooks.com/wp-content/uploads/2024/01/vegan-vanilla-cake-1-2.jpg"
+        },
+        {
+            "vegan chocolate cake": "https://thebananadiaries.com/wp-content/uploads/2023/06/vegan-chocolate-cake_3640.jpg"
+        },
+        {
+            "vegan mushroom burger": "https://www.deliciousmagazine.co.uk/wp-content/uploads/2021/06/960_2021_q2_138_portobello_mushroom_burger_02.jpg"
+        },
+        {
+            "vegan oatmeal": "https://joeats.net/wp-content/uploads/2019/07/vegan-coconut-oatmeal-9.jpg"
+        },
+        {
+            "vegan cheese fries": "https://somethingnutritiousblog.com/wp-content/uploads/2019/04/bcc7e45b-0bf8-4821-89c5-dc44b114cc0f-800x530.jpg"
+        },
+        {
+            "vegan waffles": "https://www.connoisseurusveg.com/wp-content/uploads/2023/01/vegan-waffles-sq2.jpg"
+        },
+        {
+            "vegan bagel": "https://thebananadiaries.com/wp-content/uploads/2023/05/homemade-vegan-bagels_3381.jpg"
+        },
+        {
+            "vegan mac and cheese": "https://www.crowdedkitchen.com/wp-content/uploads/2020/07/easy-vegan-mac-and-cheese-5.jpg"
+        },
+        {
+            "vegan chia seed pudding": "https://unboundwellness.com/wp-content/uploads/2021/04/chia_pudding_3.jpg"
+        },
+        {
+            "vegan fried chicken": "https://jessicainthekitchen.com/wp-content/uploads/2023/12/vegan-fried-chicken-14.jpg"
+        },
+        {
+            "chickpea sandwich": "https://www.spoonforkbacon.com/wp-content/uploads/2022/03/chickpea-salad-sandwich-recipe.jpg"
+        },
+        {
+            "vegan butternut squash": "https://www.connoisseurusveg.com/wp-content/uploads/2021/09/vegan-butternut-squash-soup-21-9-of-9.jpg"
+        },
+        {
+            "vegan vegetable bowl with quinoa": "https://www.emilieeats.com/wp-content/uploads/2016/09/greek_quinoa_buddha_bowl_vegan_gluten_free-1.jpg"
+        },
+        {
+            "vegan pho": "https://hips.hearstapps.com/hmg-prod/images/vegan-pho-1672865984.jpg?crop=1xw:0.8435812837432514xh;center,top&resize=1200:*"
+        }
+    ]
+}
