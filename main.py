@@ -247,14 +247,14 @@ def get_search_dishes_ios(
 def get_search_dishes(
     query_type: str,
     query_value: str,
-    neighborhoods: List[str] = Query(None, description = 'List of neighborhoods'),
+    neighborhoods: Optional[List[str]] = Query(None, description = 'List of neighborhoods'),
     has_unique_image: bool = Query(False, description = 'Whether to filter dishes with unique images'),
     weaviate_limit: int = Query(10, description = 'Number of dishes to search for in weaviate'),
     max_alternatives: int = Query(3, description = 'Maximum number of alternatives to return'),
     num_dishes: int = Query(10, description = 'Number of dishes to return'),
     latitude: Optional[float] = Query(DEFAULT_LATITUDE, description = 'Latitude of the location'),
     longitude: Optional[float] = Query(DEFAULT_LONGITUDE, description = 'Longitude of the location'),
-    offset: Optional[float] = Query(0, description = 'Offset multiplier'),
+    offset: int = Query(0, description = 'Offset multiplier'),
 ):
     data = weaviate.get_search_dishes(
         query_type, 
